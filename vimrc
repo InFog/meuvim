@@ -24,3 +24,5 @@ inoremap ' ''<esc>i
 
 " Mapeando teclas =)
 map <F5> :NERDTreeToggle<CR>
+
+:filetype plugin on
