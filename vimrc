@@ -26,3 +26,10 @@ inoremap ' ''<esc>i
 map <F5> :NERDTreeToggle<CR>
 
 :filetype plugin on
+
+source ~/.vim/plugin/php-doc.vim
+
+" PDV (phpDocumentor for Vim)
+inoremap <C-L> <ESC>:call PhpDocSingle()<CR>i
+nnoremap <C-L> :call PhpDocSingle()<CR>
+vnoremap <C-L> :call PhpDocRange()<CR>
