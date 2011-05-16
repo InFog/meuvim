@@ -29,7 +29,13 @@ map <F5> :NERDTreeToggle<CR>
 
 source ~/.vim/plugin/php-doc.vim
 
-" PDV (phpDocumentor for Vim)
+" PDV (phpDocumentator for Vim)
 inoremap <C-L> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-L> :call PhpDocSingle()<CR>
 vnoremap <C-L> :call PhpDocRange()<CR>
+
+" Esse tema é bem 'eye friendly' =)
+colo vibrantink
+colo zenburn
+" POG... não sei por que, mas colocando o vibrant primeiro o zenburn
+" funciona...
