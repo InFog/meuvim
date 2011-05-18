@@ -12,6 +12,7 @@ set background=dark " Define o fundo preto (É melhor usar isso com a sintaxe)
 set nu              " Mostra o número de linhas
 set ai              " Faz o auto tab
 set ts=4            " tab vale 4 espaços
+set sw=4            " tab com 4 espaços
 set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
 " set tw=80           " Define a largura do texto como 80 caracteres
