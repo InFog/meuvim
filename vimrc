@@ -39,8 +39,15 @@ inoremap <C-L> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-L> :call PhpDocSingle()<CR>
 vnoremap <C-L> :call PhpDocRange()<CR>
 
+" Cores a considerar:
+" colo lucius
+" colo tir_black
+" colo delek
+
 " Esse tema é bem 'eye friendly' =)
+
 colo vibrantink
 colo zenburn
+
 " POG... não sei por que, mas colocando o vibrant primeiro o zenburn
 " funciona...
