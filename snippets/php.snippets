@@ -223,7 +223,7 @@ snippet ci_controller
 	 *
 	 * Descrição
 	 *
-	 * @author Evaldo Junior <junior@casoft.info>
+	 * @author Bruno Almeida <bruno@casoft.info>
 	 * @version 0.1
 	 * @package
 	 * @subpackage controllers
@@ -237,7 +237,7 @@ snippet ci_controller
 	 */
 	class `Filename('', 'controller.php')` extends CI_Controller { 
 
-	    /**
+	    /** 
 	     * Função construtora
 	     */
 	    public function  __construct() { 
@@ -259,7 +259,7 @@ snippet ci_model
 	 *
 	 * Model `Filename('', 'model')`
 	 *
-	 * @author      Evaldo Junior <junior@casoft.info>
+	 * @author      Bruno Almeida <bruno@casoft.info>
 	 * @package
 	 * @subpackage  models
 	 */
@@ -276,21 +276,21 @@ snippet ci_model
 	     */
 	    public function  __construct() { 
 	        parent::__construct();
-	    }
+ 	    }
 	}
 										   
 	/* End of file `Filename('$1.php', 'model.php')` */
-	/* Location: ./application/models/`Filename('$1.php', 'model.php')` */
+ 	/* Location: ./application/models/`Filename('$1.php', 'model.php')` */
 
 snippet foreach_template
 	<?php foreach ($${1:variable} as $${2:key}) : ?>
 	    ${3:}
-	<?php endforeach; ?>
+	<?php endforeach; ?> 
 
 snippet ift
 	<?php if (${1:condition}) : ?>
 	    ${2:}
-	<?php endif; ?>
+	<?php endif; ?> 
 
 snippet echot
 	<?php echo $${1:variable}; ?>

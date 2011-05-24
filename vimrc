@@ -6,7 +6,7 @@
 runtime! debian.vim
 "
 "Agora começam as opções =)
-"
+
 syntax on           " Habilita a marcação de sintaxe
 set background=dark " Define o fundo preto (É melhor usar isso com a sintaxe)
 set nu              " Mostra o número de linhas
@@ -15,7 +15,11 @@ set ts=4            " tab vale 4 espaços
 set sw=4            " tab com 4 espaços
 set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
-" set tw=80           " Define a largura do texto como 80 caracteres
+
+set tw=130          " Define a largura do texto como 130 caracteres
+set incsearch       " Pesquisa incremental
+set hlsearch        " Highligth search :)
+
 " Fechando chaves, parenteses, colchetes e aspas
 inoremap { {}<esc>i 
 inoremap ( ()<esc>i
