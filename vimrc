@@ -27,12 +27,13 @@ inoremap [ []<esc>i
 inoremap " ""<esc>i
 inoremap ' ''<esc>i
 
-" Mapeando teclas =)
-map <F5> :NERDTreeToggle<CR>
-
 :filetype plugin on
 
 source ~/.vim/plugin/php-doc.vim
+
+" Mapeando teclas =)
+map <F5> :NERDTreeToggle<CR>
+nnoremap <silent> <F6> :TlistToggle<CR>
 
 " PDV (phpDocumentator for Vim)
 inoremap <C-L> <ESC>:call PhpDocSingle()<CR>i
