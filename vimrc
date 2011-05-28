@@ -16,7 +16,7 @@ set sw=4            " tab com 4 espaços
 set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
 
-set tw=130          " Define a largura do texto como 130 caracteres
+"set tw=130          " Define a largura do texto como 130 caracteres
 set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 

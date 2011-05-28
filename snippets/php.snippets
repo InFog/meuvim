@@ -223,7 +223,7 @@ snippet ci_controller
 	 *
 	 * Descrição
 	 *
-	 * @author Bruno Almeida <bruno@casoft.info>
+	 * @author ${1:`g:snips_author`}
 	 * @version 0.1
 	 * @package
 	 * @subpackage controllers
@@ -245,7 +245,7 @@ snippet ci_controller
 	    }
 	
 	    public function index() {
-	        ${1:// Código...}
+	        ${2:// Código...}
 	    }
 	}
 
@@ -259,7 +259,7 @@ snippet ci_model
 	 *
 	 * Model `Filename('', 'model')`
 	 *
-	 * @author      Bruno Almeida <bruno@casoft.info>
+	 * @author ${1:`g:snips_author`}
 	 * @package
 	 * @subpackage  models
 	 */
@@ -276,19 +276,19 @@ snippet ci_model
 	     */
 	    public function  __construct() { 
 	        parent::__construct();
- 	    }
+	    }
 	}
 										   
 	/* End of file `Filename('$1.php', 'model.php')` */
- 	/* Location: ./application/models/`Filename('$1.php', 'model.php')` */
+	/* Location: ./application/models/`Filename('$1.php', 'model.php')` */
 
 snippet foreacht
 	<?php foreach ($${1:variable} as $${2:key}) : ?>
 	    ${3:}
-	<?php endforeach; ?> 
+	<i?php endforeach; ?> 
 
 snippet ift
-	<?php if (${1:condition}) : ?>
+	<?iphp if (${1:condition}) : ?>
 	    ${2:}
 	<?php endif; ?> 
 
