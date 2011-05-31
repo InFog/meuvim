@@ -236,8 +236,8 @@ snippet ci_controller
 	 * @property CI_Input   $input
 	 */
 	class `Filename('', 'controller.php')` extends CI_Controller { 
-
-	    /** 
+	    
+		/** 
 	     * Função construtora
 	     */
 	    public function  __construct() { 
@@ -276,7 +276,8 @@ snippet ci_model
 	     */
 	    public function  __construct() { 
 	        parent::__construct();
-	    }
+	
+		}
 	}
 										   
 	/* End of file `Filename('$1.php', 'model.php')` */
@@ -285,10 +286,10 @@ snippet ci_model
 snippet foreacht
 	<?php foreach ($${1:variable} as $${2:key}) : ?>
 	    ${3:}
-	<i?php endforeach; ?> 
+	<?php endforeach; ?> 
 
 snippet ift
-	<?iphp if (${1:condition}) : ?>
+	<?php if (${1:condition}) : ?>
 	    ${2:}
 	<?php endif; ?> 
 
