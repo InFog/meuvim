@@ -33,10 +33,16 @@ Snippets : Adicionei o plugin snipMate que tem snippets para várias linguagens.
    * Cria a estrutura básica para um controller CI\_Controller
  *  ci\_model<tab>
    * Cria a estrutura básica de uma model CI\_Model
- * foreach\_template<tab>
-   * Cria uma estrura *foreach* em um template
+ * foreacht<tab>
+   * Cria uma estrura *foreach* em um template html
+ * echot<tab>
+   * Cria uma estrutura *echo* em um template html
+ * ift<tab>
+   * Cria uma estrutura *if* em um template html
 
-NERDTree : Use a tecla F5 =)
+NERDTree : Use a tecla F5
+
+TagList  : Use a tecla F6
 
 PHPDoc : *ctrl+l* para adicionar um trecho PHPDoc
 
@@ -44,3 +50,4 @@ Afazeres
 --------
 
  *  Procurar algum plugin que complete nomes de funções em classes e mostre o PHPDoc.
+ *  O TagList mostra funções, métodos, classes e variáveis, mas não segue o PHPDoc =( Sad, sad robot...
