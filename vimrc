@@ -67,3 +67,6 @@ colo zenburn
 
 " POG... não sei por que, mas colocando o vibrant primeiro o zenburn
 " funciona...
+
+" Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
+au BufNewFile,BufRead *.thtml setfiletype php
