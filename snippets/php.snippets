@@ -217,6 +217,7 @@ snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
 
 snippet ci_controller
+	
 	<?php
 	/**
 	 * `Filename('$1.php', 'controller.php')`
@@ -238,7 +239,7 @@ snippet ci_controller
 	class `Filename('', 'controller.php')` extends CI_Controller { 
 	    
 		/** 
-	     * Função construtora
+	     * Método construtor
 	     */
 	    public function  __construct() { 
 	        parent::__construct();
@@ -246,7 +247,8 @@ snippet ci_controller
 	
 	    public function index() {
 	        ${2:// Código...}
-	    }
+	
+		}
 	}
 
 	/* End of file `Filename('$1.php', 'controller.php')` */
@@ -270,13 +272,12 @@ snippet ci_model
 	 * @property    CI_DB_active_record     $db
 	 */
 	class `Filename('', 'model')` extends CI_Model { 
-
-	    /**
-	     * Função construtora
+	    
+		/**
+	     * Método construtor
 	     */
 	    public function  __construct() { 
 	        parent::__construct();
-	
 		}
 	}
 										   
