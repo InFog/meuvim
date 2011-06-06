@@ -64,6 +64,11 @@ inoremap <C-L> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-L> :call PhpDocSingle()<CR>
 vnoremap <C-L> :call PhpDocRange()<CR>
 
+" Identação de todo o documento
+inoremap <C-I> <ESC>gg=G<CR>
+nnoremap <C-I> <ESC>gg=G<CR>
+vnoremap <C-I> <ESC>gg=G<CR>
+
 " Cores a considerar:
 " colo lucius
 " colo tir_black
