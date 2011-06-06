@@ -47,8 +47,13 @@ map <F5> :NERDTreeToggle<CR>
 
 " Opções para o TagList
 nnoremap <silent> <F6> :TlistToggle<CR>
-let Tlist_Use_Right_Window=1
-let Tlist_GainFocus_On_ToggleOpen=1
+let Tlist_Use_Right_Window=1            " Lista de tags à direita
+let Tlist_GainFocus_On_ToggleOpen=1     " Ganhar foco
+let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
+let Tlist_Sort_Type="name"              " Ordenar pelo nome e não pela ordem no arquivo
+
+" Escondendo variáveis no TagList para PHP
+let tlist_php_settings='php;c:Classes;f:Functions'
 
 " PDV (phpDocumentator for Vim)
 inoremap <C-L> <ESC>:call PhpDocSingle()<CR>i
