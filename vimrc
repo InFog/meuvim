@@ -44,6 +44,9 @@ source ~/.vim/plugin/php-doc.vim
 
 " Opções para o NERDTree
 map <F5> :NERDTreeToggle<CR>
+let NERDTreeHighlightCursorline=1       " Destaca a linha atual
+let NERDTreeShowHidden=1                " Lista arquivos ocultos
+let NERDTreeIgnore=['\.*swp$']          " Não exibir arquivos de swap do vim
 
 " Opções para o TagList
 nnoremap <silent> <F6> :TlistToggle<CR>
