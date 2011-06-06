@@ -46,6 +46,14 @@ TagList  : Use a tecla F6
 
 PHPDoc : *ctrl+l* para adicionar um trecho PHPDoc
 
+Identação de todo o arquivo: *ctrl+i* para corrigir a identação de todo um arquivo (testei com PHP)
+
+Comandos úteis
+--------------
+
+ * *%* no modo de comandos vai para o abre/fecha parênteses/chaves/colchetes correspondente.
+   * Adicionei o matchit que faz o *%* também funcionar com tags html e outras linguagens. Detalhe que ele reconhece até a sintaxe alternativa para *if*, *foreach* e outros do *php*.
+
 Afazeres
 --------
 
