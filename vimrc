@@ -21,6 +21,7 @@ set ts=4            " tab vale 4 espaços
 set sw=4            " tab com 4 espaços
 set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
+set cursorline      " Destaca a linha atual
 
 "set tw=130         " Define a largura do texto como 130 caracteres
 set incsearch       " Pesquisa incremental
