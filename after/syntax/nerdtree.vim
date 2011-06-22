@@ -1,1 +1,1 @@
-hi Directory ctermfg=4
+hi Directory ctermfg=Blue ctermbg=235
