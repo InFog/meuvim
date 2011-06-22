@@ -7,6 +7,10 @@ runtime! debian.vim
 "
 "Agora começam as opções =)
 
+" Limpa as configurações de cores
+hi clear
+syntax reset
+
 syntax on           " Habilita a marcação de sintaxe
 set background=dark " Define o fundo preto (É melhor usar isso com a sintaxe)
 set nu              " Mostra o número de linhas
@@ -34,20 +38,30 @@ map <F5> :NERDTreeToggle<CR>
 
 source ~/.vim/plugin/php-doc.vim
 
+" PHP auto complete
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
 " PDV (phpDocumentator for Vim)
 inoremap <C-L> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-L> :call PhpDocSingle()<CR>
 vnoremap <C-L> :call PhpDocRange()<CR>
 
-" Cores a considerar:
-" colo lucius
+" Esquema de cor
+colo lucius
+
+" Bastante chamativo quando entra no modo de insersção :)
+set laststatus=2 
+
 " colo tir_black
 " colo delek
 
 " Esse tema é bem 'eye friendly' =)
 
-colo vibrantink
-colo zenburn
+" colo vibrantink
+" colo zenburn
 
 " POG... não sei por que, mas colocando o vibrant primeiro o zenburn
 " funciona...
+
+" Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
+au BufNewFile,BufRead *.thtml setfiletype php
