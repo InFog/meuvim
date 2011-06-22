@@ -19,6 +19,7 @@ set ts=4            " tab vale 4 espaços
 set sw=4            " tab com 4 espaços
 set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
+set cursorline      " Destaca a linha atual
 
 set tw=130          " Define a largura do texto como 130 caracteres
 set incsearch       " Pesquisa incremental
@@ -30,6 +31,11 @@ inoremap ( ()<esc>i
 inoremap [ []<esc>i
 inoremap " ""<esc>i
 inoremap ' ''<esc>i
+
+" Opções para que blocos selecionados sejam reselecionados após identações.
+" Ajuda muito na hora de identar grandes e confusos blocos =)
+vnoremap < <gv
+vnoremap > >gv
 
 " Mapeando teclas =)
 map <F5> :NERDTreeToggle<CR>
@@ -49,11 +55,10 @@ vnoremap <C-L> :call PhpDocRange()<CR>
 " Esquema de cor
 colo lucius
 
+" Cores dos comentários em cinza
+hi Comment ctermfg=DarkGrey guifg=DarkGrey
 " Bastante chamativo quando entra no modo de insersção :)
 set laststatus=2 
-
-" colo tir_black
-" colo delek
 
 " Esse tema é bem 'eye friendly' =)
 
