@@ -157,8 +157,8 @@ hi Debug            ctermfg=181             ctermbg=NONE            cterm=none
 " Underlined Group
 " ----------------
 " text that stands out, html links
-hi Underlined       guifg=fg                                        gui=underline
-hi Underlined       ctermfg=fg                                      cterm=underline
+hi Underlined       guifg=fg                                        gui=none
+hi Underlined       ctermfg=fg                                      cterm=none
 
 
 " Ignore Group
