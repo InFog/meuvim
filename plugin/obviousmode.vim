@@ -43,7 +43,7 @@ if !exists('g:obviousModeModifiedNonCurrentHi')
 endif
 
 if !exists('g:obviousModeModifiedVertSplitHi')
-    let g:obviousModeModifiedVertSplitHi = 'term=reverse ctermfg=22 ctermbg=30'
+    let g:obviousModeModifiedVertSplitHi = 'term=reverse ctermfg=22 ctermbg=236'
 endif
 
 let s:isInsertMode = 0
