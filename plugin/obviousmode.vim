@@ -35,11 +35,11 @@ if !exists('g:obviousModeCmdwinHi')
 endif
 
 if !exists('g:obviousModeModifiedCurrentHi')
-    let g:obviousModeModifiedCurrentHi = 'term=reverse ctermbg=30'
+    let g:obviousModeModifiedCurrentHi = 'term=reverse ctermbg=236'
 endif
 
 if !exists('g:obviousModeModifiedNonCurrentHi')
-    let g:obviousModeModifiedNonCurrentHi = 'term=reverse ctermbg=30'
+   let g:obviousModeModifiedNonCurrentHi = 'term=reverse ctermbg=236'
 endif
 
 if !exists('g:obviousModeModifiedVertSplitHi')
