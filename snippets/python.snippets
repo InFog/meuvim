@@ -4,8 +4,13 @@ snippet #!
 snippet imp
 	import ${1:module}
 # Module Docstring
+
+snippet #-*enc
+	# -*- encoding: utf-8 -*-
+
 snippet docs
-	'''
+
+'''
 	File: ${1:`Filename('$1.py', 'foo.py')`}
 	Author: ${2:`g:snips_author`}
 	Description: ${3}
