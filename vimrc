@@ -28,11 +28,12 @@ set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 
 " Fechando chaves, parenteses, colchetes e aspas
-inoremap { {}<esc>i
-inoremap ( ()<esc>i
-inoremap [ []<esc>i
-inoremap " ""<esc>i
-inoremap ' ''<esc>i
+" Troquei estes mapeamentos pelo Auto Pairs
+" inoremap { {}<esc>i
+" inoremap ( ()<esc>i
+" inoremap [ []<esc>i
+" inoremap " ""<esc>i
+" inoremap ' ''<esc>i
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
