@@ -26,6 +26,7 @@ set cursorline      " Destaca a linha atual
 "set tw=130         " Define a largura do texto como 130 caracteres
 set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
+set ignorecase      " Pesquisa ignora caixa alta e baixa
 
 " Fechando chaves, parenteses, colchetes e aspas
 " Troquei estes mapeamentos pelo Auto Pairs
