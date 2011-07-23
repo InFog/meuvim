@@ -73,6 +73,9 @@ inoremap <C-I> <ESC>gg=G<CR>
 nnoremap <C-I> <ESC>gg=G<CR>
 vnoremap <C-I> <ESC>gg=G<CR>
 
+" Tasklist
+nnoremap <C-T> <ESC>:TaskList<CR>
+
 " Cores a considerar:
 " colo lucius
 " colo tir_black
