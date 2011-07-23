@@ -22,6 +22,13 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte:
  *  Copie o arquivo vimrc para ~/.vimrc
  *  Use seu novo vim =)
 
+Dependências
+------------
+
+Só algumas dependências para tudo funcionar certinho:
+
+ *  **exuberant-ctags** para o TagList. 
+ *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**. No Debian instale o pacote **vim-gnome** que resolve.
 
 Opções
 ------
@@ -43,6 +50,10 @@ Snippets : Adicionei o plugin snipMate que tem snippets para várias linguagens.
 NERDTree : Use a tecla F5
 
 TagList  : Use a tecla F6
+
+TaskList : Use ctrl + t
+
+Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
 
 PHPDoc : *ctrl+l* para adicionar um trecho PHPDoc
 
