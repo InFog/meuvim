@@ -91,3 +91,7 @@ colo zenburn
 
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
+
+" Definindo snippets para django
+autocmd FileType python set ft=python.django " SnipMate
+autocmd FileType html set ft=htmldjango.html " SnipMate
