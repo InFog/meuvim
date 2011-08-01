@@ -95,3 +95,11 @@ au BufNewFile,BufRead *.thtml setfiletype php
 " Definindo snippets para django
 autocmd FileType python set ft=python.django " SnipMate
 autocmd FileType html set ft=htmldjango.html " SnipMate
+
+" Removendo espaços em branco no final das linhas
+autocmd BufWritePre * :call <SID>StripWhite()
+fun! <SID>StripWhite()
+    %s/[ \t]\+$//ge
+    %s!^\( \+\)\t!\=StrRepeat("\t", 1 + strlen(submatch(1)) / 8)!ge
+endfun
+
