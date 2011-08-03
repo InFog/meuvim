@@ -19,7 +19,7 @@
 "     Mapping used to jump to the next empty tag/attribute.
 
 if !exists('g:sparkupExecuteMapping')
-  let g:sparkupExecuteMapping = '<c-e>'
+  let g:sparkupExecuteMapping = '<c-d>'
 endif
 
 if !exists('g:sparkupNextMapping')
