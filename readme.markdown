@@ -27,7 +27,7 @@ Dependências
 
 Só algumas dependências para tudo funcionar certinho:
 
- *  **exuberant-ctags** para o TagList. 
+ *  **exuberant-ctags** para o TagList.
  *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**. No Debian instale o pacote **vim-gnome** que resolve.
 
 Opções
@@ -55,9 +55,11 @@ TaskList : Use ctrl + t
 
 Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
 
-PHPDoc : *ctrl+l* para adicionar um trecho PHPDoc
+PHPDoc : *ctrl+l* para adicionar um trecho PHPDoc.
 
-Identação de todo o arquivo: *ctrl+i* para corrigir a identação de todo um arquivo (testei com PHP)
+Identação de todo o arquivo: *ctrl+i* para corrigir a identação de todo um arquivo (testei com PHP).
+
+Sparkup: A função do Sparkup foi mapeada para *ctrl+d*.
 
 Comandos úteis
 --------------
