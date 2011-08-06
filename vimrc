@@ -103,3 +103,5 @@ fun! <SID>StripWhite()
     %s!^\( \+\)\t!\=StrRepeat("\t", 1 + strlen(submatch(1)) / 8)!ge
 endfun
 
+" Obvious mode
+set laststatus=2 
