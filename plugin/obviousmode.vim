@@ -27,7 +27,7 @@ if &cp || exists('g:loaded_obviousmode')
 endif
 
 if !exists('g:obviousModeInsertHi')
-    let g:obviousModeInsertHi = 'term=reverse ctermbg=52'
+    let g:obviousModeInsertHi = 'term=reverse ctermfg=52 ctermbg=255'
 endif
 
 if !exists('g:obviousModeCmdwinHi')
@@ -43,7 +43,7 @@ if !exists('g:obviousModeModifiedNonCurrentHi')
 endif
 
 if !exists('g:obviousModeModifiedVertSplitHi')
-    let g:obviousModeModifiedVertSplitHi = 'term=reverse ctermfg=22 ctermbg=30'
+    let g:obviousModeModifiedVertSplitHi = 'term=reverse ctermfg=22 ctermbg=236'
 endif
 
 let s:isInsertMode = 0
