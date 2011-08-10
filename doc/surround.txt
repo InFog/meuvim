@@ -1,6 +1,10 @@
 *surround.txt*  Plugin for deleting, changing, and adding "surroundings"
 
+<<<<<<< HEAD
 Author:  Tim Pope <vimNOSPAM@tpope.org>         *surround-author*
+=======
+Author:  Tim Pope <vimNOSPAM@tpope.info>        *surround-author*
+>>>>>>> 1a520c7c5e2d23622a6febb0500559e1dfc40db8
 License: Same terms as Vim itself (see |license|)
 
 This plugin is only available if 'compatible' is not set.
@@ -50,8 +54,13 @@ below in |surround-replacements|.  Once again, examples are in order.
   <div>Yo!*</div>           cst<p>      <p>Yo!</p>
 
 *ys* takes a valid Vim motion or text object as the first object, and wraps
+<<<<<<< HEAD
 it using the second argument as with |cs|.  (It's a stretch, but a good
 mnemonic for "ys" is "you surround".)
+=======
+it using the second argument as with |cs|.  (Unfortunately there's no good
+mnemonic for "ys".)
+>>>>>>> 1a520c7c5e2d23622a6febb0500559e1dfc40db8
 
   Old text                  Command     New text ~
   Hello w*orld!             ysiw)       Hello (world)!
@@ -106,7 +115,11 @@ thus is highly recommended).  All targets are currently just one character.
 
 Eight punctuation marks, (, ), {, }, [, ], <, and >, represent themselves
 and their counterparts.  If the opening mark is used, contained whitespace is
+<<<<<<< HEAD
 also trimmed.  The targets b, B, r, and a are aliases for ), }, ], and > 
+=======
+also trimmed.  The targets b, B, r, and a are aliases for ), }, ], and >
+>>>>>>> 1a520c7c5e2d23622a6febb0500559e1dfc40db8
 (the first two mirror Vim; the second two are completely arbitrary and
 subject to change).
 
