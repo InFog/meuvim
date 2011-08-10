@@ -66,10 +66,10 @@ hi Float            ctermfg=116                                     cterm=none
 " ----------------
 " any variable name
 hi Identifier       guifg=#efaf7f                                   gui=none
-hi Identifier       ctermfg=216                                     cterm=none
+hi Identifier       ctermfg=150                                     cterm=none
 " function, method, class
 hi Function         guifg=#efaf7f                                   gui=none
-hi Function         ctermfg=216                                     cterm=none
+hi Function         ctermfg=200                                     cterm=none
 
 
 " Statement Group
