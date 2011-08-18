@@ -20,8 +20,11 @@ set sw=4            " tab com 4 espaços
 set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
+set showmatch       " Exibe parênteses de fechamento
 
-set tw=130          " Define a largura do texto como 130 caracteres
+set mouse=a         " Uso do mouse para todas as tarefas
+
+set nowrap          " Não quebre a linha, 
 set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 
@@ -40,7 +43,7 @@ vnoremap > >gv
 " Mapeando teclas =)
 map <F5> :NERDTreeToggle<CR>
 
-:filetype plugin on
+filetype plugin on
 
 source ~/.vim/plugin/php-doc.vim
 
