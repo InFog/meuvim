@@ -24,12 +24,12 @@ set showmatch       " Exibe parênteses de fechamento
 
 set mouse=a         " Uso do mouse para todas as tarefas
 
-set nowrap          " Não quebre a linha, 
+set nowrap          " Não quebre a linha,
 set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 
 " Fechando chaves, parenteses, colchetes e aspas
-inoremap { {}<esc>i 
+inoremap { {}<esc>i
 inoremap ( ()<esc>i
 inoremap [ []<esc>i
 inoremap " ""<esc>i
@@ -40,10 +40,23 @@ inoremap ' ''<esc>i
 vnoremap < <gv
 vnoremap > >gv
 
+filetype plugin on
+
 " Mapeando teclas =)
 map <F5> :NERDTreeToggle<CR>
+let NERDTreeHighlightCursorline=1                               " Destaca a linha atual
+let NERDTreeShowHidden=1                                        " Lista arquivos ocultos
+let NERDTreeIgnore=['\.*swp$', '\.*pyc$', '^\.git$']            " Arquivos que não serão exibidos.
 
-filetype plugin on
+" Opções para o TagList
+nnoremap <silent> <F6> :TlistToggle<CR>
+let Tlist_Use_Right_Window=1            " Lista de tags à direita
+let Tlist_GainFocus_On_ToggleOpen=1     " Ganhar foco
+let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
+let Tlist_Sort_Type="name"              " Ordenar pelo nome e não pela ordem no arquivo
+
+" Escondendo variáveis no TagList para PHP
+let tlist_php_settings='php;c:Classes;f:Functions'
 
 source ~/.vim/plugin/php-doc.vim
 
@@ -60,8 +73,9 @@ colo lucius
 
 " Cores dos comentários em cinza
 hi Comment ctermfg=DarkGrey guifg=DarkGrey
+
 " Bastante chamativo quando entra no modo de insersção :)
-set laststatus=2 
+set laststatus=2
 
 " Esse tema é bem 'eye friendly' =)
 
@@ -73,3 +87,14 @@ set laststatus=2
 
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
+
+" Definindo snippets para django
+autocmd FileType python set ft=python.django " SnipMate
+autocmd FileType html set ft=htmldjango.html " SnipMate
+
+" Removendo espaços em branco no final das linhas
+autocmd BufWritePre * :call <SID>StripWhite()
+fun! <SID>StripWhite()                  " It's quite fun, isn't ?
+'    %s/[ \t]\+$//ge
+    %s!^\( \+\)\t!\=StrRepeat("\t", 1 + strlen(submatch(1)) / 8)!ge
+endfun
