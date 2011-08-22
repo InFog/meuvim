@@ -74,7 +74,7 @@ nnoremap <C-I> <ESC>gg=G<CR>
 vnoremap <C-I> <ESC>gg=G<CR>
 
 " Tasklist
-nnoremap <C-T> <ESC>:TaskList<CR>
+" nnoremap <C-T> <ESC>:TaskList<CR>
 
 " Cores a considerar:
 " colo lucius
@@ -104,4 +104,9 @@ fun! <SID>StripWhite()
 endfun
 
 " Obvious mode
-set laststatus=2 
+set laststatus=2
+
+" ABBA... ops, abas =D
+map <C-N> <ESC>:tabnext<CR>
+map <C-B> <ESC>:tabprev<CR>
+map <C-T> <ESC>:tabnew<CR>
