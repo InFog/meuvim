@@ -107,6 +107,6 @@ endfun
 set laststatus=2
 
 " ABBA... ops, abas =D
-map <C-N> <ESC>:tabnext<CR>
+map <C-M> <ESC>:tabnext<CR>
 map <C-B> <ESC>:tabprev<CR>
 map <C-T> <ESC>:tabnew<CR>
