@@ -61,6 +61,8 @@ Identação de todo o arquivo: *ctrl+i* para corrigir a identação de todo um a
 
 Sparkup: A função do Sparkup foi mapeada para *ctrl+d*.
 
+Arquivos recentes (MRU): Comando *:MRU*.
+
 Comandos úteis
 --------------
 
