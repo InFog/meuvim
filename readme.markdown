@@ -1,14 +1,7 @@
 MeuVim
 ======
 
-Meus arquivos de configuração para o Vim.
-
-Comecei montar esse Vim para tentar substituir o grandalhão NetBeans no dia-a-dia como desenvolvedor WEB.
-
-Missão
-------
-
-Substituir todos os editores do mundo! muahuahuahau
+Meus arquivos de configuração para o Vim. Baseados no vim do InFog
 
 Como usar
 ---------
@@ -16,12 +9,11 @@ Como usar
 Interessado em usar esta configuração para o seu vim? Faz o seguinte:
 
 
- *  Clone do repositório do GitHub: git clone git://github.com/InFog/meuvim.git
-   *  Ou baixe aqui: https://github.com/InFog/meuvim
+ *  Clone do repositório do GitHub: git clone git://github.com/InFog/meuvim.git  //prefira sempre o original ;)
+ *  Ou baixe aqui: https://github.com/InFog/meuvim
  *  Coloque o conteúdo do projeto no diretório ~/.vim
  *  Copie o arquivo vimrc para ~/.vimrc
  *  Use seu novo vim =)
-
 
 Opções
 ------
@@ -44,3 +36,4 @@ Afazeres
 --------
 
  *  Procurar algum plugin que complete nomes de funções em classes e mostre o PHPDoc.
+ *  Plugin para auxiliar na movimentação entre as abas
