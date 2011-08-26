@@ -110,3 +110,9 @@ set laststatus=2
 map <C-M> <ESC>:tabnext<CR>
 map <C-B> <ESC>:tabprev<CR>
 map <C-T> <ESC>:tabnew<CR>
+
+" MRU - Most Recently Used
+let MRU_Max_Entries = 30
+let MRU_Window_Height = 10
+let MRU_Add_Menu = 0
+
