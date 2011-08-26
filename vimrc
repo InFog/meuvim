@@ -21,11 +21,12 @@ set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
 set showmatch       " Exibe parênteses de fechamento
+set nowrap          " Não quebre a linha,
 
 set mouse=a         " Uso do mouse para todas as tarefas
 
-set nowrap          " Não quebre a linha,
 set incsearch       " Pesquisa incremental
+set ignorecase      " Auto explicativo...
 set hlsearch        " Highligth search :)
 
 " Fechando chaves, parenteses, colchetes e aspas
@@ -76,14 +77,6 @@ hi Comment ctermfg=DarkGrey guifg=DarkGrey
 
 " Bastante chamativo quando entra no modo de insersção :)
 set laststatus=2
-
-" Esse tema é bem 'eye friendly' =)
-
-" colo vibrantink
-" colo zenburn
-
-" POG... não sei por que, mas colocando o vibrant primeiro o zenburn
-" funciona...
 
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
