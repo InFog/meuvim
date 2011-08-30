@@ -22,6 +22,7 @@ set sw=4            " tab com 4 espaços
 set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
+set relativenumber  " A numeração das listas é feita de forma relativa. Muito boa essa opção =D
 
 set autoread        " Recarrega arquivos alterados em disco automaticamente
 
