@@ -49,7 +49,7 @@ vnoremap > >gv
 source ~/.vim/plugin/php-doc.vim
 
 " Opções para o NERDTree
-map <F5> :NERDTreeToggle<CR>
+map <F5> <ESC>:NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1       " Destaca a linha atual
 let NERDTreeShowHidden=1                " Lista arquivos ocultos
 let NERDTreeIgnore=['\.*swp$', '\.*pyc$', '^\.git$', '^\.hg$']          " Arquivos que não serão exibidos.
