@@ -31,6 +31,9 @@ set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
 
+" Atalho para o set relativenumber
+map <C-K> <ESC>:set relativenumber<CR>
+
 " Fechando chaves, parenteses, colchetes e aspas
 " Troquei estes mapeamentos pelo Auto Pairs
 " inoremap { {}<esc>i
