@@ -119,7 +119,7 @@ snippet doc_h
 	 * @copyright ${4:$2}, `strftime('%d %B, %Y')`
 	 * @package ${5:default}
 	 **/
-	
+
 	/**
 	 * Define DocBlock
 	 *//
@@ -217,8 +217,7 @@ snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
 
 snippet ci_controller
-	
-	<?php
+	<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	/**
 	 * `Filename('$1.php', 'controller.php')`
 	 *
@@ -236,18 +235,17 @@ snippet ci_controller
 	 * @property CI_Loader  $load
 	 * @property CI_Input   $input
 	 */
-	class `Filename('', 'controller.php')` extends CI_Controller { 
-	    
-		/** 
+	class `Filename('', 'controller.php')` extends CI_Controller {
+
+		/**
 	     * Método construtor
 	     */
-	    public function  __construct() { 
+	    public function  __construct() {
 	        parent::__construct();
 	    }
-	
+
 	    public function index() {
 	        ${2:// Código...}
-	
 		}
 	}
 
@@ -255,7 +253,7 @@ snippet ci_controller
 	/* Location: ./application/controllers/`Filename('$1.php', 'controller.php')` */
 
 snippet ci_model
-	<?php
+	<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 	/**
 	 * `Filename('$1.php', 'model.php')`
 	 *
@@ -265,34 +263,36 @@ snippet ci_model
 	 * @package
 	 * @subpackage  models
 	 */
-	
+
 	/**
 	 * `Filename('', 'model')`
 	 *
 	 * @property    CI_DB_active_record     $db
 	 */
-	class `Filename('', 'model')` extends CI_Model { 
-	    
+	class `Filename('', 'model')` extends CI_Model {
+
 		/**
 	     * Método construtor
 	     */
-	    public function  __construct() { 
+	    public function  __construct() {
 	        parent::__construct();
 		}
+
 	}
-										   
+
 	/* End of file `Filename('$1.php', 'model.php')` */
 	/* Location: ./application/models/`Filename('$1.php', 'model.php')` */
 
 snippet foreacht
 	<?php foreach ($${1:variable} as $${2:key}) : ?>
 	    ${3:}
-	<?php endforeach; ?> 
+
+	<?php endforeach; ?>
 
 snippet ift
 	<?php if (${1:condition}) : ?>
 	    ${2:}
-	<?php endif; ?> 
+	<?php endif; ?>
 
 snippet echot
 	<?php echo $${1:variable}; ?>
