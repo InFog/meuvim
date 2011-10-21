@@ -1,5 +1,5 @@
 "
-" vim.rc feito por InFog (Evaldo Junior)
+" vimrc feito por InFog (Evaldo Junior)
 " http://infog.casoft.info
 "
 " Esta opção é padrão do Debian e eu não a removi
@@ -25,6 +25,7 @@ set nowrap          " Não quebre a linha,
 
 set mouse=a         " Uso do mouse para todas as tarefas
 
+set nowrap          " Não quebre a linha,
 set incsearch       " Pesquisa incremental
 set ignorecase      " Auto explicativo...
 set hlsearch        " Highligth search :)
@@ -70,6 +71,8 @@ nnoremap <C-L> :call PhpDocSingle()<CR>
 vnoremap <C-L> :call PhpDocRange()<CR>
 
 " Esquema de cor
+colo vibrantink
+colo zenburn
 colo lucius
 
 " Cores dos comentários em cinza
@@ -85,9 +88,10 @@ au BufNewFile,BufRead *.thtml setfiletype php
 autocmd FileType python set ft=python.django " SnipMate
 autocmd FileType html set ft=htmldjango.html " SnipMate
 
+
 " Removendo espaços em branco no final das linhas
 autocmd BufWritePre * :call <SID>StripWhite()
-fun! <SID>StripWhite()                  " It's quite fun, isn't ?
-'    %s/[ \t]\+$//ge
+fun! <SID>StripWhite() " It's quite fun, isn't ?
+    %s/[ \t]\+$//ge
     %s!^\( \+\)\t!\=StrRepeat("\t", 1 + strlen(submatch(1)) / 8)!ge
 endfun
