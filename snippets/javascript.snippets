@@ -72,3 +72,22 @@ snippet get
 # Get Element
 snippet gett
 	getElementBy${1:Id}('${2}')${3}
+# Classe modelo
+snippet class_model
+	var `Filename('$1', 'classe.js')` = `Filename('$1', 'classe.js')` || {};
+
+	(function (window, document) {
+
+	    'use strict';
+
+	    `Filename('$1', 'classe.js')` = function () {
+	        this.ajax_url = CaJS.site_url + 'ajax/`Filename('$1', 'classe.js')`/'
+	    };
+
+	    `Filename('$1', 'classe.js')`.prototype.modelo = function (param) {
+	        // Código
+	    };
+
+	    window.`Filename('$1', 'classe.js')` = new `Filename('$1', 'classe.js')`();
+
+	}(window, document));
