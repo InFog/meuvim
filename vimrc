@@ -87,8 +87,11 @@ vnoremap <C-I> <ESC>gg=G<CR>
 
 " Esse tema é bem 'eye friendly' =)
 
-colo vibrantink
-colo zenburn
+colo lucius
+"colo earendel
+"colo desertEx
+"colo darkspectrum
+"colo zenburn
 
 " POG... não sei por que, mas colocando o vibrant primeiro o zenburn
 " funciona...
