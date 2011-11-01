@@ -48,7 +48,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Mapeando teclas =)
-map <F5> :ERDTreeToggle<CR>
+map <F5> :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1                               " Destaca a linha atual
 let NERDTreeShowHidden=1                                        " Lista arquivos ocultos
 let NERDTreeIgnore=['\.*swp$', '\.*pyc$', '^\.git$']            " Arquivos que não serão exibidos.
