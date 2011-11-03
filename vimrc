@@ -1,9 +1,5 @@
 "
-<<<<<<< HEAD
-" vimrc feito por InFog (Evaldo Junior)
-=======
 " vim.rc feito original por InFog (Evaldo Junior)
->>>>>>> 4389ad73863e9b439becf02cb1953628c8b24edb
 " http://infog.casoft.info
 "
 " Esta opção é padrão do Debian e eu não a removi
@@ -42,13 +38,10 @@ set hlsearch        " Highligth search :)
 set nobackup        " Confio no meu controlador de versões :)
 set noswapfile      " Commit all the fucking time
 
-<<<<<<< HEAD
 " Duplica a velocidade do scroll! Awesome!
 noremap <C-e> 2<C-e>
 noremap <C-y> 2<C-y>
 
-=======
->>>>>>> 459434de3ccaecc46ff89162c2b6833e99817476
 " Fechando chaves, parenteses, colchetes e aspas automaticamente
 inoremap { {}<esc>i
 inoremap ( ()<esc>i
@@ -92,10 +85,7 @@ vnoremap <C-L> :call PhpDocRange()<CR>
 " Esquema de cor
 colo vibrantink
 colo zenburn
-<<<<<<< HEAD
-=======
 
->>>>>>> 4389ad73863e9b439becf02cb1953628c8b24edb
 colo lucius
 
 " Cores dos comentários em cinza
@@ -114,11 +104,7 @@ autocmd FileType html set ft=htmldjango.html " SnipMate
 
 " Removendo espaços em branco no final das linhas
 autocmd BufWritePre * :call <SID>StripWhite()
-<<<<<<< HEAD
 fun! <SID>StripWhite() " It's quite fun, isn't ?
-=======
-fun! <SID>StripWhite()                  " It's quite fun, isn't ?
->>>>>>> 4389ad73863e9b439becf02cb1953628c8b24edb
     %s/[ \t]\+$//ge
     %s!^\( \+\)\t!\=StrRepeat("\t", 1 + strlen(submatch(1)) / 8)!ge
 endfun
