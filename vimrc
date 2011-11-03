@@ -37,10 +37,13 @@ set hlsearch        " Highligth search :)
 set nobackup        " Confio no meu controlador de versões :)
 set noswapfile      " Commit all the fucking time
 
+<<<<<<< HEAD
 " Duplica a velocidade do scroll! Awesome!
 noremap <C-e> 2<C-e>
 noremap <C-y> 2<C-y>
 
+=======
+>>>>>>> 459434de3ccaecc46ff89162c2b6833e99817476
 " Fechando chaves, parenteses, colchetes e aspas automaticamente
 inoremap { {}<esc>i
 inoremap ( ()<esc>i
