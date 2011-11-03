@@ -1,10 +1,13 @@
 "
-" vim.rc feito por InFog (Evaldo Junior)
+" vim.rc feito original por InFog (Evaldo Junior)
 " http://infog.casoft.info
 "
 " Esta opção é padrão do Debian e eu não a removi
 runtime! debian.vim
-"
+
+" Who cares?
+set nocompatible
+
 "Agora começam as opções =)
 
 " Limpa as configurações de cores
@@ -12,8 +15,10 @@ hi clear
 syntax reset
 
 syntax on           " Habilita a marcação de sintaxe
+set showmode        " Sempre exibir em qual modo esta atualmente
 set background=dark " Define o fundo preto (É melhor usar isso com a sintaxe)
 set nu              " Mostra o número de linhas
+set nowrap          " Não quebre a linha,
 set ai              " Faz o auto tab
 set ts=4            " tab vale 4 espaços
 set sw=4            " tab com 4 espaços
@@ -21,7 +26,7 @@ set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
 set showmatch       " Exibe parênteses de fechamento
-set nowrap          " Não quebre a linha,
+set hidden          " Faz com que os buffers sejan escondidos ao invés de fechados ao terminar a edição
 
 set mouse=a         " Uso do mouse para todas as tarefas
 
@@ -29,7 +34,14 @@ set incsearch       " Pesquisa incremental
 set ignorecase      " Auto explicativo...
 set hlsearch        " Highligth search :)
 
-" Fechando chaves, parenteses, colchetes e aspas
+set nobackup        " Confio no meu controlador de versões :)
+set noswapfile      " Commit all the fucking time
+
+" Duplica a velocidade do scroll! Awesome!
+noremap <C-e> 2<C-e>
+noremap <C-y> 2<C-y>
+
+" Fechando chaves, parenteses, colchetes e aspas automaticamente
 inoremap { {}<esc>i
 inoremap ( ()<esc>i
 inoremap [ []<esc>i
@@ -37,11 +49,8 @@ inoremap " ""<esc>i
 inoremap ' ''<esc>i
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
-" Ajuda muito na hora de identar grandes e confusos blocos =)
 vnoremap < <gv
 vnoremap > >gv
-
-filetype plugin on
 
 " Mapeando teclas =)
 map <F5> :NERDTreeToggle<CR>
@@ -59,10 +68,13 @@ let Tlist_Sort_Type="name"              " Ordenar pelo nome e não pela ordem no
 " Escondendo variáveis no TagList para PHP
 let tlist_php_settings='php;c:Classes;f:Functions'
 
-source ~/.vim/plugin/php-doc.vim
+" Permite que o vim carregue os plugins de acordo com o contexto do arquivo carregado
+filetype plugin on
 
 " PHP auto complete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+source ~/.vim/plugin/php-doc.vim
 
 " PDV (phpDocumentator for Vim)
 inoremap <C-L> <ESC>:call PhpDocSingle()<CR>i
@@ -70,6 +82,9 @@ nnoremap <C-L> :call PhpDocSingle()<CR>
 vnoremap <C-L> :call PhpDocRange()<CR>
 
 " Esquema de cor
+colo vibrantink
+colo zenburn
+
 colo lucius
 
 " Cores dos comentários em cinza
