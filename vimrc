@@ -19,6 +19,7 @@ hi clear
 syntax reset
 
 syntax on           " Habilita a marcação de sintaxe
+set showmode        " Sempre exibir em qual modo esta atualmente
 set background=dark " Define o fundo preto (É melhor usar isso com a sintaxe)
 set nu              " Mostra o número de linhas
 set nowrap          " Não quebre a linha,
@@ -41,6 +42,13 @@ set hlsearch        " Highligth search :)
 set nobackup        " Confio no meu controlador de versões :)
 set noswapfile      " Commit all the fucking time
 
+<<<<<<< HEAD
+" Duplica a velocidade do scroll! Awesome!
+noremap <C-e> 2<C-e>
+noremap <C-y> 2<C-y>
+
+=======
+>>>>>>> 459434de3ccaecc46ff89162c2b6833e99817476
 " Fechando chaves, parenteses, colchetes e aspas automaticamente
 inoremap { {}<esc>i
 inoremap ( ()<esc>i
@@ -53,7 +61,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Mapeando teclas =)
-map <F5> :ERDTreeToggle<CR>
+map <F5> :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1                               " Destaca a linha atual
 let NERDTreeShowHidden=1                                        " Lista arquivos ocultos
 let NERDTreeIgnore=['\.*swp$', '\.*pyc$', '^\.git$']            " Arquivos que não serão exibidos.
