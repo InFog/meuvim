@@ -5,6 +5,8 @@ Meus arquivos de configuração para o Vim.
 
 Comecei montar esse Vim para tentar substituir o grandalhão NetBeans no dia-a-dia como desenvolvedor WEB.
 
+Eu trabalho principalmente com PHP, JavaScript, CSS e HTML. Ocasionalmente Python e C++.
+
 Missão
 ------
 
@@ -13,7 +15,7 @@ Substituir todos os editores do mundo! muahuahuahau
 Como usar
 ---------
 
-Interessado em usar esta configuração para o seu vim? Faz o seguinte:
+Interessado em usar esta configuração para o seu vim? Faz o seguinte (Usando GNU/Linux, claro):
 
 
  *  Clone do repositório do GitHub: git clone git://github.com/InFog/meuvim.git
@@ -21,6 +23,7 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte:
  *  Coloque o conteúdo do projeto no diretório ~/.vim
  *  Copie o arquivo vimrc para ~/.vimrc
  *  Use seu novo vim =)
+ * (Dá para usar com o GVim no Windows, mas aí é com você)
 
 Dependências
 ------------
@@ -28,7 +31,8 @@ Dependências
 Só algumas dependências para tudo funcionar certinho:
 
  *  **exuberant-ctags** para o TagList.
- *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**. No Debian instale o pacote **vim-gnome** que resolve.
+ *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**.
+    No Debian instale o pacote **vim-gnome** que resolve.
 
 Opções
 ------
@@ -47,6 +51,8 @@ Snippets : Adicionei o plugin snipMate que tem snippets para várias linguagens.
  * ift<tab>
    * Cria uma estrutura *if* em um template html
 
+Buffer Explorer : Use \\be no modo comando
+
 NERDTree : Use a tecla F5
 
 TagList  : Use a tecla F6
@@ -57,7 +63,8 @@ Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mos
 
 PHPDoc : *ctrl+l* para adicionar um trecho PHPDoc.
 
-Identação de todo o arquivo: *ctrl+i* para corrigir a identação de todo um arquivo (testei com PHP).
+Identação de todo o arquivo: *ctrl+i* para corrigir a identação de todo um arquivo
+(testei com PHP, não é tão bom assim... Mas desenvolvedor tem que fazer sua identação).
 
 Sparkup: A função do Sparkup foi mapeada para *ctrl+d*.
 
@@ -67,7 +74,8 @@ Comandos úteis
 --------------
 
  * *%* no modo de comandos vai para o abre/fecha parênteses/chaves/colchetes correspondente.
-   * Adicionei o matchit que faz o *%* também funcionar com tags html e outras linguagens. Detalhe que ele reconhece até a sintaxe alternativa para *if*, *foreach* e outros do *php*.
+   * Adicionei o matchit que faz o *%* também funcionar com tags html e outras linguagens.
+     Detalhe que ele reconhece até a sintaxe alternativa para *if*, *foreach* e outros do *php*.
 
 Afazeres
 --------
