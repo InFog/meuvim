@@ -1,4 +1,4 @@
-"
+""
 " vim.rc feito original por InFog (Evaldo Junior)
 " http://infog.casoft.info
 "
@@ -25,7 +25,7 @@ set sw=4            " tab com 4 espaços
 set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
-set showmatch       " Exibe parênteses de fechamento
+set sm              " Exibe parênteses de fechamento
 set hidden          " Faz com que os buffers sejan escondidos ao invés de fechados ao terminar a edição
 
 set mouse=a         " Uso do mouse para todas as tarefas
@@ -42,6 +42,12 @@ set noswapfile      " Commit all the fucking time
 noremap <C-e> 2<C-e>
 noremap <C-y> 2<C-y>
 
+" Esquema de cor
+colorscheme darkburn
+
+" Bastante chamativo quando entra no modo de insersção :)
+set laststatus=2
+
 " Fechando chaves, parenteses, colchetes e aspas automaticamente
 inoremap { {}<esc>i
 inoremap ( ()<esc>i
@@ -53,6 +59,9 @@ inoremap ' ''<esc>i
 vnoremap < <gv
 vnoremap > >gv
 
+map <C-M> <ESC>:tabnext<CR>
+map <C-B> <ESC>:tabprev<CR>
+
 " Mapeando teclas =)
 map <F5> :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1                               " Destaca a linha atual
@@ -61,6 +70,7 @@ let NERDTreeIgnore=['\.*swp$', '\.*pyc$', '^\.git$']            " Arquivos que n
 
 " Opções para o TagList
 nnoremap <silent> <F6> :TlistToggle<CR>
+let Tlist_Ctags_Cmd = 'ctags'
 let Tlist_Use_Right_Window=1            " Lista de tags à direita
 let Tlist_GainFocus_On_ToggleOpen=1     " Ganhar foco
 let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
@@ -81,18 +91,6 @@ source ~/.vim/plugin/php-doc.vim
 inoremap <C-L> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-L> :call PhpDocSingle()<CR>
 vnoremap <C-L> :call PhpDocRange()<CR>
-
-" Esquema de cor
-colo vibrantink
-colo zenburn
-
-colo lucius
-
-" Cores dos comentários em cinza
-hi Comment ctermfg=DarkGrey guifg=DarkGrey
-
-" Bastante chamativo quando entra no modo de insersção :)
-set laststatus=2
 
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php

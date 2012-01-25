@@ -1,7 +1,5 @@
 snippet php
-	<?php
-	${1}
-	?>
+	<?php ${1}; ?>
 snippet ec
 	echo "${1:string}"${2};
 snippet inc
@@ -42,6 +40,7 @@ snippet doc_cp
 	 * ${1:undocumented class}
 	 *
 	 * @package ${2:default}
+	 * @author CaSoft Tecnologia <contato@casoft.info>
 	 * @author ${3:`g:snips_author`}
 	**/${4}
 # Class Variable - post doc
@@ -65,6 +64,7 @@ snippet doc_c
 	 * ${3:undocumented class}
 	 *
 	 * @packaged ${4:default}
+	 * @author CaSoft Tecnologia <contato@casoft.info>
 	 * @author ${5:`g:snips_author`}
 	 **/
 	${1:}class ${2:}
@@ -87,6 +87,7 @@ snippet doc_fp
 	 * ${1:undocumented function}
 	 *
 	 * @return ${2:void}
+	 * @author CaSoft Tecnologia <contato@casoft.info>
 	 * @author ${3:`g:snips_author`}
 	 **/${4}
 # Function signature
@@ -95,6 +96,7 @@ snippet doc_s
 	 * ${4:undocumented function}
 	 *
 	 * @return ${5:void}
+	 * @author CaSoft Tecnologia <contato@casoft.info>
 	 * @author ${6:`g:snips_author`}
 	 **/
 	${1}function ${2}(${3});${7}
@@ -104,6 +106,7 @@ snippet doc_f
 	 * ${4:undocumented function}
 	 *
 	 * @return ${5:void}
+	 * @author CaSoft Tecnologia <contato@casoft.info>
 	 * @author ${6:`g:snips_author`}
 	 **/
 	${1}function ${2}(${3})
@@ -119,7 +122,7 @@ snippet doc_h
 	 * @copyright ${4:$2}, `strftime('%d %B, %Y')`
 	 * @package ${5:default}
 	 **/
-	
+
 	/**
 	 * Define DocBlock
 	 *//
@@ -217,33 +220,31 @@ snippet array
 	$${1:arrayName} = array('${2}' => ${3});${4}
 
 snippet ci_controller
-	<?php
+	<?php if (! defined('BASEPATH')) exit('No direct script access allowed');
 	/**
 	 * `Filename('$1.php', 'controller.php')`
 	 *
 	 * Descrição
 	 *
+	 * @author CaSoft Tecnologia <contato@casoft.info>
 	 * @author Bruno Almeida <bruno@casoft.info>
-	 * @version 0.1
-	 * @package
 	 * @subpackage controllers
 	 */
 
-	/**
-	 * `Filename('', 'controller.php')`
-	 *
-	 * @property CI_Loader  $load
-	 * @property CI_Input   $input
-	 */
-	class `Filename('', 'controller.php')` extends CI_Controller { 
+	class `Filename('', 'controller.php')` extends MY_Controller {
 
-	    /** 
-	     * Função construtora
-	     */
-	    public function  __construct() { 
+	    public function  __construct() {
 	        parent::__construct();
 	    }
-	
+
+	    /**
+	     * index
+		 *
+		 * Método principal da classse `Filename('', 'controller.php')`
+	     *
+	     * @access public
+	     * @return void
+	     */
 	    public function index() {
 	        ${1:// Código...}
 	    }
@@ -259,38 +260,49 @@ snippet ci_model
 	 *
 	 * Model `Filename('', 'model')`
 	 *
+	 * @author 		CaSoft Tecnologia <contato@casoft.info>
 	 * @author      Bruno Almeida <bruno@casoft.info>
 	 * @package
 	 * @subpackage  models
 	 */
-	
+
 	/**
 	 * `Filename('', 'model')`
 	 *
 	 * @property    CI_DB_active_record     $db
 	 */
-	class `Filename('', 'model')` extends CI_Model { 
+	class `Filename('', 'model')` extends CI_Model {
 
 	    /**
 	     * Função construtora
 	     */
-	    public function  __construct() { 
+	    public function  __construct() {
 	        parent::__construct();
- 	    }
+		}
 	}
-										   
+
 	/* End of file `Filename('$1.php', 'model.php')` */
- 	/* Location: ./application/models/`Filename('$1.php', 'model.php')` */
+	/* Location: ./application/models/`Filename('$1.php', 'model.php')` */
 
 snippet foreacht
 	<?php foreach ($${1:variable} as $${2:key}) : ?>
 	    ${3:}
-	<?php endforeach; ?> 
+	<?php endforeach; ?>
 
 snippet ift
 	<?php if (${1:condition}) : ?>
 	    ${2:}
-	<?php endif; ?> 
+	<?php endif; ?>
+
+snippet debug
+	echo '<pre>';
+	print_r(${1});
+	die();
+
+snippet debugt
+	<pre>
+		<?php print_r(${1}); ?>
+	</pre>
 
 snippet echot
 	<?php echo $${1:variable}; ?>
