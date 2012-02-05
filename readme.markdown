@@ -61,7 +61,9 @@ TaskList : Use ctrl + t
 
 Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
 
-PHPDoc : *ctrl+l* para adicionar um trecho PHPDoc.
+PHPDoc : *,doc* para adicionar um trecho PHPDoc.
+
+Abas : *,t* abre uma nova aba, *,n* avança para a aba seguinte e *,b* volta uma aba.
 
 Identação de todo o arquivo: *ctrl+i* para corrigir a identação de todo um arquivo
 (testei com PHP, não é tão bom assim... Mas desenvolvedor tem que fazer sua identação).

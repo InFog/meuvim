@@ -32,7 +32,7 @@ set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
 
 " Atalho para o set relativenumber
-map <C-K> <ESC>:set relativenumber<CR>
+map ,reln <ESC>:set relativenumber<CR>
 
 " Fechando chaves, parenteses, colchetes e aspas
 " Troquei estes mapeamentos pelo Auto Pairs
@@ -68,9 +68,8 @@ let Tlist_Sort_Type="name"              " Ordenar pelo nome e não pela ordem no
 let tlist_php_settings='php;c:Classes;f:Functions'
 
 " PDV (phpDocumentator for Vim)
-inoremap <C-L> <ESC>:call PhpDocSingle()<CR>i
-nnoremap <C-L> :call PhpDocSingle()<CR>
-vnoremap <C-L> :call PhpDocRange()<CR>
+nnoremap ,doc :call PhpDocSingle()<CR>
+vnoremap ,doc :call PhpDocRange()<CR>
 
 " Identação de todo o documento
 inoremap <C-I> <ESC>gg=G<CR>
@@ -87,10 +86,6 @@ vnoremap <C-I> <ESC>gg=G<CR>
 
 " Esse tema é bem 'eye friendly' =)
 
-"colo lucius
-"colo earendel
-"colo desertEx
-"colo darkspectrum
 colo vibrantink
 colo zenburn
 
@@ -115,9 +110,9 @@ endfun
 set laststatus=2
 
 " ABBA... ops, abas =D
-map <C-M> <ESC>:tabnext<CR>
-map <C-B> <ESC>:tabprev<CR>
-map <C-T> <ESC>:tabnew<CR>
+map ,n <ESC>:tabnext<CR>
+map ,b <ESC>:tabprev<CR>
+map ,t <ESC>:tabnew<CR>
 
 " MRU - Most Recently Used
 let MRU_Max_Entries = 30
