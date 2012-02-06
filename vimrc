@@ -28,8 +28,6 @@ set cursorline      " Destaca a linha atual
 set sm              " Exibe parênteses de fechamento
 set hidden          " Faz com que os buffers sejan escondidos ao invés de fechados ao terminar a edição
 
-set mouse=a         " Uso do mouse para todas as tarefas
-
 set nowrap          " Não quebre a linha,
 set incsearch       " Pesquisa incremental
 set ignorecase      " Auto explicativo...
