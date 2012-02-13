@@ -57,8 +57,6 @@ NERDTree : Use a tecla F5
 
 TagList  : Use a tecla F6
 
-TaskList : Use ctrl + t
-
 Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
 
 PHPDoc : *,doc* para adicionar um trecho PHPDoc.
@@ -69,8 +67,6 @@ Identação de todo o arquivo: *ctrl+i* para corrigir a identação de todo um a
 (testei com PHP, não é tão bom assim... Mas desenvolvedor tem que fazer sua identação).
 
 Sparkup: A função do Sparkup foi mapeada para *ctrl+d*.
-
-Arquivos recentes (MRU): Comando *:MRU*.
 
 Comandos úteis
 --------------
