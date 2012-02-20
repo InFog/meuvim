@@ -99,23 +99,5 @@ au BufNewFile,BufRead *.thtml setfiletype php
 autocmd FileType python set ft=python.django " SnipMate
 autocmd FileType html set ft=htmldjango.html " SnipMate
 
-" Removendo espaços em branco no final das linhas
-autocmd BufWritePre * :call <SID>StripWhite()
-fun! <SID>StripWhite()
-    %s/[ \t]\+$//ge
-    %s!^\( \+\)\t!\=StrRepeat("\t", 1 + strlen(submatch(1)) / 8)!ge
-endfun
-
 " Obvious mode
 set laststatus=2
-
-" ABBA... ops, abas =D
-map ,n <ESC>:tabnext<CR>
-map ,b <ESC>:tabprev<CR>
-map ,t <ESC>:tabnew<CR>
-
-" MRU - Most Recently Used
-let MRU_Max_Entries = 30
-let MRU_Window_Height = 10
-let MRU_Add_Menu = 0
-
