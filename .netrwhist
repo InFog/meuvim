@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/var/www/pacatatu/application'
 let g:netrw_dirhist_2='/home/junior/projetos/mycss3/transitions'
+let g:netrw_dirhist_3='/home/junior'
+let g:netrw_dirhist_4='/home/junior/.config'
