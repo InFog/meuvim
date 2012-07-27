@@ -87,9 +87,10 @@ vnoremap <C-I> <ESC>gg=G<CR>
 
 " Esse tema é bem 'eye friendly' =)
 
-colo vibrantink
-colo freya
+" colo vibrantink
+" colo freya
 " colo zenburn
+colo darkburn
 
 " POG... não sei por que, mas colocando o vibrant primeiro o zenburn
 " funciona...
