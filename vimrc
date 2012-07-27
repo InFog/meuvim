@@ -80,21 +80,20 @@ vnoremap <C-I> <ESC>gg=G<CR>
 " Tasklist
 " nnoremap <C-T> <ESC>:TaskList<CR>
 
+" Para as cores funcionarem bem é preciso usar 256 cores no terminal.
+" No bashrc, zshrc ou similar, faça algo como
+" export TERM="xterm-256color"
+
 " Cores a considerar:
 " colo lucius
 " colo tir_black
 " colo delek
-
-" Esse tema é bem 'eye friendly' =)
-
 " colo vibrantink
 " colo freya
 " colo zenburn
 " colo darkburn
-colo jellybeans
-
-" POG... não sei por que, mas colocando o vibrant primeiro o zenburn
-" funciona...
+" colo jellybeans
+colo bensday
 
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
