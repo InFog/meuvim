@@ -90,7 +90,8 @@ vnoremap <C-I> <ESC>gg=G<CR>
 " colo vibrantink
 " colo freya
 " colo zenburn
-colo darkburn
+" colo darkburn
+colo jellybeans
 
 " POG... não sei por que, mas colocando o vibrant primeiro o zenburn
 " funciona...
