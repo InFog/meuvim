@@ -90,11 +90,11 @@ vnoremap <C-I> <ESC>gg=G<CR>
 " colo delek
 " colo vibrantink
 " colo freya
-" colo zenburn
+colo zenburn
 " colo darkburn
 " colo jellybeans
 " colo bensday
-colo infog
+" colo infog
 
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
