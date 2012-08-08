@@ -14,11 +14,14 @@ runtime! debian.vim
 "Agora começam as opções do VIM
 
 syntax on           " Habilita a marcação de sintaxe
+set showmode        " Exibe o modo atual
+set wildmenu        " Menu com as opções do vim usando tab
 set background=dark " Define o fundo preto (É melhor usar isso com a sintaxe)
 set nu              " Mostra o número de linhas
 set ai              " Faz o auto tab
 set ts=4            " tab vale 4 espaços
 set sw=4            " tab com 4 espaços
+set softtabstop=4   " Operações como o backspace também com 4 espaços
 set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
@@ -31,6 +34,19 @@ set colorcolumn=81  " Deixa a coluna 80 colorida
 set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
+
+" Bora fazer uma linha de status decente, valeu @saganium
+set laststatus=2                                " Quando exibir a linha de status: 2=always
+
+set statusline=                                 " Limpa a linha de status
+set statusline+=[%n]                            " Número do buffer atual
+set statusline+=%m%r\                           " [+] Quando o arquivo for modificado, [RO] para apenas leitura
+set statusline+=%f\                             " Nome do arquivo
+set statusline+=[%{strlen(&ft)?&ft:'none'}]     " Tipo do arquivo
+set statusline+=[%{strlen(&fenc)?&fenc:&enc}]   " Codificação
+set statusline+=%=                              " Alinha tudo a seguir à direita
+set statusline+=%b,0x%-8B\                      " ASCII e número hexadecimal do caractere sob o cursor
+set statusline+=%-4.(%l-%c%)\ %<%P              " Linha-coluna do cursor e percentual do arquivo
 
 " Atalho para o set relativenumber
 map ,reln <ESC>:set relativenumber<CR>
