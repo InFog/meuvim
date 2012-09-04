@@ -72,6 +72,7 @@ source ~/.vim/plugin/php-doc.vim
 map <F5> <ESC>:NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1       " Destaca a linha atual
 let NERDTreeShowHidden=1                " Lista arquivos ocultos
+let NERDTreeShowLineNumbers=1
 let NERDTreeIgnore=['\.*swp$', '\.*pyc$', '^\.git$', '^\.hg$']          " Arquivos que não serão exibidos.
 
 " Opções para o TagList
