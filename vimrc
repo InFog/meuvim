@@ -29,7 +29,7 @@ set relativenumber  " A numeração das listas é feita de forma relativa. Muito
 
 set autoread        " Recarrega arquivos alterados em disco automaticamente
 
-set tw=80           " Define a largura do texto como 80 caracteres
+"set tw=80           " Define a largura do texto como 80 caracteres
 set colorcolumn=81  " Deixa a coluna 80 colorida
 set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
