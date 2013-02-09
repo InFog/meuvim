@@ -8,6 +8,13 @@
 " Este vimrc pode ser acompanhado pelo GitHub em:
 " https://github.com/InFog/meuvim
 
+set nocompatible
+filetype off
+
+" Estou usando o Vundle para gerenciar os bundles
+
+" Daqui para baixo são as minhas opções
+
 syntax on           " Habilita a marcação de sintaxe
 set showmode        " Exibe o modo atual
 set wildmenu        " Menu com as opções do vim usando tab
@@ -48,6 +55,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 :filetype plugin on
+:filetype plugin indent on
 
 " Opções para o NERDTree
 map ,t <ESC>:NERDTreeToggle<CR>
