@@ -12,18 +12,19 @@ set nocompatible
 filetype off
 
 " Estou usando o Vundle para gerenciar os bundles
-set rtp+=bundle/vundle/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Agora os bundles
 Bundle 'Lokaltog/powerline'
+Bundle 'altercation/vim-colors-solarized'
 
 " Iniciando os Bundles
-set rtp+=bundle/powerline/powerline/bindings/vim
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 " Daqui para baixo são as minhas opções
 
-syntax on           " Habilita a marcação de sintaxe
+syntax enable           " Habilita a marcação de sintaxe
 set showmode        " Exibe o modo atual
 set wildmenu        " Menu com as opções do vim usando tab
 set background=dark " Define o fundo preto (É melhor usar isso com a sintaxe)
@@ -44,18 +45,6 @@ set colorcolumn=81  " Deixa a coluna 80 colorida
 set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
-
-" Bora fazer uma linha de status decente, valeu @bralpassos
-" set laststatus=2                                " Quando exibir a linha de status: 2=always
-" set statusline=                                 " Limpa a linha de status
-" set statusline+=[%n]                            " Número do buffer atual
-" set statusline+=%m%r\                           " [+] Quando o arquivo for modificado, [RO] para apenas leitura
-" set statusline+=%f\                             " Nome do arquivo
-" set statusline+=[%{strlen(&ft)?&ft:'none'}]     " Tipo do arquivo
-" set statusline+=[%{strlen(&fenc)?&fenc:&enc}]   " Codificação
-" set statusline+=%=                              " Alinha tudo a seguir à direita
-" set statusline+=%b,0x%-8B\                      " ASCII e número hexadecimal do caractere sob o cursor
-" set statusline+=%-4.(%l-%c%)\ %<%P              " Linha-coluna do cursor e percentual do arquivo
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
@@ -87,16 +76,10 @@ let tlist_php_settings='php;c:Classes;f:Functions'
 " export TERM="xterm-256color"
 
 " Cores a considerar:
-" colo lucius
-" colo tir_black
-" colo delek
-" colo vibrantink
-" colo freya
 " colo zenburn
-" colo darkburn
-" colo jellybeans
-" colo bensday
-" colo infog
+let g:solarized_termcolors=256
+colorscheme solarized
+
 
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
