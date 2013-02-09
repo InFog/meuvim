@@ -5,12 +5,12 @@ Meus arquivos de configuração para o Vim.
 
 Comecei montar esse Vim para tentar substituir o grandalhão NetBeans no dia-a-dia como desenvolvedor WEB.
 
-Eu trabalho principalmente com PHP, JavaScript, CSS e HTML. Ocasionalmente Python e C++.
+Eu trabalho principalmente para web com Python, PHP, JavaScript, CSS e HTML.
 
 Missão
 ------
 
-Substituir todos os editores do mundo! muahuahuahau
+Substituir todos os editores do mundo! muahuahuahau (risada malévola)
 
 Como usar
 ---------
@@ -32,7 +32,7 @@ Só algumas dependências para tudo funcionar certinho:
 
  *  **exuberant-ctags** para o TagList.
  *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**.
-    No Debian instale o pacote **vim-gnome** que resolve.
+    No Debian instale o pacote `vim-gnome` que resolve.
 
 Opções
 ------
@@ -51,20 +51,15 @@ Snippets : Adicionei o plugin snipMate que tem snippets para várias linguagens.
  * ift<tab>
    * Cria uma estrutura *if* em um template html
 
-Buffer Explorer : Use \\be no modo comando
+Buffer Explorer : Use `\\be` no modo comando
 
-NERDTree : Use a tecla F5
+NERDTree : Use o comando `,t`
 
-TagList  : Use a tecla F6
+TagList  : Use o comando `,l`
 
 Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
 
 PHPDoc : *,doc* para adicionar um trecho PHPDoc.
-
-Abas : *,t* abre uma nova aba, *,n* avança para a aba seguinte e *,b* volta uma aba.
-
-Identação de todo o arquivo: *ctrl+i* para corrigir a identação de todo um arquivo
-(testei com PHP, não é tão bom assim... Mas desenvolvedor tem que fazer sua identação).
 
 Sparkup: A função do Sparkup foi mapeada para *ctrl+d*.
 
