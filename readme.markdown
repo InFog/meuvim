@@ -32,7 +32,9 @@ Só algumas dependências para tudo funcionar certinho:
 
  *  **exuberant-ctags** para o TagList.
  *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**.
-    No Debian instale o pacote `vim-gnome` que resolve.
+    *  No Debian instale o pacote `vim-gnome` que resolve.
+ *  `python-git`, no Debian
+ *  Para as fontes do powerline funcionarem bem, recomendo essas fontes: `https://github.com/Lokaltog/powerline-fonts/`
 
 Opções
 ------
