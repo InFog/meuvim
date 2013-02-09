@@ -22,8 +22,10 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte (Usando G
    *  Ou baixe aqui: https://github.com/InFog/meuvim
  *  Coloque o conteúdo do projeto no diretório ~/.vim
  *  Copie o arquivo vimrc para ~/.vimrc
+ *  Instale os submodules do git: `git submodule init` e `git submodule update` para instalar o `vundle`
+ *  Abra o vim (sem arquivos) e rode um `:BundleInstall`, assim ele instala os Bundles.
  *  Use seu novo vim =)
- * (Dá para usar com o GVim no Windows, mas aí é com você)
+ * (Deve dar para usar com o GVim no Windows, mas aí é com você... Já está no Windows mesmo...)
 
 Dependências
 ------------
