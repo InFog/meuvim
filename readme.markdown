@@ -45,13 +45,13 @@ Snippets : Adicionei o plugin snipMate que tem snippets para várias linguagens.
  *  ci\_model<tab>
    * Cria a estrutura básica de uma model CI\_Model
  * foreacht<tab>
-   * Cria uma estrura *foreach* em um template html
+   * Cria uma estrura `foreach` em um template html
  * echot<tab>
-   * Cria uma estrutura *echo* em um template html
+   * Cria uma estrutura `echo` em um template html
  * ift<tab>
-   * Cria uma estrutura *if* em um template html
+   * Cria uma estrutura `if` em um template html
 
-Buffer Explorer : Use `\\be` no modo comando
+Buffer Explorer : Use `\be` no modo comando
 
 NERDTree : Use o comando `,t`
 
@@ -59,16 +59,16 @@ TagList  : Use o comando `,l`
 
 Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
 
-PHPDoc : *,doc* para adicionar um trecho PHPDoc.
+PHPDoc : `,doc` para adicionar um trecho PHPDoc.
 
-Sparkup: A função do Sparkup foi mapeada para *ctrl+d*.
+Sparkup: A função do Sparkup foi mapeada para `ctrl+d`.
 
 Comandos úteis
 --------------
 
- * *%* no modo de comandos vai para o abre/fecha parênteses/chaves/colchetes correspondente.
-   * Adicionei o matchit que faz o *%* também funcionar com tags html e outras linguagens.
-     Detalhe que ele reconhece até a sintaxe alternativa para *if*, *foreach* e outros do *php*.
+ * `%` no modo de comandos vai para o abre/fecha parênteses/chaves/colchetes correspondente.
+   * Adicionei o **matchit** que faz o `%` também funcionar com tags html e outras linguagens.
+     Detalhe que ele reconhece até a sintaxe alternativa para `if`, `foreach` e outros do `php`.
 
 Afazeres
 --------
