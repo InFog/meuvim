@@ -18,6 +18,7 @@ call vundle#rc()
 " Agora os bundles
 Bundle 'Lokaltog/powerline'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'scrooloose/syntastic'
 
 " Iniciando os Bundles
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
