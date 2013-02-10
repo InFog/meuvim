@@ -21,11 +21,16 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte (Usando G
  *  Clone do repositório do GitHub: git clone git://github.com/InFog/meuvim.git
    *  Ou baixe aqui: https://github.com/InFog/meuvim
  *  Coloque o conteúdo do projeto no diretório ~/.vim
- *  Copie o arquivo vimrc para ~/.vimrc
+ *  Copie o arquivo vimrc para ~/.vimrc (Ou faça um link, que fica melhor: `ln -s ~/.vim/vimrc ~/.vimrc`)
  *  Instale os submodules do git: `git submodule init` e `git submodule update` para instalar o `vundle`
  *  Abra o vim (sem arquivos) e rode um `:BundleInstall`, assim ele instala os Bundles.
  *  Use seu novo vim =)
- * (Deve dar para usar com o GVim no Windows, mas aí é com você... Já está no Windows mesmo...)
+ *  (Deve ser possível usar com o GVim no Windows ou no Vim do Mac OS X, mas aí é com você...)
+
+Dica importante
+---------------
+
+Você também pode usar este vimrc como inspiração para montar o seu próprio vimrc ;-)
 
 Dependências
 ------------
@@ -44,10 +49,6 @@ Opções
 Snippets : Adicionei o plugin snipMate que tem snippets para várias linguagens. Adicionei algumas opções:
 
 
- *  ci\_controller<tab>
-   * Cria a estrutura básica para um controller CI\_Controller
- *  ci\_model<tab>
-   * Cria a estrutura básica de uma model CI\_Model
  * foreacht<tab>
    * Cria uma estrura `foreach` em um template html
  * echot<tab>
