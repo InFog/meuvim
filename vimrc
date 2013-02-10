@@ -22,6 +22,9 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'vim-scripts/bufexplorer.zip'
+Bundle 'tpope/vim-surround'
+Bundle 'vim-scripts/matchit.zip'
+Bundle 'Townk/vim-autoclose'
 
 " Iniciando os Bundles
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
