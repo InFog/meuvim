@@ -26,6 +26,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'Townk/vim-autoclose'
 Bundle 'InFog/snipmate.vim'
+Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
 
 " Iniciando os Bundles
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
@@ -75,9 +76,12 @@ let Tlist_Use_Right_Window=1            " Lista de tags à direita
 let Tlist_GainFocus_On_ToggleOpen=1     " Ganhar foco
 let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
 let Tlist_Sort_Type="name"              " Ordenar pelo nome e não pela ordem no arquivo
-
 " Escondendo variáveis no TagList para PHP
 let tlist_php_settings='php;c:Classes;f:Functions'
+
+" Mapeando função do PHPDoc
+nnoremap ,doc :call PhpDocSingle()<CR>
+vnoremap ,doc :call PhpDocRange()<CR>
 
 " Para as cores funcionarem bem é preciso usar 256 cores no terminal.
 " No bashrc, zshrc ou similar, faça algo como
