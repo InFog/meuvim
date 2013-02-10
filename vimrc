@@ -25,6 +25,7 @@ Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'Townk/vim-autoclose'
+Bundle 'InFog/snipmate.vim'
 
 " Iniciando os Bundles
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
