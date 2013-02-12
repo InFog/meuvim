@@ -34,12 +34,13 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 " Daqui para baixo são as minhas opções
 
-syntax enable           " Habilita a marcação de sintaxe
+syntax enable       " Habilita a marcação de sintaxe
+set encoding=utf-8
 set showmode        " Exibe o modo atual
 set wildmenu        " Menu com as opções do vim usando tab
 set background=dark " Define o fundo preto (É melhor usar isso com a sintaxe)
 set nu              " Mostra o número de linhas
-set ai              " Faz o auto tab
+set ai              " Faz o auto tab/auto indent
 set ts=4            " tab vale 4 espaços
 set sw=4            " tab com 4 espaços
 set softtabstop=4   " Operações como o backspace também com 4 espaços
@@ -55,6 +56,7 @@ set colorcolumn=81  " Deixa a coluna 80 colorida
 set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
+set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais maiúsculas na pesquisa
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
