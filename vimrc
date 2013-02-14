@@ -86,6 +86,10 @@ let tlist_php_settings='php;c:Classes;f:Functions'
 nnoremap ,doc :call PhpDocSingle()<CR>
 vnoremap ,doc :call PhpDocRange()<CR>
 
+" Falando em PHP, escolhendo o verificador para PHP:
+" let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
+let g:syntastic_php_checkers=['php']
+
 " Para as cores funcionarem bem é preciso usar 256 cores no terminal.
 " No bashrc, zshrc ou similar, faça algo como
 " export TERM="xterm-256color"
