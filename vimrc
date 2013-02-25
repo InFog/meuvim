@@ -28,6 +28,7 @@ Bundle 'Townk/vim-autoclose'
 Bundle 'InFog/snipmate.vim'
 Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
 Bundle 'godlygeek/csapprox'
+Bundle 'evidens/vim-twig'
 
 " Iniciando os Bundles
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
