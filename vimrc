@@ -48,7 +48,6 @@ set softtabstop=4   " Operações como o backspace também com 4 espaços
 set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
-set relativenumber  " A numeração das listas é feita de forma relativa. Muito boa essa opção =D
 
 set autoread        " Recarrega arquivos alterados em disco automaticamente
 
@@ -58,6 +57,9 @@ set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
 set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais maiúsculas na pesquisa
+
+set relativenumber  " A numeração das linhas é feita de forma relativa. Muito boa essa opção =D
+map ,r :set relativenumber<CR>
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
@@ -100,9 +102,5 @@ let g:syntastic_php_checkers=['php']
 let g:solarized_termcolors=256
 colorscheme solarized
 
-
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
-
-" Obvious mode
-set laststatus=2
