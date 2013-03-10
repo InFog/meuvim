@@ -48,6 +48,7 @@ set softtabstop=4   " Operações como o backspace também com 4 espaços
 set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
+set laststatus=2    " Sempre exibe a barra de status
 
 set autoread        " Recarrega arquivos alterados em disco automaticamente
 
@@ -73,7 +74,8 @@ vnoremap > >gv
 map ,t <ESC>:NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1       " Destaca a linha atual
 let NERDTreeShowHidden=1                " Lista arquivos ocultos
-" let NERDTreeShowLineNumbers=1
+let NERDTreeShowLineNumbers=0
+let NERDTreeQuitOnOpen=1
 let NERDTreeIgnore=['\.*swp$', '\.*pyc$', '^\.git$', '^\.hg$']          " Arquivos que não serão exibidos.
 
 " Opções para o TagList
