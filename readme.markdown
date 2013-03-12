@@ -23,7 +23,7 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte (Usando G
  *  Coloque o conteúdo do projeto no diretório ~/.vim
  *  Copie o arquivo vimrc para ~/.vimrc (Ou faça um link, que fica melhor: `ln -s ~/.vim/vimrc ~/.vimrc`)
  *  Instale os submodules do git: `git submodule init` e `git submodule update` para instalar o `vundle`
- *  Abra o vim (sem arquivos) e rode um `:BundleInstall`, assim ele instala os Bundles.
+ *  Abra o vim (sem arquivos) e rode um `:BundleInstall`, ou chame assim: `vim +BundleInstall`. Dessa forma ele instala os Bundles.
  *  Use seu novo vim =)
  *  (Deve ser possível usar com o GVim no Windows ou no Vim do Mac OS X, mas aí é com você...)
 
