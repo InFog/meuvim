@@ -26,6 +26,8 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte (Usando G
  *  Abra o vim (sem arquivos) e rode um `:BundleInstall`, ou chame assim: `vim +BundleInstall`. Dessa forma ele instala os Bundles.
  *  Use seu novo vim =)
  *  (Deve ser possível usar com o GVim no Windows ou no Vim do Mac OS X, mas aí é com você...)
+ *  Gosta do gVim? Aqui também tem um `gvimrc`, basta copiar ou fazer um link para `~/.gvimrc`
+    * Este gvimrc basicamente remove todas as opções de menus e barras de rolagem.
 
 Dica importante
 ---------------
