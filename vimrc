@@ -37,6 +37,9 @@ Bundle 'vim-scripts/bufexplorer.zip'
 " Adiciona opções para apagar, selecionar, etc dentro de tags, aspas, etc.
 Bundle 'tpope/vim-surround'
 
+" O melhor wrapper Git de todos os tempos =P
+Bundle 'tpope/vim-fugitive'
+
 " Adiciona tags html e mais umas coisinhas para o %
 Bundle 'vim-scripts/matchit.zip'
 
