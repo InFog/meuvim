@@ -19,9 +19,6 @@ call vundle#rc()
 " Linha de status bem completa, tem até git.
 Bundle 'Lokaltog/powerline'
 
-" Esquema de cores
-Bundle 'altercation/vim-colors-solarized'
-
 " Verifica sintaxe e exibe erros
 Bundle 'scrooloose/syntastic'
 
@@ -60,6 +57,10 @@ Bundle 'evidens/vim-twig'
 
 " Números das linhas relativo no modo normal e absoluto no modo insert
 Bundle 'myusuf3/numbers.vim'
+
+" Esquemas de cores
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'spf13/vim-colors'
 
 " Iniciando os Bundles
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
@@ -129,8 +130,8 @@ let g:syntastic_php_checkers=['php']
 
 " Cores a considerar:
 " colo zenburn
-let g:solarized_termcolors=256
-colorscheme solarized
+" let g:solarized_termcolors=256
+colorscheme molokai
 
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
