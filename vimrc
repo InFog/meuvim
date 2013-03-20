@@ -16,19 +16,47 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Agora os bundles
+" Linha de status bem completa, tem até git.
 Bundle 'Lokaltog/powerline'
+
+" Esquema de cores
 Bundle 'altercation/vim-colors-solarized'
+
+" Verifica sintaxe e exibe erros
 Bundle 'scrooloose/syntastic'
+
+" Navegador de arquivos e diretórios
 Bundle 'scrooloose/nerdtree'
+
+" Lista de classes e métodos em um arquivo
 Bundle 'vim-scripts/taglist.vim'
+
+" Navegador para os buffers abertos
 Bundle 'vim-scripts/bufexplorer.zip'
+
+" Adiciona opções para apagar, selecionar, etc dentro de tags, aspas, etc.
 Bundle 'tpope/vim-surround'
+
+" Adiciona tags html e mais umas coisinhas para o %
 Bundle 'vim-scripts/matchit.zip'
+
+" Fecha automaticamente aspas, chaves, parênteses...
 Bundle 'Townk/vim-autoclose'
+
+" Snippets, este é meu fork
 Bundle 'InFog/snipmate.vim'
+
+" Facilita a adição de Docblocks no PHP
 Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
+
+" Melhora os temas para terminais
 Bundle 'godlygeek/csapprox'
+
+" Integração com o Twig
 Bundle 'evidens/vim-twig'
+
+" Números das linhas relativo no modo normal e absoluto no modo insert
+Bundle 'myusuf3/numbers.vim'
 
 " Iniciando os Bundles
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
@@ -58,9 +86,6 @@ set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
 set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais maiúsculas na pesquisa
-
-set relativenumber  " A numeração das linhas é feita de forma relativa. Muito boa essa opção =D
-map ,r :set relativenumber<CR>
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
