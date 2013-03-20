@@ -58,6 +58,9 @@ Bundle 'evidens/vim-twig'
 " Números das linhas relativo no modo normal e absoluto no modo insert
 Bundle 'myusuf3/numbers.vim'
 
+" Autocomplete para PHP
+Bundle 'shawncplus/phpcomplete.vim'
+
 " Esquemas de cores
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
