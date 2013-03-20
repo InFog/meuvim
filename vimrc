@@ -85,7 +85,7 @@ set laststatus=2    " Sempre exibe a barra de status
 set autoread        " Recarrega arquivos alterados em disco automaticamente
 
 "set tw=80           " Define a largura do texto como 80 caracteres
-set colorcolumn=81  " Deixa a coluna 80 colorida
+"set colorcolumn=81  " Deixa a coluna 80 colorida
 set incsearch       " Pesquisa incremental
 set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
