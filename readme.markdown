@@ -15,19 +15,19 @@ Substituir todos os editores do mundo! muahuahuahau (risada malévola)
 Como usar
 ---------
 
-Interessado em usar esta configuração para o seu vim? Faz o seguinte (Usando GNU/Linux, claro):
+Interessado em usar esta configuração para o seu vim? Faz o seguinte:
 
 
- *  Clone do repositório do GitHub: git clone git://github.com/InFog/meuvim.git
+ *  Clone do repositório do GitHub: `git clone git://github.com/InFog/meuvim.git`
    *  Ou baixe aqui: https://github.com/InFog/meuvim
  *  Coloque o conteúdo do projeto no diretório ~/.vim
  *  Copie o arquivo vimrc para ~/.vimrc (Ou faça um link, que fica melhor: `ln -s ~/.vim/vimrc ~/.vimrc`)
  *  Instale os submodules do git: `git submodule init` e `git submodule update` para instalar o `vundle`
  *  Abra o vim (sem arquivos) e rode um `:BundleInstall`, ou chame assim: `vim +BundleInstall`. Dessa forma ele instala os Bundles.
  *  Use seu novo vim =)
- *  (Deve ser possível usar com o GVim no Windows ou no Vim do Mac OS X, mas aí é com você...)
  *  Gosta do gVim? Aqui também tem um `gvimrc`, basta copiar ou fazer um link para `~/.gvimrc`
     * Este gvimrc basicamente remove todas as opções de menus e barras de rolagem.
+ *  (Deve ser possível usar com o GVim no Windows ou no MacVim, mas aí é com você...)
 
 Dica importante
 ---------------
@@ -40,10 +40,11 @@ Dependências
 Só algumas dependências para tudo funcionar certinho:
 
  *  **exuberant-ctags** para o TagList.
+    * No Debian instale o pacote `exuberant-ctags`
  *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**.
     *  No Debian instale o pacote `vim-gnome` que resolve.
  *  `python-git`, no Debian
- *  Para as fontes do powerline funcionarem bem, recomendo essas fontes: https://github.com/Lokaltog/powerline-fonts/
+ *  Para as a barra de status `powerline` funcionar bem com os caracteres especiais, use essas fontes: https://github.com/Lokaltog/powerline-fonts/
 
 Opções
 ------
@@ -68,7 +69,7 @@ Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mos
 
 PHPDoc : `,doc` para adicionar um trecho PHPDoc.
 
-Sparkup: A função do Sparkup foi mapeada para `ctrl+d`.
+Sparkup: A função do Sparkup foi mapeada para `ctrl+d`. (Atualmente está sem o Sparkup...)
 
 Comandos úteis
 --------------
@@ -80,5 +81,5 @@ Comandos úteis
 Afazeres
 --------
 
- *  Procurar algum plugin que complete nomes de funções em classes e mostre o PHPDoc.
- *  O TagList mostra funções, métodos, classes e variáveis, mas não segue o PHPDoc =( Sad, sad robot...
+ *  Procurar algum plugin que complete nomes de métodos, funções e classes e mostre o PHPDoc.
+    *  O TagList mostra funções, métodos, classes e variáveis, mas não segue o PHPDoc =( Sad, sad robot...

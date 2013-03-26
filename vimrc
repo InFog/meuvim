@@ -36,6 +36,8 @@ Bundle 'tpope/vim-surround'
 
 " O melhor wrapper Git de todos os tempos =P
 Bundle 'tpope/vim-fugitive'
+" Mostrando adições, remoções e alterações do Git
+Bundle 'airblade/vim-gitgutter'
 
 " Adiciona tags html e mais umas coisinhas para o %
 Bundle 'vim-scripts/matchit.zip'
