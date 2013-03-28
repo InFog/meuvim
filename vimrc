@@ -60,6 +60,9 @@ Bundle 'evidens/vim-twig'
 " Números das linhas relativo no modo normal e absoluto no modo insert
 Bundle 'myusuf3/numbers.vim'
 
+" CtrlP, pesquisa arquivos e diretórios
+Bundle 'kien/ctrlp.vim'
+
 " Autocomplete para PHP
 Bundle 'shawncplus/phpcomplete.vim'
 
@@ -120,6 +123,9 @@ let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
 let Tlist_Sort_Type="name"              " Ordenar pelo nome e não pela ordem no arquivo
 " Escondendo variáveis no TagList para PHP
 let tlist_php_settings='php;c:Classes;f:Functions'
+
+" Atalho para o CtrlP
+nnoremap ,f :CtrlP<CR>
 
 " Mapeando função do PHPDoc
 nnoremap ,doc :call PhpDocSingle()<CR>
