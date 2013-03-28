@@ -63,7 +63,9 @@ Buffer Explorer : Use `\be` no modo comando
 
 NERDTree : Use o comando `,t`
 
-TagList  : Use o comando `,l`
+TagList : Use o comando `,l`
+
+CtrlP : Pesquisa de arquivos e diretórios a partir da raiz do projeto, use o comando `,f`
 
 Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
 
