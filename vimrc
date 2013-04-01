@@ -16,18 +16,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Agora os bundles
-" Linha de status bem completa, tem até git.
-Bundle 'Lokaltog/powerline'
-
-" Verifica sintaxe e exibe erros
-Bundle 'scrooloose/syntastic'
-
-" Navegador de arquivos e diretórios
-Bundle 'scrooloose/nerdtree'
-
-" Lista de classes e métodos em um arquivo
-Bundle 'vim-scripts/taglist.vim'
-
 " Navegador para os buffers abertos
 Bundle 'vim-scripts/bufexplorer.zip'
 
@@ -48,9 +36,6 @@ Bundle 'Townk/vim-autoclose'
 " Snippets, este é meu fork
 Bundle 'InFog/snipmate.vim'
 
-" Facilita a adição de Docblocks no PHP
-Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
-
 " Melhora os temas para terminais
 Bundle 'godlygeek/csapprox'
 
@@ -60,9 +45,6 @@ Bundle 'evidens/vim-twig'
 " Números das linhas relativo no modo normal e absoluto no modo insert
 Bundle 'myusuf3/numbers.vim'
 
-" CtrlP, pesquisa arquivos e diretórios
-Bundle 'kien/ctrlp.vim'
-
 " Autocomplete para PHP
 Bundle 'shawncplus/phpcomplete.vim'
 
@@ -70,11 +52,51 @@ Bundle 'shawncplus/phpcomplete.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
 
-" Iniciando os Bundles
+"
+" Abaixo estão os Bundles que precisam de algumas opções/personalizações
+"
+
+" NerdTree: Navegador de arquivos e diretórios
+Bundle 'scrooloose/nerdtree'
+map ,t <ESC>:NERDTreeToggle<CR>
+let NERDTreeHighlightCursorline=1       " Destaca a linha atual
+let NERDTreeShowHidden=1                " Lista arquivos ocultos
+let NERDTreeShowLineNumbers=0
+let NERDTreeQuitOnOpen=1
+let NERDTreeIgnore=['\.*swp$', '\.*pyc$', '^\.git$', '^\.hg$']          " Arquivos que não serão exibidos.
+
+" TagList: Lista de classes e métodos em um arquivo
+Bundle 'vim-scripts/taglist.vim'
+nnoremap ,l :TlistToggle<CR>
+let Tlist_Use_Right_Window=1            " Lista de tags à direita
+let Tlist_GainFocus_On_ToggleOpen=1     " Ganhar foco
+let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
+let Tlist_Sort_Type="name"              " Ordenar pelo nome e não pela ordem no arquivo
+" Escondendo itens no TagList para PHP
+let tlist_php_settings='php;c:Classes;f:Functions'
+
+" Powerline: Linha de status bem completa, tem até git.
+Bundle 'Lokaltog/powerline'
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
-" Daqui para baixo são as minhas opções
+" CtrlP: Pesquisa arquivos e diretórios
+Bundle 'kien/ctrlp.vim'
+nnoremap ,f :CtrlP<CR>
 
+" PDV: Facilita a adição de Docblocks no PHP
+Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
+nnoremap ,doc :call PhpDocSingle()<CR>
+vnoremap ,doc :call PhpDocRange()<CR>
+
+" Syntastic: Verifica sintaxe e exibe erros
+Bundle 'scrooloose/syntastic'
+let g:syntastic_php_checkers=['php']
+" Exemplo
+" let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
+
+"
+" Daqui para baixo são as minhas opções
+"
 syntax enable       " Habilita a marcação de sintaxe
 set encoding=utf-8
 set showmode        " Exibe o modo atual
@@ -106,34 +128,6 @@ vnoremap > >gv
 
 :filetype plugin on
 :filetype plugin indent on
-
-" Opções para o NERDTree
-map ,t <ESC>:NERDTreeToggle<CR>
-let NERDTreeHighlightCursorline=1       " Destaca a linha atual
-let NERDTreeShowHidden=1                " Lista arquivos ocultos
-let NERDTreeShowLineNumbers=0
-let NERDTreeQuitOnOpen=1
-let NERDTreeIgnore=['\.*swp$', '\.*pyc$', '^\.git$', '^\.hg$']          " Arquivos que não serão exibidos.
-
-" Opções para o TagList
-nnoremap ,l :TlistToggle<CR>
-let Tlist_Use_Right_Window=1            " Lista de tags à direita
-let Tlist_GainFocus_On_ToggleOpen=1     " Ganhar foco
-let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
-let Tlist_Sort_Type="name"              " Ordenar pelo nome e não pela ordem no arquivo
-" Escondendo variáveis no TagList para PHP
-let tlist_php_settings='php;c:Classes;f:Functions'
-
-" Atalho para o CtrlP
-nnoremap ,f :CtrlP<CR>
-
-" Mapeando função do PHPDoc
-nnoremap ,doc :call PhpDocSingle()<CR>
-vnoremap ,doc :call PhpDocRange()<CR>
-
-" Falando em PHP, escolhendo o verificador para PHP:
-" let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
-let g:syntastic_php_checkers=['php']
 
 " Para as cores funcionarem bem é preciso usar 256 cores no terminal.
 " No bashrc, zshrc ou similar, faça algo como
