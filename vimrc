@@ -83,6 +83,7 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 " CtrlP: Pesquisa arquivos e diretórios
 Bundle 'kien/ctrlp.vim'
 nnoremap ,f :CtrlP<CR>
+let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim. 
 
 " PDV: Facilita a adição de Docblocks no PHP
 Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
