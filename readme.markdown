@@ -51,7 +51,6 @@ Opções
 
 Snippets : Adicionei o plugin snipMate que tem snippets para várias linguagens. Adicionei algumas opções:
 
-
  * foreacht<tab>
    * Cria uma estrura `foreach` em um template html
  * echot<tab>
@@ -65,7 +64,13 @@ NERDTree : Use o comando `,t`
 
 TagList : Use o comando `,l`
 
+ * `x` Expandir/retrair a janela do TagList
+ * `<espaço>` Mostrar a assinatura do método sobre o cursor
+ * `u` Atualizar a TagList
+
 CtrlP : Pesquisa de arquivos e diretórios a partir da raiz do projeto, use o comando `,f`
+
+ * `<ctrl+d>` Habilita/desabilita a pesquisa pelo nome do arquivo apenas
 
 Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
 
