@@ -3,7 +3,7 @@ MeuVim
 
 Meus arquivos de configuração para o Vim.
 
-Comecei montar esse Vim para tentar substituir o grandalhão NetBeans no dia-a-dia como desenvolvedor WEB.
+Comecei montar esta configuração para Vim com a ideia de substituir o grandalhão NetBeans no dia-a-dia como desenvolvedor WEB.
 
 Eu trabalho principalmente para web com Python, PHP, JavaScript, CSS e HTML.
 
@@ -29,10 +29,13 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte:
     * Este gvimrc basicamente remove todas as opções de menus e barras de rolagem.
  *  (Deve ser possível usar com o GVim no Windows ou no MacVim, mas aí é com você...)
 
-Dica importante
----------------
+Dicas importantes
+-----------------
 
-Você também pode usar este vimrc como inspiração para montar o seu próprio vimrc ;-)
+ *  Tenha uma boa motivação para usar o Vim, pois no começo é difícil, e você vai querer voltar para a sua IDE favorita.
+ *  Você também pode usar este vimrc como inspiração para montar o seu próprio vimrc ;-)
+ *  Tente aprender apenas um ou dois comandos novos por dia. Parece pouco, mas em um mês você já terá muitas ferramentas nas pontas dos dedos.
+ *  Aprender a navegar usando h, j, k e l é importante, mas usar as setas é perfeitamente normal e aceitável.
 
 Dependências
 ------------
