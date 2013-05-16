@@ -48,6 +48,9 @@ Bundle 'myusuf3/numbers.vim'
 " Autocomplete para PHP
 Bundle 'shawncplus/phpcomplete.vim'
 
+" HTML5
+Bundle 'othree/html5.vim'
+
 " Esquemas de cores
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
