@@ -99,6 +99,10 @@ let g:syntastic_php_checkers=['php']
 " Exemplo
 " let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
 
+" Grep: Facilitando o uso do grep e similares
+Bundle 'vim-scripts/grep.vim'
+let Grep_Default_Options = '-ir'
+
 "
 " Daqui para baixo são as minhas opções
 "
