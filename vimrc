@@ -101,7 +101,8 @@ let g:syntastic_php_checkers=['php']
 
 " Grep: Facilitando o uso do grep e similares
 Bundle 'vim-scripts/grep.vim'
-let Grep_Default_Options = '-ir'
+map ,g <ESC>:Grep<CR>
+let Grep_Default_Options = '-ri'
 
 "
 " Daqui para baixo são as minhas opções
