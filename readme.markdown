@@ -75,6 +75,8 @@ CtrlP : Pesquisa de arquivos e diretórios a partir da raiz do projeto, use o co
 
  * `<ctrl+d>` Habilita/desabilita a pesquisa pelo nome do arquivo apenas
 
+Grep : Pesquisa em arquivos a partir da raiz do projeto, use o comando `,g`
+
 Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
 
 PHPDoc : `,doc` para adicionar um trecho PHPDoc.
