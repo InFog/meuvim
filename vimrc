@@ -51,6 +51,9 @@ Bundle 'shawncplus/phpcomplete.vim'
 " HTML5
 Bundle 'othree/html5.vim'
 
+" CSS3
+Bundle 'hail2u/vim-css3-syntax'
+
 " Esquemas de cores
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
