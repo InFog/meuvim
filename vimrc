@@ -54,6 +54,9 @@ Bundle 'othree/html5.vim'
 " CSS3
 Bundle 'hail2u/vim-css3-syntax'
 
+" Sintaxe Tubaína (Casa do Código)
+Bundle 'vinibaggio/vim-tubaina'
+
 " Esquemas de cores
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
