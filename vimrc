@@ -113,6 +113,16 @@ Bundle 'vim-scripts/grep.vim'
 map ,g <ESC>:Grep<CR>
 let Grep_Default_Options = '-ri'
 
+" VDebug - usa o protocolo DBGP (xdebug e outros)
+Bundle 'joonty/vdebug'
+let g:vdebug_options = {'server': '0.0.0.0'}
+
+" VDebug for xdebug (PHP)
+" xdebug.remote_autostart = On
+" xdebug.remote_enable = On
+" xdebug.remote_host = localhost
+" xdebug.remote_port = 9000
+
 "
 " Daqui para baixo são as minhas opções
 "
