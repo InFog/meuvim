@@ -97,6 +97,10 @@ Bundle 'kien/ctrlp.vim'
 nnoremap ,f :CtrlP<CR>
 let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim. 
 
+" Markdown: Sintax highlight para markdown
+Bundle 'plasticboy/vim-markdown'
+let g:vim_markdown_folding_disabled=1
+
 " PDV: Facilita a adição de Docblocks no PHP
 Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
 nnoremap ,doc :call PhpDocSingle()<CR>
@@ -113,7 +117,7 @@ Bundle 'vim-scripts/grep.vim'
 map ,g <ESC>:Grep<CR>
 let Grep_Default_Options = '-ri'
 
-" VDebug - usa o protocolo DBGP (xdebug e outros)
+" VDebug: usa o protocolo DBGP (xdebug e outros)
 Bundle 'joonty/vdebug'
 let g:vdebug_options = {'server': '0.0.0.0'}
 
