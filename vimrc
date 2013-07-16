@@ -95,7 +95,7 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 " CtrlP: Pesquisa arquivos e diretórios
 Bundle 'kien/ctrlp.vim'
 nnoremap ,f :CtrlP<CR>
-let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim. 
+let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim.
 
 " Markdown: Sintax highlight para markdown
 Bundle 'plasticboy/vim-markdown'
@@ -144,6 +144,7 @@ set et              " Troca tabs por espaços
 set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
 set laststatus=2    " Sempre exibe a barra de status
+set clipboard=unnamedplus   " Copia do vim para o clipboard
 
 set autoread        " Recarrega arquivos alterados em disco automaticamente
 
