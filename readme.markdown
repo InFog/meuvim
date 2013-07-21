@@ -22,6 +22,7 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte:
    *  Ou baixe aqui: https://github.com/InFog/meuvim
  *  Coloque o conteúdo do projeto no diretório ~/.vim
  *  Copie o arquivo vimrc para ~/.vimrc (Ou faça um link, que fica melhor: `ln -s ~/.vim/vimrc ~/.vimrc`)
+ *  Crie o diretório ~/.vimundo para o desfazer persistente (desfaz mesmo fechando o arquivo e abrindo novamente)
  *  Instale os submodules do git: `git submodule init` e `git submodule update` para instalar o `vundle`
  *  Abra o vim (sem arquivos) e rode um `:BundleInstall`, ou chame assim: `vim +BundleInstall`. Dessa forma ele instala os Bundles.
  *  Use seu novo vim =)

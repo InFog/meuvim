@@ -155,6 +155,14 @@ set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
 set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais maiúsculas na pesquisa
 
+" Persistent undo
+if has('persistent_undo')
+    set undodir=~/.vimundo      " Diretório de gravação do undo
+    set undofile                " desfazer persistente
+    set undolevels=1000         " número de alterações para desfazer
+    set undoreload=10000        " número de linhas do undo no reload de um buffer
+endif
+
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
 vnoremap < <gv
