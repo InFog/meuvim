@@ -88,9 +88,13 @@ let Tlist_Close_On_Select=1             " Fecha a taglist após selecionar uma t
 " Escondendo itens no TagList para PHP
 let tlist_php_settings='php;c:Classes;f:Functions'
 
-" Powerline: Linha de status bem completa, tem até git.
-Bundle 'Lokaltog/powerline'
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+" Airline: Linha de status bem completa, tem até git.
+Bundle 'bling/vim-airline'
+let g:airline_theme='bubblegum'
+let g:airline_powerline_fonts=1
+let g:airline_enable_branch=1
+let g:airline_enable_syntastic=1
+let g:airline_detect_paste=1
 
 " CtrlP: Pesquisa arquivos e diretórios
 Bundle 'kien/ctrlp.vim'
