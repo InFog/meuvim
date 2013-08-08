@@ -63,6 +63,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 " Esquemas de cores
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
+Bundle 'baskerville/bubblegum'
 
 "
 " Abaixo estão os Bundles que precisam de algumas opções/personalizações
@@ -182,7 +183,7 @@ vnoremap > >gv
 " Cores a considerar:
 " colo zenburn
 " let g:solarized_termcolors=256
-colorscheme molokai
+colorscheme bubblegum
 
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
