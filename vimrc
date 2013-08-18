@@ -126,6 +126,10 @@ let Grep_Default_Options = '-ri'
 Bundle 'joonty/vdebug'
 let g:vdebug_options = {'server': '0.0.0.0'}
 
+" Matchmaker: Destaca as palavras iguais
+Bundle 'qstrahl/vim-matchmaker'
+let g:matchmaker_enable_startup = 1
+
 " VDebug for xdebug (PHP)
 " xdebug.remote_autostart = On
 " xdebug.remote_enable = On
