@@ -20,11 +20,16 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte:
 
  *  Clone do repositório do GitHub: `git clone git://github.com/InFog/meuvim.git`
    *  Ou baixe aqui: https://github.com/InFog/meuvim
- *  Coloque o conteúdo do projeto no diretório ~/.vim
- *  Copie o arquivo vimrc para ~/.vimrc (Ou faça um link, que fica melhor: `ln -s ~/.vim/vimrc ~/.vimrc`)
+ *  Coloque o conteúdo do projeto no diretório `~/.vim`
+ *  Copie o arquivo `vimrc` para `~/.vimrc`
+    * Ou faça um link, que fica bem melhor: `ln -s ~/.vim/vimrc ~/.vimrc`
  *  Crie o diretório ~/.vimundo para o desfazer persistente (desfaz mesmo fechando o arquivo e abrindo novamente)
  *  Instale os submodules do git: `git submodule init` e `git submodule update` para instalar o `vundle`
+ *  Instale as dependências listadas abaixo.
  *  Abra o vim (sem arquivos) e rode um `:BundleInstall`, ou chame assim: `vim +BundleInstall`. Dessa forma ele instala os Bundles.
+ *  Para que os temas de cores funcionem corretamente é necessário ativar as 256 cores no terminal.
+    * Para isso adicione `export TERM="xterm-256color"` no seu `~/.bashrc`, `~/.zshrc` ou o terminal de sua preferência.
+    * Será necessário abrir um novo terminal.
  *  Use seu novo vim =)
  *  Gosta do gVim? Aqui também tem um `gvimrc`, basta copiar ou fazer um link para `~/.gvimrc`
     * Este gvimrc basicamente remove todas as opções de menus e barras de rolagem.
