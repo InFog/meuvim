@@ -16,6 +16,9 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Agora os bundles
+" Ack Grep
+Bundle 'https://github.com/mileszs/ack.vim.git'
+
 " Navegador para os buffers abertos
 Bundle 'vim-scripts/bufexplorer.zip'
 
