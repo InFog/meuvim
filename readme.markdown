@@ -18,8 +18,8 @@ Como usar
 Interessado em usar esta configuração para o seu vim? Faz o seguinte:
 
 
- *  Clone do repositório do GitHub: `git clone git://github.com/InFog/meuvim.git`
-   *  Ou baixe aqui: https://github.com/InFog/meuvim
+ *  Clone do repositório do GitHub: `git clone git://github.com/noisae/meuvim.git`
+   *  Ou baixe aqui: https://github.com/noisae/meuvim
  *  Coloque o conteúdo do projeto no diretório `~/.vim`
  *  Copie o arquivo `vimrc` para `~/.vimrc`
     * Ou faça um link, que fica bem melhor: `ln -s ~/.vim/vimrc ~/.vimrc`
