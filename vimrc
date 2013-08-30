@@ -60,6 +60,9 @@ Bundle 'vinibaggio/vim-tubaina'
 " Exibe os espaços em branch no final de linhas
 Bundle 'bronson/vim-trailing-whitespace'
 
+" Usando o Ack
+Bundle 'mileszs/ack.vim'
+
 " Esquemas de cores
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
@@ -116,11 +119,6 @@ Bundle 'scrooloose/syntastic'
 let g:syntastic_php_checkers=['php']
 " Exemplo
 " let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
-
-" Grep: Facilitando o uso do grep e similares
-Bundle 'vim-scripts/grep.vim'
-map ,g <ESC>:Grep<CR>
-let Grep_Default_Options = '-ri'
 
 " VDebug: usa o protocolo DBGP (xdebug e outros)
 Bundle 'joonty/vdebug'
