@@ -63,6 +63,9 @@ Bundle 'bronson/vim-trailing-whitespace'
 " Usando o Ack
 Bundle 'mileszs/ack.vim'
 
+" Blade
+Bundle 'xsbeats/vim-blade'
+
 " Esquemas de cores
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'spf13/vim-colors'
@@ -177,6 +180,8 @@ vnoremap > >gv
 
 :filetype plugin on
 :filetype plugin indent on
+
+nnoremap ,white :%s/\s\+$//<CR>
 
 " Para as cores funcionarem bem é preciso usar 256 cores no terminal.
 " No bashrc, zshrc ou similar, faça algo como
