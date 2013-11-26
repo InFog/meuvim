@@ -173,6 +173,12 @@ if has('persistent_undo')
     set undoreload=10000        " número de linhas do undo no reload de um buffer
 endif
 
+" Sem setas.
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
 vnoremap < <gv
