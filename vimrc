@@ -141,6 +141,14 @@ let g:matchmaker_enable_startup = 1
 " Daqui para baixo são as minhas opções
 "
 syntax enable       " Habilita a marcação de sintaxe
+
+let mapleader=","
+
+set nobackup
+set noswapfile      " Eu não uso os arquivos de swap e backup...
+
+set hidden          " Pode esconder buffers não salvos.
+
 set encoding=utf-8
 set showmode        " Exibe o modo atual
 set wildmenu        " Menu com as opções do vim usando tab
@@ -165,6 +173,9 @@ set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
 set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais maiúsculas na pesquisa
 
+" Limpando a pesquisa
+nmap <silent> ,/ :nohlsearch<CR>
+
 " Persistent undo
 if has('persistent_undo')
     set undodir=~/.vimundo      " Diretório de gravação do undo
@@ -174,10 +185,10 @@ if has('persistent_undo')
 endif
 
 " Sem setas.
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+map <Up> <nop>
+map <Down> <nop>
+map <Left> <nop>
+map <Right> <nop>
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
