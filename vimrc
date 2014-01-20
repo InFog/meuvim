@@ -45,9 +45,6 @@ Bundle 'evidens/vim-twig'
 " Números das linhas relativo no modo normal e absoluto no modo insert
 Bundle 'myusuf3/numbers.vim'
 
-" Autocomplete para PHP
-Bundle 'shawncplus/phpcomplete.vim'
-
 " HTML5
 Bundle 'othree/html5.vim'
 
@@ -60,15 +57,12 @@ Bundle 'vinibaggio/vim-tubaina'
 " Exibe os espaços em branch no final de linhas
 Bundle 'bronson/vim-trailing-whitespace'
 
-" Usando o Ack
-Bundle 'mileszs/ack.vim'
-
 " Blade
 Bundle 'xsbeats/vim-blade'
 
 " Esquemas de cores
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'spf13/vim-colors'
+" Bundle 'altercation/vim-colors-solarized'
+" Bundle 'spf13/vim-colors'
 Bundle 'baskerville/bubblegum'
 
 "
@@ -127,15 +121,15 @@ let g:syntastic_php_checkers=['php']
 Bundle 'joonty/vdebug'
 let g:vdebug_options = {'server': '0.0.0.0'}
 
-" Matchmaker: Destaca as palavras iguais
-Bundle 'qstrahl/vim-matchmaker'
-let g:matchmaker_enable_startup = 1
-
 " VDebug for xdebug (PHP)
 " xdebug.remote_autostart = On
 " xdebug.remote_enable = On
 " xdebug.remote_host = localhost
 " xdebug.remote_port = 9000
+
+" Matchmaker: Destaca as palavras iguais
+Bundle 'qstrahl/vim-matchmaker'
+let g:matchmaker_enable_startup = 1
 
 "
 " Daqui para baixo são as minhas opções
