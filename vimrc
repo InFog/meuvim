@@ -3,7 +3,7 @@
 " Criado por InFog - Evaldo Junior <evaldojuniorbento@gmail.com>
 " Inspirado em vários outros vimrc's por aí
 "
-" http://infog.casoft.info
+" http://evaldojunior.com.br
 "
 " Este vimrc pode ser acompanhado pelo GitHub em:
 " https://github.com/InFog/meuvim
@@ -29,9 +29,6 @@ Bundle 'airblade/vim-gitgutter'
 
 " Adiciona tags html e mais umas coisinhas para o %
 Bundle 'vim-scripts/matchit.zip'
-
-" Fecha automaticamente aspas, chaves, parênteses...
-Bundle 'Townk/vim-autoclose'
 
 " Snippets, este é meu fork
 Bundle 'InFog/snipmate.vim'
