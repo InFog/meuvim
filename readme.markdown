@@ -81,15 +81,11 @@ CtrlP : Pesquisa de arquivos e diretórios a partir da raiz do projeto, use o co
 
  * `<ctrl+d>` Habilita/desabilita a pesquisa pelo nome do arquivo apenas
 
-Grep : Pesquisa em arquivos a partir da raiz do projeto, use o comando `,g`
-
 VDebug : Funciona com algumas linguagens, mas eu uso para PHP, usando o Xdebug. Mais informações aqui: https://github.com/joonty/vdebug
 
 Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
 
 PHPDoc : `,doc` para adicionar um trecho PHPDoc.
-
-Sparkup: A função do Sparkup foi mapeada para `ctrl+d`. (Atualmente está sem o Sparkup...)
 
 Comandos úteis
 --------------
