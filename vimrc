@@ -135,6 +135,14 @@ syntax enable       " Habilita a marcação de sintaxe
 
 let mapleader=","
 
+" Persistent undo
+if has('persistent_undo')
+    set undodir=~/.vimundo      " Diretório de gravação do undo
+    set undofile                " desfazer persistente
+    set undolevels=1000         " número de alterações para desfazer
+    set undoreload=10000        " número de linhas do undo no reload de um buffer
+endif
+
 set nobackup
 set noswapfile      " Eu não uso os arquivos de swap e backup...
 
@@ -164,22 +172,20 @@ set hlsearch        " Highligth search :)
 set ignorecase      " Pesquisa ignora caixa alta e baixa
 set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais maiúsculas na pesquisa
 
+" Mapas, atalhos, etc
+"
 " Limpando a pesquisa
 nmap <silent> ,/ :nohlsearch<CR>
-
-" Persistent undo
-if has('persistent_undo')
-    set undodir=~/.vimundo      " Diretório de gravação do undo
-    set undofile                " desfazer persistente
-    set undolevels=1000         " número de alterações para desfazer
-    set undoreload=10000        " número de linhas do undo no reload de um buffer
-endif
 
 " Sem setas.
 map <Up> <nop>
 map <Down> <nop>
 map <Left> <nop>
 map <Right> <nop>
+
+" Abas, uso bastante
+nmap <silent> tn :tabnew<CR>
+nmap <silent> tq :tabclose<CR>
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
