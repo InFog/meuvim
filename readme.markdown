@@ -93,6 +93,8 @@ Comandos úteis
  * `%` no modo de comandos vai para o abre/fecha parênteses/chaves/colchetes correspondente.
    * Adicionei o **matchit** que faz o `%` também funcionar com tags html e outras linguagens.
      Detalhe que ele reconhece até a sintaxe alternativa para `if`, `foreach` e outros do `php`.
+ * `tn` para abrir nova aba e `tq` para fechar a aba atual.
+ * `,/` para limpar o destaque da pesquisa.
 
 Afazeres
 --------
