@@ -95,6 +95,7 @@ Comandos úteis
      Detalhe que ele reconhece até a sintaxe alternativa para `if`, `foreach` e outros do `php`.
  * `tn` para abrir nova aba e `tq` para fechar a aba atual.
  * `,/` para limpar o destaque da pesquisa.
+ * `,white` para remover os espaços em branco no final das linhas.
 
 Afazeres
 --------
