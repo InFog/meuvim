@@ -51,6 +51,16 @@ Bundle 'hail2u/vim-css3-syntax'
 " Sintaxe Tubaína (Casa do Código)
 Bundle 'vinibaggio/vim-tubaina'
 
+" Go Lang
+"
+" Adicionar no bashrc/zshrc:
+" export GOROOT=$HOME/.go
+" export PATH=$PATH:$GOROOT/bin
+"
+" Depois
+" go get github.com/nsf/gocode
+Bundle 'Blackrush/vim-gocode'
+
 " Exibe os espaços em branch no final de linhas
 Bundle 'bronson/vim-trailing-whitespace'
 
