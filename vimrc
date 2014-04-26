@@ -172,6 +172,7 @@ set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
 set laststatus=2    " Sempre exibe a barra de status
 set clipboard=unnamedplus   " Copia do vim para o clipboard
+set lazyredraw
 
 set autoread        " Recarrega arquivos alterados em disco automaticamente
 
