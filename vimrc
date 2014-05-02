@@ -11,6 +11,8 @@
 set nocompatible
 filetype off
 
+let mapleader=","
+
 " Estou usando o Vundle para gerenciar os bundles
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -78,7 +80,8 @@ Bundle 'baskerville/bubblegum'
 
 " NerdTree: Navegador de arquivos e diretórios
 Bundle 'scrooloose/nerdtree'
-map ,t <ESC>:NERDTreeToggle<CR>
+map <leader>t <ESC>:NERDTreeToggle<CR>
+map <leader>T :NERDTreeFind<CR>
 let NERDTreeHighlightCursorline=1       " Destaca a linha atual
 let NERDTreeShowHidden=1                " Lista arquivos ocultos
 let NERDTreeShowLineNumbers=0
@@ -87,7 +90,7 @@ let NERDTreeIgnore=['\.*swp$', '\.*pyc$', '^\.git$', '^\.hg$']          " Arquiv
 
 " TagList: Lista de classes e métodos em um arquivo
 Bundle 'vim-scripts/taglist.vim'
-nnoremap ,l :TlistToggle<CR>
+nnoremap <leader>l :TlistToggle<CR>
 let Tlist_Use_Right_Window=1            " Lista de tags à direita
 let Tlist_GainFocus_On_ToggleOpen=1     " Ganhar foco
 let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
@@ -106,7 +109,7 @@ let g:airline_detect_paste=1
 
 " CtrlP: Pesquisa arquivos e diretórios
 Bundle 'kien/ctrlp.vim'
-nnoremap ,f :CtrlP<CR>
+nnoremap <leader>f :CtrlP<CR>
 let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim.
 
 " Markdown: Sintax highlight para markdown
@@ -115,8 +118,8 @@ let g:vim_markdown_folding_disabled=1
 
 " PDV: Facilita a adição de Docblocks no PHP
 Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
-nnoremap ,doc :call PhpDocSingle()<CR>
-vnoremap ,doc :call PhpDocRange()<CR>
+nnoremap <leader>doc :call PhpDocSingle()<CR>
+vnoremap <leader>doc :call PhpDocRange()<CR>
 
 " Syntastic: Verifica sintaxe e exibe erros
 Bundle 'scrooloose/syntastic'
@@ -142,8 +145,6 @@ let g:matchmaker_enable_startup = 1
 " Daqui para baixo são as minhas opções
 "
 syntax enable       " Habilita a marcação de sintaxe
-
-let mapleader=","
 
 " Persistent undo
 if has('persistent_undo')
@@ -206,7 +207,7 @@ vnoremap > >gv
 :filetype plugin on
 :filetype plugin indent on
 
-nnoremap ,white :%s/\s\+$//<CR>
+nnoremap <leader>white :%s/\s\+$//<CR>
 
 " Para as cores funcionarem bem é preciso usar 256 cores no terminal.
 " No bashrc, zshrc ou similar, faça algo como
