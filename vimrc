@@ -78,16 +78,6 @@ Bundle 'baskerville/bubblegum'
 " Abaixo estão os Bundles que precisam de algumas opções/personalizações
 "
 
-" NerdTree: Navegador de arquivos e diretórios
-Bundle 'scrooloose/nerdtree'
-map <leader>t <ESC>:NERDTreeToggle<CR>
-map <leader>T :NERDTreeFind<CR>
-let NERDTreeHighlightCursorline=1       " Destaca a linha atual
-let NERDTreeShowHidden=1                " Lista arquivos ocultos
-let NERDTreeShowLineNumbers=0
-let NERDTreeQuitOnOpen=1
-let NERDTreeIgnore=['\.*swp$', '\.*pyc$', '^\.git$', '^\.hg$']          " Arquivos que não serão exibidos.
-
 " TagList: Lista de classes e métodos em um arquivo
 Bundle 'vim-scripts/taglist.vim'
 nnoremap <leader>l :TlistToggle<CR>
