@@ -67,9 +67,9 @@ Snippets : Adicionei o plugin snipMate que tem snippets para várias linguagens.
  * ift<tab>
    * Cria uma estrutura `if` em um template html
 
-Buffer Explorer : Use `\be` no modo comando
+Buffer Explorer : Use `,be` no modo comando
 
-NERDTree : Use o comando `,t`
+Explore : Use o comando `,t`
 
 TagList : Use o comando `,l`
 
