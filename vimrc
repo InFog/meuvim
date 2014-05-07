@@ -179,6 +179,9 @@ set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais 
 " Limpando a pesquisa
 nmap <silent> ,/ :nohlsearch<CR>
 
+" File epxlorer
+map <leader>t :Explore<CR>
+
 " Sem setas.
 map <Up> <nop>
 map <Down> <nop>
