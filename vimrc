@@ -63,10 +63,10 @@ Bundle 'vinibaggio/vim-tubaina'
 " go get github.com/nsf/gocode
 Bundle 'Blackrush/vim-gocode'
 
-" Exibe os espaços em branch no final de linhas
+" Exibe os espaços em branco no final de linhas
 Bundle 'bronson/vim-trailing-whitespace'
 
-" Blade
+" Templates Blade
 Bundle 'xsbeats/vim-blade'
 
 " Esquemas de cores
@@ -177,7 +177,7 @@ set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais 
 " Mapas, atalhos, etc
 "
 " Limpando a pesquisa
-nmap <silent> ,/ :nohlsearch<CR>
+nmap <silent> <leader>/ :nohlsearch<CR>
 
 " File explorer
 map <leader>t :Explore<CR>
@@ -201,7 +201,7 @@ vnoremap > >gv
 :filetype plugin on
 :filetype plugin indent on
 
-nnoremap <leader>white :%s/\s\+$//<CR>
+nnoremap <leader>w :%s/\s\+$//<CR>
 
 " Para as cores funcionarem bem é preciso usar 256 cores no terminal.
 " No bashrc, zshrc ou similar, faça algo como
