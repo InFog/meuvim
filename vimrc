@@ -18,9 +18,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Agora os bundles
-" Navegador para os buffers abertos
-Bundle 'vim-scripts/bufexplorer.zip'
-
+"
 " Adiciona opções para apagar, selecionar, etc dentro de tags, aspas, etc.
 Bundle 'tpope/vim-surround'
 
