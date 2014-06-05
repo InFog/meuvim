@@ -67,8 +67,6 @@ Snippets : Adicionei o plugin snipMate que tem snippets para várias linguagens.
  * ift<tab>
    * Cria uma estrutura `if` em um template html
 
-Buffer Explorer : Use `,be` no modo comando
-
 Explore : Use o comando `,t`
 
 TagList : Use o comando `,l`
@@ -95,10 +93,4 @@ Comandos úteis
      Detalhe que ele reconhece até a sintaxe alternativa para `if`, `foreach` e outros do `php`.
  * `tn` para abrir nova aba e `tq` para fechar a aba atual.
  * `,/` para limpar o destaque da pesquisa.
- * `,white` para remover os espaços em branco no final das linhas.
-
-Afazeres
---------
-
- *  Procurar algum plugin que complete nomes de métodos, funções e classes e mostre o PHPDoc.
-    *  O TagList mostra funções, métodos, classes e variáveis, mas não segue o PHPDoc =( Sad, sad robot...
+ * `,w` para remover os espaços em branco no final das linhas.
