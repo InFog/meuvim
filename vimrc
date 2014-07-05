@@ -189,7 +189,7 @@ map <Right> <nop>
 
 " Abas, uso bastante
 nmap <silent> tn :tabnew<CR>
-nmap <silent> tq :tabclose<CR>
+nmap <silent> tc :tabclose<CR>
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
