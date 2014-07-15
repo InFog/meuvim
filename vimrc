@@ -10,6 +10,7 @@
 
 set nocompatible
 filetype off
+set modelines=0
 
 let mapleader=","
 
@@ -161,6 +162,7 @@ set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
 set laststatus=2    " Sempre exibe a barra de status
 set clipboard=unnamedplus   " Copia do vim para o clipboard
+set ttyfast
 set lazyredraw
 
 set autoread        " Recarrega arquivos alterados em disco automaticamente
@@ -182,10 +184,25 @@ map <leader>t :Explore<CR>
 map <leader>T :split<CR> :Explore<CR>
 
 " Sem setas.
-map <Up> <nop>
-map <Down> <nop>
-map <Left> <nop>
-map <Right> <nop>
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+" Evitar de abrir a ajuda sem querer...
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+" Também usar o ; como :
+nnoremap ; :
+
+" Usar o jj como esc. Excelente.
+inoremap jj <ESC>
 
 " Abas, uso bastante
 nmap <silent> tn :tabnew<CR>
