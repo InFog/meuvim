@@ -201,8 +201,9 @@ vnoremap <F1> <ESC>
 " Também usar o ; como :
 nnoremap ; :
 
-" Usar o jj como esc. Excelente.
+" Usar o jj como esc. Excelente. (E forçar seu uso)
 inoremap jj <ESC>
+inoremap <ESC> <nop>
 
 " Abas, uso bastante
 nmap <silent> tn :tabnew<CR>
