@@ -113,6 +113,8 @@ vnoremap <leader>doc :call PhpDocRange()<CR>
 " Syntastic: Verifica sintaxe e exibe erros
 Bundle 'scrooloose/syntastic'
 let g:syntastic_php_checkers=['php']
+let g:syntastic_python_checkers=['pep8', 'pylint']
+let g:syntastic_python_pep8_args='--ignore=E501'
 " Exemplo
 " let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
 
