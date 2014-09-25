@@ -50,6 +50,7 @@ Só algumas dependências para tudo funcionar certinho:
 
  *  **exuberant-ctags** para o TagList.
     * No Debian instale o pacote `exuberant-ctags`
+    * No Fedora instale o pacote `ctags`
  *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**.
     *  No Debian instale o pacote `vim-gnome` que resolve.
  *  `python-git`, no Debian
