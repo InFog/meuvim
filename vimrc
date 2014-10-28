@@ -210,6 +210,8 @@ inoremap <ESC> <nop>
 " Abas, uso bastante
 nmap <silent> tn :tabnew<CR>
 nmap <silent> tc :tabclose<CR>
+nmap <silent> tq :tabclose<CR>
+" Nunca lembro se é tc ou tq
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
