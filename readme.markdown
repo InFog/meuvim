@@ -31,6 +31,7 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte:
     * Para isso adicione `export TERM="xterm-256color"` no seu `~/.bashrc`, `~/.zshrc` ou o terminal de sua preferência.
     * Será necessário abrir um novo terminal.
  *  Use seu novo vim =)
+ *  Também é possível usar este `vimrc` com o **Neo Vim**, basta renomear para `nvimrc` e mover o diretório para `.nvim`.
  *  Gosta do gVim? Aqui também tem um `gvimrc`, basta copiar ou fazer um link para `~/.gvimrc`
     * Este gvimrc basicamente remove todas as opções de menus e barras de rolagem.
  *  (Deve ser possível usar com o GVim no Windows ou no MacVim, mas aí é com você...)
@@ -75,10 +76,6 @@ TagList : Use o comando `,l`
  * `x` Expandir/retrair a janela do TagList
  * `<espaço>` Mostrar a assinatura do método sobre o cursor
  * `u` Atualizar a TagList
-
-CtrlP : Pesquisa de arquivos e diretórios a partir da raiz do projeto, use o comando `,f`
-
- * `<ctrl+d>` Habilita/desabilita a pesquisa pelo nome do arquivo apenas
 
 VDebug : Funciona com algumas linguagens, mas eu uso para PHP, usando o Xdebug. Mais informações aqui: https://github.com/joonty/vdebug
 
