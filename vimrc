@@ -3,9 +3,8 @@
 " Criado por InFog - Evaldo Junior <evaldojuniorbento@gmail.com>
 " Inspirado em vários outros vimrc's por aí
 "
-" http://evaldojunior.com.br
+" http://evaldojunior.com
 "
-" Este vimrc pode ser acompanhado pelo GitHub em:
 " https://github.com/InFog/meuvim
 
 set nocompatible
@@ -25,6 +24,7 @@ Bundle 'tpope/vim-surround'
 
 " O melhor wrapper Git de todos os tempos =P
 Bundle 'tpope/vim-fugitive'
+
 " Mostrando adições, remoções e alterações do Git
 Bundle 'airblade/vim-gitgutter'
 
@@ -91,15 +91,10 @@ let tlist_php_settings='php;c:Classes;f:Functions'
 " Airline: Linha de status bem completa, tem até git.
 Bundle 'bling/vim-airline'
 let g:airline_theme='bubblegum'
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=0
 let g:airline_enable_branch=1
 let g:airline_enable_syntastic=1
 let g:airline_detect_paste=1
-
-" CtrlP: Pesquisa arquivos e diretórios
-Bundle 'kien/ctrlp.vim'
-nnoremap <leader>f :CtrlP<CR>
-let g:ctrlp_working_path_mode='' "Pesquisa a partir do diretório atual no Vim.
 
 " Markdown: Sintax highlight para markdown
 Bundle 'plasticboy/vim-markdown'
@@ -221,6 +216,7 @@ vnoremap > >gv
 :filetype plugin on
 :filetype plugin indent on
 
+" Remove espacos em branco no final das linhas
 nnoremap <leader>w :%s/\s\+$//<CR>
 
 " Para as cores funcionarem bem é preciso usar 256 cores no terminal.
