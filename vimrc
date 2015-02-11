@@ -159,7 +159,7 @@ set ruler           " Mostra a posição do cursor
 set cursorline      " Destaca a linha atual
 set laststatus=2    " Sempre exibe a barra de status
 set clipboard=unnamedplus   " Copia do vim para o clipboard
-set ttyfast
+" set ttyfast
 set lazyredraw
 
 set autoread        " Recarrega arquivos alterados em disco automaticamente
@@ -206,7 +206,10 @@ inoremap <ESC> <nop>
 nmap <silent> tn :tabnew<CR>
 nmap <silent> tc :tabclose<CR>
 nmap <silent> tq :tabclose<CR>
-" Nunca lembro se é tc ou tq
+
+" Splits
+nmap <silent> <leader>s :split<CR>
+nmap <silent> <leader>S :vsplit<CR>
 
 " Opções para que blocos selecionados sejam reselecionados após identações.
 " Ajuda muito na hora de identar grandes e confusos blocos =)
