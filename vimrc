@@ -77,16 +77,14 @@ Bundle 'baskerville/bubblegum'
 " Abaixo estão os Bundles que precisam de algumas opções/personalizações
 "
 
-" TagList: Lista de classes e métodos em um arquivo
-Bundle 'vim-scripts/taglist.vim'
-nnoremap <leader>l :TlistToggle<CR>
-let Tlist_Use_Right_Window=1            " Lista de tags à direita
-let Tlist_GainFocus_On_ToggleOpen=1     " Ganhar foco
-let Tlist_File_Fold_Auto_Close=1        " Não exibe tags de buffers inativos
-let Tlist_Sort_Type="name"              " Ordenar pelo nome e não pela ordem no arquivo
-let Tlist_Close_On_Select=1             " Fecha a taglist após selecionar uma tag
-" Escondendo itens no TagList para PHP
-let tlist_php_settings='php;c:Classes;f:Functions'
+" Tagbar para mostrar as tags do arquivo (depende do exuberant-ctags)
+Bundle 'majutsushi/tagbar'
+let g:tagbar_autoclose=1
+let g:tagbar_autofocus=1
+let g:tagbar_compact=1
+let g:tagbar_show_linenumbers=2 "Relative
+Bundle 'vim-php/tagbar-phpctags.vim'
+nnoremap <leader>l :TagbarToggle<CR>
 
 " Airline: Linha de status bem completa, tem até git.
 Bundle 'bling/vim-airline'
