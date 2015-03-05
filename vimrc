@@ -175,6 +175,7 @@ set smartcase       " Pesquisa considera caixa alta apenas se ouver uma ou mais 
 nmap <silent> <leader>/ :nohlsearch<CR>
 
 " File explorer
+let g:netrw_bufsettings = 'noma nomod rnu nobl nowrap ro'
 map <leader>t :Explore<CR>
 map <leader>T :split<CR> :Explore<CR>
 
