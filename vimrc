@@ -65,9 +65,6 @@ Bundle 'Blackrush/vim-gocode'
 " Exibe os espaços em branco no final de linhas
 Bundle 'bronson/vim-trailing-whitespace'
 
-" Templates Blade
-Bundle 'xsbeats/vim-blade'
-
 " Esquemas de cores
 " Bundle 'altercation/vim-colors-solarized'
 " Bundle 'spf13/vim-colors'
