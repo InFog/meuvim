@@ -225,7 +225,7 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 " Cores a considerar:
 " colo zenburn
 " let g:solarized_termcolors=256
-colorscheme bubblegum
+colorscheme bubblegum-256-dark
 
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
