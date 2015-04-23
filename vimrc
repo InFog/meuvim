@@ -93,10 +93,6 @@ let g:airline_detect_paste=1
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
 
-" Markdown: Sintax highlight para markdown
-Bundle 'plasticboy/vim-markdown'
-let g:vim_markdown_folding_disabled=1
-
 " PDV: Facilita a adição de Docblocks no PHP
 Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
 nnoremap <leader>doc :call PhpDocSingle()<CR>
@@ -229,5 +225,8 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 " let g:solarized_termcolors=256
 colorscheme zenburn
 
-" Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
+" Definindo sintaxe PHP para arquivos 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
+
+" Definindo sintaxe markdown para arquivos 'md'
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
