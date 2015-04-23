@@ -69,6 +69,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 " Bundle 'altercation/vim-colors-solarized'
 " Bundle 'spf13/vim-colors'
 Bundle 'baskerville/bubblegum'
+Bundle 'jnurmine/Zenburn'
 
 "
 " Abaixo estão os Bundles que precisam de algumas opções/personalizações
@@ -80,12 +81,13 @@ let g:tagbar_autoclose=1
 let g:tagbar_autofocus=1
 let g:tagbar_compact=1
 let g:tagbar_show_linenumbers=2 "Relative
+" PHPtagbar: depois de instalar, rodar o make: cd ~/.vim/bundle/tagbar-phpctags.vim && make
 Bundle 'vim-php/tagbar-phpctags.vim'
 nnoremap <leader>l :TagbarToggle<CR>
 
 " Airline: Linha de status bem completa, tem até git.
 Bundle 'bling/vim-airline'
-let g:airline_theme='bubblegum'
+let g:airline_theme='zenburn'
 let g:airline_powerline_fonts=0
 let g:airline_detect_paste=1
 let g:airline#extensions#branch#enabled=1
@@ -225,7 +227,7 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 " Cores a considerar:
 " colo zenburn
 " let g:solarized_termcolors=256
-colorscheme bubblegum-256-dark
+colorscheme zenburn
 
 " Definindo sintaxe PHP para arquivos com a extensão 'thtml'.
 au BufNewFile,BufRead *.thtml setfiletype php
