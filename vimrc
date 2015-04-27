@@ -106,6 +106,14 @@ let g:syntastic_python_pep8_args='--ignore=E501'
 " Exemplo
 " let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
 
+" PHPQATools
+Bundle 'joonty/vim-phpqa'
+let g:phpqa_messdetector_autorun = 0
+let g:phpqa_codesniffer_autorun = 0
+let g:phpqa_codecoverage_autorun = 0
+nnoremap <leader>md :Phpmd<CR>
+vnoremap <leader>md :Phpmd<CR>
+
 " VDebug: usa o protocolo DBGP (xdebug e outros)
 Bundle 'joonty/vdebug'
 let g:vdebug_options = {'server': '0.0.0.0'}
