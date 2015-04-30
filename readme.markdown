@@ -56,7 +56,7 @@ Só algumas dependências para tudo funcionar certinho:
  *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**.
     *  No Debian instale o pacote `vim-gnome` que resolve.
  *  `python-git`, no Debian
- *  Para as a barra de status `powerline` funcionar bem com os caracteres especiais, use essas fontes: https://github.com/Lokaltog/powerline-fonts/
+ *  Para as a barra de status `airline` funcionar bem com os caracteres especiais, use essas fontes: https://github.com/Lokaltog/powerline-fonts/
 
 Opções
 ------
@@ -72,17 +72,21 @@ Snippets : Adicionei o plugin snipMate que tem snippets para várias linguagens.
 
 Explore : Use o comando `,t`
 
-TagList : Use o comando `,l`
+Tagbar : Use o comando `,l`
 
- * `x` Expandir/retrair a janela do TagList
- * `<espaço>` Mostrar a assinatura do método sobre o cursor
- * `u` Atualizar a TagList
+ * Alguns atalhos do Tagbar:
+   * `x` Expandir/retrair a janela
+   * `<espaço>` Mostrar a assinatura do método sobre o cursor
+   * `-` Para esconder o escopo atual
+   * `+` Para expandir o escopo do método/classe sobre o cursor
 
 VDebug : Funciona com algumas linguagens, mas eu uso para PHP, usando o Xdebug. Mais informações aqui: https://github.com/joonty/vdebug
 
 Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
 
 PHPDoc : `,doc` para adicionar um trecho PHPDoc.
+
+PHPMD : ' `,md` para rodar o Mass Detector. É necessário ter o PHPMD instalado.
 
 Comandos úteis
 --------------
