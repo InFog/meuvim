@@ -1,5 +1,100 @@
-MeuVim
-======
+# MeuVim
+
+## English
+
+My config files for Vim.
+
+"MeuVim" is Portuguese for "MyVim". I'm from Brazil and I speak Portuguese as my mother tongue (No, we don't speak Spanish in Brazil. Trust me, I know that).
+
+My initial idea was to replace NetBeans as my IDE during my daily work as a web developer.
+
+I use PHP, Python, Javascript, CSS and HTML.
+
+### Mission
+
+To replace all text editors in the world!
+
+### How to use it
+
+So you want to use my configs in you Vim? Ok, do the following:
+
+ * Clone this repo: `git clone git://github.com/InFog/meuvim.git`
+   * You can also get the zip here: https://github.com/InFog/meuvim
+ * You should move the contents of this project to `~/.vim`
+ * Copy the file `vimrc` to `~/.vimrc`
+   * Or, better yet, use a link: `ln -s ~/.vim/vimrc ~/.vimrc`
+ * Create the `~/.vimundo` dir for the persistent undo (it's magical, it will allow you to undo stuff when you close and reopen files)
+ * Install the git submodules: `git submodule init` and `git submodule update` to install `vundle`
+ * Install the dependencies listed below (*Dependencies*)
+ * Start vim and run `:BundleInstall` to install the Bundles (Extensions)
+ * In order to have nice colors on the terminal you need to activate 256 colors:
+   * Add `export TERM="xterm-256color"` in your `~/.bashrc` or the `rc` for your terminal
+   * Then you need to open a new terminal (or run the rc...)
+ * All done, enjoy!
+ * It's also possible to use this `vimrc` with **Neo Vim**. To do so, rename `.vimrc` to `.nvimrc` ando the config dir from `.vim` to `.nvim`.
+ * Do you like **gVim**? Try using `gvimrc` file in this project.
+   * This `gvimrc` will remove most all GUI buttons, leaving just a terminal like window.
+ * If you want to use these files in Windows or MacVim, then the configuration is up to you, good luck.
+
+### Important tips
+
+ * Having a good motivation to learn and use Vim is the key.
+ * I recommend you read my vimrc and get inspired to build your own.
+ * Try to learn only two or three new Vim commands per day. It doesn't seems too much, but by the end of one month you will already know more than 50 commands.
+ * Learn how to move around witj h, j, k and l. It's not mandatory and using the arrows is also ok.
+
+### Dependencies
+
+Only a few dependencies for everything to work fine:
+
+ * **exuberant-ctags** for Tagbar.
+    * For Debian install `exuberant-ctags`
+    * For Fedora install `ctags`
+ * In order to have Tagbar working properly with PHP, go to the `phpctags` dir (**bundle/tagbar-phpctags.vim**) and install it's dependencies using `make`.
+ * To have Python autocomplete your Vim must have the **+python** flag.
+    * For Debian just install the package `vim-gnome`.
+ * `python-git`, for Debian
+ * If you want the fancy stuff for your status bar you need those fonts: https://github.com/Lokaltog/powerline-fonts/
+
+### Options
+
+Snippets : In this config there is a snippets plugin for several languages and I added a few options for PHP:
+
+ * foreacht<tab>
+   * Creates a `foreach` loop for a template
+ * echot<tab>
+   * Creates an `echo` for templates
+ * ift<tab>
+   * Creates an `if` for templates
+
+Explore : to open the file explorer type `,t`
+
+Tagbar : to open the tags list type `,l`
+
+ * Some keys for Tagbar:
+   * `x` Zoom in/out
+   * `<espaço>` Shows tag prototype
+   * `-` Hide the current fold
+   * `+` Show the fold under the cursor
+
+VDebug : It works with a few languages, but I use it with PHP, together with Xdebug. More information here: https://github.com/joonty/vdebug
+
+Python autocomplete: ctrl + x, ctrl + o. Works very nice and shows even documentation
+
+PHPDoc : `,doc` to add a PHPDoc block
+
+PHPMD : ' `,md` to run PHPMD (Mess Detector)
+
+### Useful commands
+
+ * `%` in command mode navigates to the opening/closing symbol.
+   * The **matchit** plugin will do the same for HTML tags and improves the matching for other languages
+     It matches even the alternative syntax for `if`, `foreach` and others in `php`.
+ * `tn` to open a new tab and `tc` or `tq` to close the current tab.
+ * `,/` to clear the highlight of the current search.
+ * `,w` to remove trailing spaces.
+
+## Português
 
 Meus arquivos de configuração para o Vim.
 
@@ -7,13 +102,11 @@ Comecei montar esta configuração para Vim com a ideia de substituir o grandalh
 
 Eu trabalho principalmente para web com Python, PHP, JavaScript, CSS e HTML.
 
-Missão
-------
+### Missão
 
 Substituir todos os editores do mundo! muahuahuahau (risada malévola)
 
-Como usar
----------
+### Como usar
 
 Interessado em usar esta configuração para o seu vim? Faz o seguinte:
 
@@ -23,7 +116,7 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte:
  *  Coloque o conteúdo do projeto no diretório `~/.vim`
  *  Copie o arquivo `vimrc` para `~/.vimrc`
     * Ou faça um link, que fica bem melhor: `ln -s ~/.vim/vimrc ~/.vimrc`
- *  Crie o diretório ~/.vimundo para o desfazer persistente (desfaz mesmo fechando o arquivo e abrindo novamente)
+ *  Crie o diretório `~/.vimundo` para o desfazer persistente (desfaz mesmo fechando o arquivo e abrindo novamente)
  *  Instale os submodules do git: `git submodule init` e `git submodule update` para instalar o `vundle`
  *  Instale as dependências listadas abaixo.
  *  Abra o vim (sem arquivos) e rode um `:BundleInstall`, ou chame assim: `vim +BundleInstall`. Dessa forma ele instala os Bundles.
@@ -36,16 +129,14 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte:
     * Este gvimrc basicamente remove todas as opções de menus e barras de rolagem.
  *  (Deve ser possível usar com o GVim no Windows ou no MacVim, mas aí é com você...)
 
-Dicas importantes
------------------
+### Dicas importantes
 
  *  Tenha uma boa motivação para usar o Vim, pois no começo é difícil, e você vai querer voltar para a sua IDE favorita.
  *  Você também pode usar este vimrc como inspiração para montar o seu próprio vimrc ;-)
  *  Tente aprender apenas um ou dois comandos novos por dia. Parece pouco, mas em um mês você já terá muitas ferramentas nas pontas dos dedos.
  *  Aprender a navegar usando h, j, k e l é importante, mas usar as setas é perfeitamente normal e aceitável.
 
-Dependências
-------------
+### Dependências
 
 Só algumas dependências para tudo funcionar certinho:
 
@@ -58,8 +149,7 @@ Só algumas dependências para tudo funcionar certinho:
  *  `python-git`, no Debian
  *  Para as a barra de status `airline` funcionar bem com os caracteres especiais, use essas fontes: https://github.com/Lokaltog/powerline-fonts/
 
-Opções
-------
+### Opções
 
 Snippets : Adicionei o plugin snipMate que tem snippets para várias linguagens. Adicionei algumas opções:
 
@@ -86,10 +176,9 @@ Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mos
 
 PHPDoc : `,doc` para adicionar um trecho PHPDoc.
 
-PHPMD : ' `,md` para rodar o Mass Detector. É necessário ter o PHPMD instalado.
+PHPMD : ' `,md` para rodar o Mess Detector. É necessário ter o PHPMD instalado.
 
-Comandos úteis
---------------
+### Comandos úteis
 
  * `%` no modo de comandos vai para o abre/fecha parênteses/chaves/colchetes correspondente.
    * Adicionei o **matchit** que faz o `%` também funcionar com tags html e outras linguagens.
