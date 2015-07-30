@@ -238,3 +238,8 @@ au BufNewFile,BufRead *.thtml setfiletype php
 
 " Markdown syntax for 'md' files.
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" Overwriting options for different languages
+
+" Ruby
+autocmd Filetype ruby setlocal ts=2 sw=2 softtabstop=2
