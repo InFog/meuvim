@@ -73,7 +73,7 @@ Tagbar : to open the tags list type `,l`
 
  * Some keys for Tagbar:
    * `x` Zoom in/out
-   * `<espaço>` Shows tag prototype
+   * `<space>` Shows tag prototype
    * `-` Hide the current fold
    * `+` Show the fold under the cursor
 
