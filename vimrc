@@ -25,9 +25,6 @@ Bundle 'tpope/vim-surround'
 " The best git wrapper, ever (Says the author)
 Bundle 'tpope/vim-fugitive'
 
-" Shows added, modified and deleted lines on git repos
-Bundle 'airblade/vim-gitgutter'
-
 " HTML tags and other improvements for '%'
 Bundle 'vim-scripts/matchit.zip'
 
@@ -75,6 +72,10 @@ Bundle 'jnurmine/Zenburn'
 "
 " And now some bundles that need any additional configs
 "
+
+" Shows added, modified and deleted lines on git repos
+Bundle 'airblade/vim-gitgutter'
+let g:gitgutter_max_signs=10000
 
 " Tagbar to show the file's tags (depends on exuberant-ctags)
 Bundle 'majutsushi/tagbar'
