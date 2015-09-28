@@ -234,13 +234,17 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 " let g:solarized_termcolors=256
 colorscheme zenburn
 
+" Overwriting options for different languages
+
 " Using PHP syntax for 'thtml' files.
 au BufNewFile,BufRead *.thtml setfiletype php
 
 " Markdown syntax for 'md' files.
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-
-" Overwriting options for different languages
+autocmd Filetype markdown setlocal colorcolumn=80
 
 " Ruby
 autocmd Filetype ruby setlocal ts=2 sw=2 softtabstop=2
+
+" Tubaina
+autocmd Filetype tubaina setlocal colorcolumn=75
