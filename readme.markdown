@@ -34,6 +34,7 @@ So you want to use my configs in you Vim? Ok, do the following:
  * It's also possible to use this `vimrc` with **Neo Vim**. To do so, rename `.vimrc` to `.nvimrc` ando the config dir from `.vim` to `.nvim`.
  * Do you like **gVim**? Try using `gvimrc` file in this project.
    * This `gvimrc` will remove most all GUI buttons, leaving just a terminal like window.
+ * I tested my vimrc with vim on Mac, from command line, you know, and it worked pretty fine.
  * If you want to use these files in Windows or MacVim, then the configuration is up to you, good luck.
 
 ### Important tips
@@ -50,6 +51,7 @@ Only a few dependencies for everything to work fine:
  * **exuberant-ctags** for Tagbar.
     * For Debian install `exuberant-ctags`
     * For Fedora install `ctags`
+    * For Mac you can try installing `ctags` via `homebrew`.
  * In order to have Tagbar working properly with PHP, go to the `phpctags` dir (**bundle/tagbar-phpctags.vim**) and install it's dependencies using `make`.
  * To have Python autocomplete your Vim must have the **+python** flag.
     * For Debian just install the package `vim-gnome`.
@@ -127,7 +129,8 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte:
  *  Também é possível usar este `vimrc` com o **Neo Vim**, basta renomear para `nvimrc` e mover o diretório para `.nvim`.
  *  Gosta do gVim? Aqui também tem um `gvimrc`, basta copiar ou fazer um link para `~/.gvimrc`
     * Este gvimrc basicamente remove todas as opções de menus e barras de rolagem.
- *  (Deve ser possível usar com o GVim no Windows ou no MacVim, mas aí é com você...)
+ *  Eu testei este vimrc com o vim no Mac, via linha de comando, e funcionou decentemente.
+ *  Deve ser possível usar com o GVim no Windows ou no MacVim, mas aí é com você...
 
 ### Dicas importantes
 
@@ -143,6 +146,7 @@ Só algumas dependências para tudo funcionar certinho:
  *  **exuberant-ctags** para o Tagbar.
     * No Debian instale o pacote `exuberant-ctags`
     * No Fedora instale o pacote `ctags`
+    * No Mac tente instalar o pacote `ctags` usando o `homebrew`
  *  Para o Tagbar funcionar bem com PHP, entre no diretório do `phpctags` (**bundle/tagbar-phpctags.vim**) e instale as dependencias usando o `make`.
  *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**.
     *  No Debian instale o pacote `vim-gnome` que resolve.
