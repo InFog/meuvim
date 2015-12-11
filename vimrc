@@ -31,6 +31,9 @@ Bundle 'vim-scripts/matchit.zip'
 " Snippets, this is my fork to add some stuff
 Bundle 'InFog/snipmate.vim'
 
+" Support for PHP syntax for Vim 7.3 or older.
+Bundle 'StanAngeloff/php.vim'
+
 " Improves colors for terminals
 Bundle 'godlygeek/csapprox'
 
