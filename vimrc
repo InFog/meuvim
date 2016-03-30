@@ -102,6 +102,7 @@ let g:airline_powerline_fonts=0
 let g:airline_detect_paste=1
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
+let g:airline#extensions#tabline#enabled=1
 
 " PDV : Docblocks for PHP the easy way
 Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
