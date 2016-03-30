@@ -66,6 +66,9 @@ Bundle 'Blackrush/vim-gocode'
 " Show trailing spaces
 Bundle 'bronson/vim-trailing-whitespace'
 
+" Laravel's blade templating syntax
+Bundle 'jwalton512/vim-blade'
+
 " Some colorschemes
 " Bundle 'altercation/vim-colors-solarized'
 " Bundle 'spf13/vim-colors'
@@ -73,7 +76,7 @@ Bundle 'baskerville/bubblegum'
 Bundle 'jnurmine/Zenburn'
 
 "
-" And now some bundles that need any additional configs
+" And now some bundles that need additional configs
 "
 
 " Shows added, modified and deleted lines on git repos
@@ -85,7 +88,8 @@ Bundle 'majutsushi/tagbar'
 let g:tagbar_autoclose=1
 let g:tagbar_autofocus=1
 let g:tagbar_compact=1
-let g:tagbar_show_linenumbers=2 "Relative, welcome
+let g:tagbar_show_linenumbers=2
+
 " PHPtagbar : remember to run cd ~/.vim/bundle/tagbar-phpctags.vim && make
 Bundle 'vim-php/tagbar-phpctags.vim'
 nnoremap <leader>l :TagbarToggle<CR>
@@ -233,7 +237,6 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 " export TERM="xterm-256color"
 
 " Some nice colors
-" colo zenburn
 " let g:solarized_termcolors=256
 colorscheme zenburn
 
