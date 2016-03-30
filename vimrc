@@ -95,7 +95,8 @@ Bundle 'vim-php/tagbar-phpctags.vim'
 nnoremap <leader>l :TagbarToggle<CR>
 
 " Airline : Nice statusbar, shows a lot of stuff and some git info
-Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 let g:airline_theme='zenburn'
 let g:airline_powerline_fonts=0
 let g:airline_detect_paste=1
