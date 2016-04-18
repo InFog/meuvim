@@ -44,6 +44,18 @@ So you want to use my configs in you Vim? Ok, do the following:
  * Try to learn only two or three new Vim commands per day. It doesn't seems too much, but by the end of one month you will already know more than 50 commands.
  * Learn how to move around witj h, j, k and l. It's not mandatory and using the arrows is also ok.
 
+### Vim and Eclipse
+
+If you are using the Eclipse IDE and want to have some of the Vim Power at your fingertips you can try Vrapper, a Vim Emulator. It is not so good as the original Vim, but you can still have some of the Vim capabilities.
+
+You can find Vrapper here: http://vrapper.sourceforge.net/documentation
+
+Inside this repo there is also a `vrapperrc` file that you can copy to `~/.vrapperrc`.
+
+Some other plugins to improve the "Vim feeling" inside Eclipse:
+
+ * Relative Line Numbers http://matf.github.io/relativenumberruler/updatesite/
+
 ### Dependencies
 
 Only a few dependencies for everything to work fine:
@@ -138,6 +150,18 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte:
  *  Você também pode usar este vimrc como inspiração para montar o seu próprio vimrc ;-)
  *  Tente aprender apenas um ou dois comandos novos por dia. Parece pouco, mas em um mês você já terá muitas ferramentas nas pontas dos dedos.
  *  Aprender a navegar usando h, j, k e l é importante, mas usar as setas é perfeitamente normal e aceitável.
+
+### Vim e Eclipse
+
+Se você está usando a IDE Eclipse e quer ter um pouco do poder do Vim nas pontas dos dedos, você pode testar o Vrapper, um emulador do Vim. Ele não é tão bom quanto o Vim original, mas quebra o galho para quando você ter ter as funcionalidades do Vim dentro do Eclise.
+
+Você pode achar o Vrapper aqui: http://vrapper.sourceforge.net/documentation
+
+Dentro deste repositório há também um arquivo `vrapperrc` que você pode copiar para `~/.vrapperrc`.
+
+Alguns outros plugins para melhorar a sensação de "estou usando o Vim" dentro do Eclipse:
+
+ * Relative Line Numbers http://matf.github.io/relativenumberruler/updatesite/
 
 ### Dependências
 
