@@ -56,6 +56,14 @@ Some other plugins to improve the "Vim feeling" inside Eclipse:
 
  * Relative Line Numbers http://matf.github.io/relativenumberruler/updatesite/
 
+### IdeaVim the Vim Plugin for Jet Brains IDEs
+
+If you are using some IDE from JetBrains and want to have some of the Vim Power at your fingertips you can try IdeaVim, a Vim Emulator. It is not so good as the original Vim, but you can still have some of the Vim capabilities.
+
+You can find IdeaVim here: https://github.com/JetBrains/ideavim
+
+Inside this repo there is also a `ideavimrc` file that you can copy/link to `~/.ideavimrc`.
+
 ### Dependencies
 
 Only a few dependencies for everything to work fine:
@@ -162,6 +170,14 @@ Dentro deste repositório há também um arquivo `vrapperrc` que você pode copi
 Alguns outros plugins para melhorar a sensação de "estou usando o Vim" dentro do Eclipse:
 
  * Relative Line Numbers http://matf.github.io/relativenumberruler/updatesite/
+
+### IdeaVim o Plugin Vim para as IDEs da Jet Brains
+
+Se você está usando alguma IDE da Jet Brains e quer ter um pouco do poder do Vim nas pontas dos dedos, você pode testar o IdeaVim, um emulador do Vim. Ele não é tão bom quanto o Vim original, mas quebra o galho para quando você ter ter as funcionalidades do Vim dentro do IntelliJ, do RubyMine ou do PHPStorm.
+
+Você pode achar o IdeaVim aqui: https://github.com/JetBrains/ideavim
+
+Dentro deste repositório há também um arquivo `ideavimrc` que você pode copiar ou fazer um link para `~/.ideavimrc`.
 
 ### Dependências
 

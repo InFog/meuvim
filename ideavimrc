@@ -1,4 +1,4 @@
-" Configs for the Eclipse Vim plugin Vrapper
+" Configs for the IdeaVIM Plugin
 imap jj <esc>
 
 set relativenumber
