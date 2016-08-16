@@ -139,6 +139,11 @@ let g:vdebug_options = {'server': '0.0.0.0'}
 Bundle 'qstrahl/vim-matchmaker'
 let g:matchmaker_enable_startup = 1
 
+" CtrlP, a fuzzy finder
+Bundle 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_map = '<leader>f'
+set wildignore+=vendor/*
+
 "
 " And now some default Vim options
 "
