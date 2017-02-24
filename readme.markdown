@@ -73,6 +73,7 @@ Only a few dependencies for everything to work fine:
     * For Fedora install `ctags`
     * For Mac you can try installing `ctags` via `homebrew`.
  * In order to have Tagbar working properly with PHP, go to the `phpctags` dir (**bundle/tagbar-phpctags.vim**) and install it's dependencies using `make`.
+ * If you want the PHP autocomplete from `lvht/phpcd.vim` then go into **bundle/phpcd.vim** and run a `composer install`. It is magic.
  * To have Python autocomplete your Vim must have the **+python** flag.
     * For Debian just install the package `vim-gnome`.
  * `python-git`, for Debian
@@ -188,6 +189,7 @@ Só algumas dependências para tudo funcionar certinho:
     * No Fedora instale o pacote `ctags`
     * No Mac tente instalar o pacote `ctags` usando o `homebrew`
  *  Para o Tagbar funcionar bem com PHP, entre no diretório do `phpctags` (**bundle/tagbar-phpctags.vim**) e instale as dependencias usando o `make`.
+ * Se você quiser o autocomplete do PHP do `lvht/phpcd.vim` então vá em **bundle/phpcd.vim** e rode um `composer install`. O funcionamento é bem interessante.
  *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**.
     *  No Debian instale o pacote `vim-gnome` que resolve.
  *  `python-git`, no Debian

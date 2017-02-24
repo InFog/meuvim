@@ -49,10 +49,6 @@ Bundle 'othree/html5.vim'
 " CSS3, same as HTML5
 Bundle 'hail2u/vim-css3-syntax'
 
-" My stuff, if you are not me and are not writing a book for Casa do Código,
-" you don't need it.
-Bundle 'vinibaggio/vim-tubaina'
-
 " Go Lang
 "
 " Add to bashrc/zshrc:
@@ -143,6 +139,9 @@ let g:matchmaker_enable_startup = 1
 Bundle 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_map = '<leader>f'
 set wildignore+=vendor/*
+
+" PHP COmpletion Daemon
+Bundle 'lvht/phpcd.vim'
 
 "
 " And now some default Vim options
