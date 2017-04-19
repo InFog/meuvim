@@ -49,6 +49,9 @@ Bundle 'othree/html5.vim'
 " CSS3, same as HTML5
 Bundle 'hail2u/vim-css3-syntax'
 
+" Less
+Bundle 'groenewege/vim-less'
+
 " Go Lang
 "
 " Add to bashrc/zshrc:
