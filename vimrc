@@ -177,6 +177,8 @@ set laststatus=2    " Statusbar is always there
 set clipboard=unnamedplus   " Copy from Vim to clipboard
 " set ttyfast
 set lazyredraw
+set t_BE=           " disabling the bracketed paste (Vim 8+)
+set backspace=indent,eol,start  " Enabling backspace like any other editor
 
 set autoread        " Reloads files that where updated after opening them in Vim
 
