@@ -132,10 +132,6 @@ let g:vdebug_options = {'server': '0.0.0.0'}
 " xdebug.remote_host = localhost
 " xdebug.remote_port = 9000
 
-" Matchmaker : Highligths word under the cursor
-Bundle 'qstrahl/vim-matchmaker'
-let g:matchmaker_enable_startup = 1
-
 " CtrlP, a fuzzy finder
 Bundle 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_map = '<leader>f'
