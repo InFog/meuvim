@@ -69,10 +69,8 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'jwalton512/vim-blade'
 
 " Some colorschemes
-" Bundle 'altercation/vim-colors-solarized'
-" Bundle 'spf13/vim-colors'
-Bundle 'baskerville/bubblegum'
 Bundle 'jnurmine/Zenburn'
+Bundle 'NLKNguyen/papercolor-theme'
 
 "
 " And now some bundles that need additional configs
@@ -96,7 +94,7 @@ nnoremap <leader>l :TagbarToggle<CR>
 " Airline : Nice statusbar, shows a lot of stuff and some git info
 Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
-let g:airline_theme='zenburn'
+let g:airline_theme='papercolor'
 let g:airline_powerline_fonts=0
 let g:airline_detect_paste=1
 let g:airline#extensions#branch#enabled=1
@@ -167,7 +165,6 @@ set hidden          " Allow hiding not saved buffers
 set encoding=utf-8
 set showmode        " Display current mode
 set wildmenu        " Allows using tab for vim commands
-set background=dark
 set nu              " line numbers
 set ai              " Auto indentation
 set ts=4            " 4 spaces for tab
@@ -249,8 +246,8 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 " export TERM="xterm-256color"
 
 " Some nice colors
-" let g:solarized_termcolors=256
-colorscheme zenburn
+set background=light
+colorscheme PaperColor
 
 " Overwriting options for different languages
 
