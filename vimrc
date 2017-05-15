@@ -177,11 +177,12 @@ set et              " No tabs, please, use spaces (no flamewars here, please, ok
 set ruler           " Cursors position
 set cursorline      " Highlights line under cursor
 set laststatus=2    " Statusbar is always there
-set clipboard=unnamedplus   " Copy from Vim to clipboard
 " set ttyfast
 set lazyredraw
 set t_BE=           " disabling the bracketed paste (Vim 8+)
 set backspace=indent,eol,start  " Enabling backspace like any other editor
+
+set clipboard=unnamed
 
 set autoread        " Reloads files that where updated after opening them in Vim
 
