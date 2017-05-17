@@ -10,10 +10,9 @@
 set nocompatible
 filetype off
 set modelines=0
-
 let mapleader=","
 
-" Bundle is the bundle manager
+" Vundle is the bundle manager
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -31,42 +30,17 @@ Bundle 'vim-scripts/matchit.zip'
 " Snippets, this is my fork to add some stuff
 Bundle 'InFog/snipmate.vim'
 
-" Support for PHP syntax for Vim 7.3 or older.
-Bundle 'StanAngeloff/php.vim'
+" Lots of languages: https://github.com/sheerun/vim-polyglot
+Bundle 'sheerun/vim-polyglot'
 
 " Improves colors for terminals
 Bundle 'godlygeek/csapprox'
 
-" You know, Twig, PHP...
-Bundle 'evidens/vim-twig'
-
 " Relative line numbers in normal mode and absolute in insert mode (magic)
 Bundle 'myusuf3/numbers.vim'
 
-" HTML5, Vim will have it some day (Maybe it already does)
-Bundle 'othree/html5.vim'
-
-" CSS3, same as HTML5
-Bundle 'hail2u/vim-css3-syntax'
-
-" Less
-Bundle 'groenewege/vim-less'
-
-" Go Lang
-"
-" Add to bashrc/zshrc:
-" export GOROOT=$HOME/.go
-" export PATH=$PATH:$GOROOT/bin
-"
-" And then...
-" go get github.com/nsf/gocode
-Bundle 'Blackrush/vim-gocode'
-
 " Show trailing spaces
 Bundle 'bronson/vim-trailing-whitespace'
-
-" Laravel's blade templating syntax
-Bundle 'jwalton512/vim-blade'
 
 " Some colorschemes
 Bundle 'jnurmine/Zenburn'
@@ -101,11 +75,6 @@ let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
 let g:airline#extensions#tabline#enabled=1
 
-" PDV : Docblocks for PHP the easy way
-Bundle 'vim-scripts/PDV--phpDocumentor-for-Vim'
-nnoremap <leader>doc :call PhpDocSingle()<CR>
-vnoremap <leader>doc :call PhpDocRange()<CR>
-
 " Syntastic : Check sytax errors and some other stuff like codestyle
 Bundle 'scrooloose/syntastic'
 let g:syntastic_php_checkers=['php']
@@ -138,7 +107,7 @@ let g:ctrlp_map = '<leader>f'
 set wildignore+=vendor/*
 
 " PHP COmpletion Daemon
-Bundle 'lvht/phpcd.vim'
+" Bundle 'lvht/phpcd.vim'
 
 "
 " And now some default Vim options
