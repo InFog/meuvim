@@ -75,7 +75,7 @@ let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
 let g:airline#extensions#tabline#enabled=1
 
-" Syntastic : Check sytax errors and some other stuff like codestyle
+" Syntastic : Checks syntax errors and some other stuff like codestyle
 Bundle 'scrooloose/syntastic'
 let g:syntastic_php_checkers=['php']
 let g:syntastic_python_checkers=['pep8', 'pylint']
@@ -106,7 +106,7 @@ Bundle 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_map = '<leader>f'
 set wildignore+=vendor/*
 
-" PHP COmpletion Daemon
+" PHP Completion Daemon
 " Bundle 'lvht/phpcd.vim'
 
 "
@@ -135,7 +135,7 @@ set ai              " Auto indentation
 set ts=4            " 4 spaces for tab
 set sw=4            " 4 spaces for tab
 set softtabstop=4   " Backspace also respects tabs with 4 spaces
-set et              " No tabs, please, use spaces (no flamewars here, please, okthanksbye)
+set et              " No tabs, please, use spaces (no flame wars here, please, okthanksbye)
 set ruler           " Cursors position
 set cursorline      " Highlights line under cursor
 set laststatus=2    " Statusbar is always there
@@ -151,7 +151,7 @@ set autoread        " Reloads files that where updated after opening them in Vim
 "set tw=80           " text width
 "set colorcolumn=81  " color for the 80th column
 set incsearch       " incremental search
-set hlsearch        " Highligth search :)
+set hlsearch        " Highlight search :)
 set ignorecase      " Ignore case for searching
 set smartcase       " If your search has upcase letters, do not ignore case
 
@@ -200,6 +200,9 @@ nmap <silent> <leader>S :vsplit<CR>
 vnoremap < <gv
 vnoremap > >gv
 
+" spell check in Portuguese or English
+map <leader>spell :set spell spelllang=pt,en<CR>
+
 :filetype plugin on
 :filetype plugin indent on
 
@@ -207,7 +210,7 @@ vnoremap > >gv
 nnoremap <leader>w :%s/\s\+$//<CR>
 
 " To you want nice colors on your terminal?
-" Add the folowing to your bashrc (or the file for your shell)
+" Add the following to your bashrc (or the file for your shell)
 " export TERM="xterm-256color"
 
 " Some nice colors
