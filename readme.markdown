@@ -31,7 +31,7 @@ So you want to use my configs in you Vim? Ok, do the following:
    * Add `export TERM="xterm-256color"` in your `~/.bashrc` or the `rc` for your terminal
    * Then you need to open a new terminal (or run the rc...)
  * All done, enjoy!
- * It's also possible to use this `vimrc` with **Neo Vim**. To do so, rename `.vimrc` to `.nvimrc` ando the config dir from `.vim` to `.nvim`.
+ * It's also possible to use this `vimrc` with **Neovim**. Check the Neovim section bellow to see how.
  * Do you like **gVim**? Try using `gvimrc` file in this project.
    * This `gvimrc` will remove most all GUI buttons, leaving just a terminal like window.
  * I tested my vimrc with vim on Mac, from command line, you know, and it worked pretty fine.
@@ -42,7 +42,7 @@ So you want to use my configs in you Vim? Ok, do the following:
  * Having a good motivation to learn and use Vim is the key.
  * I recommend you read my vimrc and get inspired to build your own.
  * Try to learn only two or three new Vim commands per day. It doesn't seems too much, but by the end of one month you will already know more than 50 commands.
- * Learn how to move around witj h, j, k and l. It's not mandatory and using the arrows is also ok.
+ * Learn how to move around with h, j, k and l. It's not mandatory and using the arrows is also ok.
 
 ### Vim and Eclipse
 
@@ -63,6 +63,13 @@ If you are using some IDE from JetBrains and want to have some of the Vim Power 
 You can find IdeaVim here: https://github.com/JetBrains/ideavim
 
 Inside this repo there is also a `ideavimrc` file that you can copy/link to `~/.ideavimrc`.
+
+### Neovim
+
+This configuration works also for Neovim, you just need to link the `vimrc` file
+to `~/.config/nvim/init.vim`.
+
+Learn more about Neovim in their website: https://neovim.io/
 
 ### Dependencies
 
@@ -104,9 +111,7 @@ VDebug : It works with a few languages, but I use it with PHP, together with Xde
 
 Python autocomplete: ctrl + x, ctrl + o. Works very nice and shows even documentation
 
-PHPDoc : `,doc` to add a PHPDoc block
-
-PHPMD : ' `,md` to run PHPMD (Mess Detector)
+PHPMD : ' `,md` to run PHPMD (Mess Detector) (You need `phpmd` in your PATH)
 
 ### Useful commands
 
@@ -147,7 +152,7 @@ Interessado em usar esta configuração para o seu vim? Faz o seguinte:
     * Para isso adicione `export TERM="xterm-256color"` no seu `~/.bashrc`, `~/.zshrc` ou o terminal de sua preferência.
     * Será necessário abrir um novo terminal.
  *  Use seu novo vim =)
- *  Também é possível usar este `vimrc` com o **Neo Vim**, basta renomear para `nvimrc` e mover o diretório para `.nvim`.
+ *  Também é possível usar este `vimrc` com o **Neovim**, confira a documentação para isso abaixo.
  *  Gosta do gVim? Aqui também tem um `gvimrc`, basta copiar ou fazer um link para `~/.gvimrc`
     * Este gvimrc basicamente remove todas as opções de menus e barras de rolagem.
  *  Eu testei este vimrc com o vim no Mac, via linha de comando, e funcionou decentemente.
@@ -179,6 +184,13 @@ Se você está usando alguma IDE da Jet Brains e quer ter um pouco do poder do V
 Você pode achar o IdeaVim aqui: https://github.com/JetBrains/ideavim
 
 Dentro deste repositório há também um arquivo `ideavimrc` que você pode copiar ou fazer um link para `~/.ideavimrc`.
+
+### Neovim
+
+Esta configuração também funciona para o Neovim, basta fazer um link do arquivo
+`vimrc` para `~/.config/nvim/init.vim`.
+
+Saiba mais sobre o Neovim no site do projeto: Learn more about Neovim in their website: https://neovim.io/
 
 ### Dependências
 
@@ -219,8 +231,6 @@ Tagbar : Use o comando `,l`
 VDebug : Funciona com algumas linguagens, mas eu uso para PHP, usando o Xdebug. Mais informações aqui: https://github.com/joonty/vdebug
 
 Autocomplete de funções do Python: ctrl + x, ctrl + o. Funciona super bem, mostra até a documentação.
-
-PHPDoc : `,doc` para adicionar um trecho PHPDoc.
 
 PHPMD : ' `,md` para rodar o Mess Detector. É necessário ter o PHPMD instalado.
 

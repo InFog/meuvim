@@ -95,7 +95,8 @@ vnoremap <leader>md :Phpmd<CR>
 Bundle 'joonty/vdebug'
 let g:vdebug_options = {'server': '0.0.0.0'}
 
-" VDebug for xdebug (PHP)
+" VDebug for xdebug (PHP) (Add the following lines to php.ini)
+" IMPORTANT: This extension still requires Python2. Use Vim 7.x or NeoVim.
 " xdebug.remote_autostart = On
 " xdebug.remote_enable = On
 " xdebug.remote_host = localhost
