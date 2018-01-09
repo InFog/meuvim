@@ -69,7 +69,7 @@ nnoremap <leader>l :TagbarToggle<CR>
 Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
 let g:airline_theme='papercolor'
-let g:airline_powerline_fonts=0
+" let g:airline_powerline_fonts=0
 let g:airline_detect_paste=1
 let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
