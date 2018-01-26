@@ -33,6 +33,9 @@ Bundle 'InFog/snipmate.vim'
 " Lots of languages: https://github.com/sheerun/vim-polyglot
 Bundle 'sheerun/vim-polyglot'
 
+" PHP Documentation
+Bundle 'alvan/vim-php-manual'
+
 " Improves colors for terminals
 Bundle 'godlygeek/csapprox'
 
