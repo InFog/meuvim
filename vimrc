@@ -45,6 +45,9 @@ Bundle 'myusuf3/numbers.vim'
 " Show trailing spaces
 Bundle 'bronson/vim-trailing-whitespace'
 
+" Show the marks
+Bundle 'jeetsukumaran/vim-markology'
+
 " Some colorschemes
 Bundle 'jnurmine/Zenburn'
 Bundle 'NLKNguyen/papercolor-theme'
