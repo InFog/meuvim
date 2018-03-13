@@ -47,6 +47,7 @@ Bundle 'bronson/vim-trailing-whitespace'
 
 " Show the marks
 Bundle 'jeetsukumaran/vim-markology'
+let g:markology_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
 " Shows added, modified and deleted lines on git repos
 Bundle 'mhinz/vim-signify'
@@ -72,7 +73,16 @@ nnoremap <leader>l :TagbarToggle<CR>
 
 " Statusline
 Bundle 'itchyny/lightline.vim'
-let g:lightline = {'colorscheme': 'PaperColor_light',}
+let g:lightline = {
+    \ 'colorscheme': 'PaperColor_light',
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste' ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'fugitive#head'
+    \ },
+    \ }
 
 " Syntastic : Checks syntax errors and some other stuff like codestyle
 Bundle 'scrooloose/syntastic'
