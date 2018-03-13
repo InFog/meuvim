@@ -48,17 +48,16 @@ Bundle 'bronson/vim-trailing-whitespace'
 " Show the marks
 Bundle 'jeetsukumaran/vim-markology'
 
+" Shows added, modified and deleted lines on git repos
+Bundle 'mhinz/vim-signify'
+
 " Some colorschemes
-Bundle 'jnurmine/Zenburn'
+" Bundle 'jnurmine/Zenburn'
 Bundle 'NLKNguyen/papercolor-theme'
 
 "
 " And now some bundles that need additional configs
 "
-
-" Shows added, modified and deleted lines on git repos
-Bundle 'airblade/vim-gitgutter'
-let g:gitgutter_max_signs=10000
 
 " Tagbar to show the file's tags (depends on exuberant-ctags)
 Bundle 'majutsushi/tagbar'
@@ -71,15 +70,9 @@ let g:tagbar_show_linenumbers=2
 Bundle 'vim-php/tagbar-phpctags.vim'
 nnoremap <leader>l :TagbarToggle<CR>
 
-" Airline : Nice statusbar, shows a lot of stuff and some git info
-Bundle 'vim-airline/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
-let g:airline_theme='papercolor'
-" let g:airline_powerline_fonts=0
-let g:airline_detect_paste=1
-let g:airline#extensions#branch#enabled=1
-let g:airline#extensions#syntastic#enabled=1
-let g:airline#extensions#tabline#enabled=1
+" Statusline
+Bundle 'itchyny/lightline.vim'
+let g:lightline = {'colorscheme': 'PaperColor_light',}
 
 " Syntastic : Checks syntax errors and some other stuff like codestyle
 Bundle 'scrooloose/syntastic'
@@ -146,6 +139,7 @@ set et              " No tabs, please, use spaces (no flame wars here, please, o
 set ruler           " Cursors position
 set cursorline      " Highlights line under cursor
 set laststatus=2    " Statusbar is always there
+set noshowmode      " Hide mode because status line shows it already
 " set ttyfast
 set lazyredraw
 set t_BE=           " disabling the bracketed paste (Vim 8+)
@@ -170,7 +164,7 @@ nmap <silent> <leader>/ :nohlsearch<CR>
 " File explorer
 let g:netrw_bufsettings = 'noma nomod rnu nobl nowrap ro'
 map <leader>t :Explore<CR>
-map <leader>T :split<CR> :Explore<CR>
+map <leader>T :vsplit<CR> :Explore<CR>
 
 " Arrows? Nope. (If you want to have arrows just remove the lines below)
 nnoremap <up> <nop>
