@@ -60,6 +60,12 @@ Bundle 'NLKNguyen/papercolor-theme'
 " And now some bundles that need additional configs
 "
 
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+set completeopt=longest,menuone
+nnoremap <leader>phpct :!echo "Generating PHP CTAGS..."; ctags -R --fields=+aimlS --languages=php<CR>
+inoremap <C-@> <C-x><C-o>
+Bundle 'shawncplus/phpcomplete.vim'
+
 " Tagbar to show the file's tags (depends on exuberant-ctags)
 Bundle 'majutsushi/tagbar'
 let g:tagbar_autoclose=1

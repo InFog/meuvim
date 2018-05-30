@@ -121,6 +121,7 @@ PHPMD : ' `,md` to run PHPMD (Mess Detector) (You need `phpmd` in your PATH)
  * `tn` to open a new tab and `tc` or `tq` to close the current tab.
  * `,/` to clear the highlight of the current search.
  * `,w` to remove trailing spaces.
+ * `,phpct` to generate the php ctags file.
 
 ## Português
 
@@ -242,3 +243,4 @@ PHPMD : ' `,md` para rodar o Mess Detector. É necessário ter o PHPMD instalado
  * `tn` para abrir nova aba e `tc` para fechar a aba atual.
  * `,/` para limpar o destaque da pesquisa.
  * `,w` para remover os espaços em branco no final das linhas.
+ * `,phpct` para gerar o arquivo de ctags para PHP.
