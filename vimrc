@@ -56,6 +56,9 @@ Bundle 'mhinz/vim-signify'
 " Bundle 'jnurmine/Zenburn'
 Bundle 'NLKNguyen/papercolor-theme'
 
+" Automatically inserts getters and setters for PHP.
+Bundle 'docteurklein/php-getter-setter.vim'
+
 "
 " And now some bundles that need additional configs
 "
