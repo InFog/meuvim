@@ -63,11 +63,21 @@ Bundle 'docteurklein/php-getter-setter.vim'
 " And now some bundles that need additional configs
 "
 
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-set completeopt=longest,menuone
-nnoremap <leader>phpct :!echo "Generating PHP CTAGS..."; ctags -R --fields=+aimlS --languages=php<CR>
-inoremap <C-@> <C-x><C-o>
-Bundle 'shawncplus/phpcomplete.vim'
+" autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+" set completeopt=longest,menuone
+" nnoremap <leader>phpct :!echo "Generating PHP CTAGS..."; ctags -R --fields=+aimlS --languages=php<CR>
+" inoremap <C-@> <C-x><C-o>
+" Bundle 'shawncplus/phpcomplete.vim'
+
+Bundle 'phpactor/phpactor'
+Bundle 'ncm2/ncm2'
+Bundle 'roxma/nvim-yarp'
+Bundle 'phpactor/ncm2-phpactor'
+
+autocmd BufEnter * call ncm2#enable_for_buffer()
+set completeopt=noinsert,menuone,noselect
+autocmd FileType php setlocal omnifunc=phpactor#Complete
+let g:phpactorOmniError = v:true
 
 " Tagbar to show the file's tags (depends on exuberant-ctags)
 Bundle 'majutsushi/tagbar'
