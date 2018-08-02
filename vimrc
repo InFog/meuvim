@@ -63,12 +63,7 @@ Bundle 'docteurklein/php-getter-setter.vim'
 " And now some bundles that need additional configs
 "
 
-" autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-" set completeopt=longest,menuone
-" nnoremap <leader>phpct :!echo "Generating PHP CTAGS..."; ctags -R --fields=+aimlS --languages=php<CR>
-" inoremap <C-@> <C-x><C-o>
-" Bundle 'shawncplus/phpcomplete.vim'
-
+" phpactor - autocomplete/refactoring for PHP
 Bundle 'phpactor/phpactor'
 Bundle 'ncm2/ncm2'
 Bundle 'roxma/nvim-yarp'
@@ -138,9 +133,6 @@ let g:vdebug_options = {'server': '0.0.0.0'}
 Bundle 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_map = '<leader>f'
 set wildignore+=vendor/*
-
-" PHP Completion Daemon
-" Bundle 'lvht/phpcd.vim'
 
 "
 " And now some default Vim options
