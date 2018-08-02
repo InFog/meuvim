@@ -79,6 +79,10 @@ set completeopt=noinsert,menuone,noselect
 autocmd FileType php setlocal omnifunc=phpactor#Complete
 let g:phpactorOmniError = v:true
 
+nmap <leader>u :call phpactor#UseAdd()<CR>
+nmap <leader>d :call phpactor#GotoDefinition()<CR>
+nmap <leader>n :call phpactor#Navigate()<CR>
+
 " Tagbar to show the file's tags (depends on exuberant-ctags)
 Bundle 'majutsushi/tagbar'
 let g:tagbar_autoclose=1
