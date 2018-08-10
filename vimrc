@@ -77,6 +77,7 @@ let g:phpactorOmniError = v:true
 nmap <leader>u :call phpactor#UseAdd()<CR>
 nmap <leader>d :call phpactor#GotoDefinition()<CR>
 nmap <leader>n :call phpactor#Navigate()<CR>
+nmap <leader>m :call phpactor#ContextMenu()<CR>
 
 " Tagbar to show the file's tags (depends on exuberant-ctags)
 Bundle 'majutsushi/tagbar'
