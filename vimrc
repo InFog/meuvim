@@ -59,6 +59,9 @@ Bundle 'NLKNguyen/papercolor-theme'
 " Automatically inserts getters and setters for PHP.
 Bundle 'docteurklein/php-getter-setter.vim'
 
+" grep/ack and other search utilities
+Bundle 'yegappan/grep'
+
 "
 " And now some bundles that need additional configs
 "
