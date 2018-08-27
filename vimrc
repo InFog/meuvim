@@ -54,7 +54,8 @@ Bundle 'mhinz/vim-signify'
 
 " Some colorschemes
 " Bundle 'jnurmine/Zenburn'
-Bundle 'NLKNguyen/papercolor-theme'
+" Bundle 'NLKNguyen/papercolor-theme'
+Bundle 'lifepillar/vim-solarized8'
 
 " Automatically inserts getters and setters for PHP.
 Bundle 'docteurklein/php-getter-setter.vim'
@@ -96,7 +97,7 @@ nnoremap <leader>l :TagbarToggle<CR>
 " Statusline
 Bundle 'itchyny/lightline.vim'
 let g:lightline = {
-    \ 'colorscheme': 'PaperColor_light',
+    \ 'colorscheme': 'solarized',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -244,8 +245,9 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 " export TERM="xterm-256color"
 
 " Some nice colors
+let g:solarized_termcolors=256
 set background=light
-colorscheme PaperColor
+colorscheme solarized8
 
 " Overwriting options for different languages
 
