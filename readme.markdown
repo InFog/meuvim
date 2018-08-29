@@ -6,9 +6,9 @@ My config files for Vim.
 
 "MeuVim" is Portuguese for "MyVim". I'm from Brazil and I speak Portuguese as my mother tongue (No, we don't speak Spanish in Brazil. Trust me, I know that).
 
-My initial idea was to replace NetBeans as my IDE during my daily work as a web developer.
+My initial idea was to replace NetBeans as my IDE during my daily work as a web developer and I can say I achieved that.
 
-I use PHP, Python, Javascript, CSS and HTML.
+I mostly use PHP, Python, Javascript, CSS and HTML.
 
 ### Mission
 
@@ -126,17 +126,17 @@ PHPMD : ' `,md` to run PHPMD (Mess Detector) (You need `phpmd` in your PATH)
 
 Meus arquivos de configuração para o Vim.
 
-Comecei montar esta configuração para Vim com a ideia de substituir o grandalhão NetBeans no dia-a-dia como desenvolvedor WEB.
+Comecei montar esta configuração para Vim com a ideia de substituir o grandalhão NetBeans no dia-a-dia como desenvolvedor WEB e posso dizer que o objetivo foi alcançado.
 
 Eu trabalho principalmente para web com Python, PHP, JavaScript, CSS e HTML.
 
 ### Missão
 
-Substituir todos os editores do mundo! muahuahuahau (risada malévola)
+Substituir todos os editores de texto do mundo!
 
 ### Como usar
 
-Interessado em usar esta configuração para o seu vim? Faz o seguinte:
+Tem interesse em usar esta configuração para o seu vim? Faz o seguinte:
 
 
  *  Clone do repositório do GitHub: `git clone git://github.com/InFog/meuvim.git`
