@@ -16,127 +16,8 @@ let mapleader=","
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" And now, some bundles
-"
-" Options to delete, select, copy, etc inside tags and other block symbols
-Bundle 'tpope/vim-surround'
-
-" The best git wrapper, ever (Says the author)
-Bundle 'tpope/vim-fugitive'
-
-" HTML tags and other improvements for '%'
-Bundle 'vim-scripts/matchit.zip'
-
-" Snippets, this is my fork to add some stuff
-Bundle 'InFog/snipmate.vim'
-
-" Lots of languages: https://github.com/sheerun/vim-polyglot
-Bundle 'sheerun/vim-polyglot'
-
-" PHP Documentation
-Bundle 'alvan/vim-php-manual'
-
-" Improves colors for terminals
-Bundle 'godlygeek/csapprox'
-
-" Relative line numbers in normal mode and absolute in insert mode (magic)
-Bundle 'myusuf3/numbers.vim'
-
-" Show trailing spaces
-Bundle 'bronson/vim-trailing-whitespace'
-
-" Show the marks
-Bundle 'jeetsukumaran/vim-markology'
-let g:markology_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-
-" Shows added, modified and deleted lines on git repos
-Bundle 'mhinz/vim-signify'
-
-" Some colorschemes
-" Bundle 'jnurmine/Zenburn'
-Bundle 'NLKNguyen/papercolor-theme'
-
-" Automatically inserts getters and setters for PHP.
-Bundle 'docteurklein/php-getter-setter.vim'
-
-" grep/ack and other search utilities
-Bundle 'yegappan/grep'
-
-"
-" And now some bundles that need additional configs
-"
-
-" phpactor - autocomplete/refactoring for PHP
-Bundle 'phpactor/phpactor'
-Bundle 'ncm2/ncm2'
-Bundle 'roxma/nvim-yarp'
-Bundle 'phpactor/ncm2-phpactor'
-
-autocmd BufEnter * call ncm2#enable_for_buffer()
-set completeopt=noinsert,menuone,noselect
-autocmd FileType php setlocal omnifunc=phpactor#Complete
-let g:phpactorOmniError = v:true
-
-nmap <leader>u :call phpactor#UseAdd()<CR>
-nmap <leader>d :call phpactor#GotoDefinition()<CR>
-nmap <leader>n :call phpactor#Navigate()<CR>
-nmap <leader>m :call phpactor#ContextMenu()<CR>
-
-" Tagbar to show the file's tags (depends on exuberant-ctags)
-Bundle 'majutsushi/tagbar'
-let g:tagbar_autoclose=1
-let g:tagbar_autofocus=1
-let g:tagbar_compact=1
-let g:tagbar_show_linenumbers=2
-
-" PHPtagbar : remember to run cd ~/.vim/bundle/tagbar-phpctags.vim && make
-Bundle 'vim-php/tagbar-phpctags.vim'
-nnoremap <leader>l :TagbarToggle<CR>
-
-" Statusline
-Bundle 'itchyny/lightline.vim'
-let g:lightline = {
-    \ 'colorscheme': 'PaperColor_light',
-    \ 'active': {
-    \   'left': [ [ 'mode', 'paste' ],
-    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-    \ },
-    \ 'component_function': {
-    \   'gitbranch': 'fugitive#head'
-    \ },
-    \ }
-
-" Syntastic : Checks syntax errors and some other stuff like codestyle
-Bundle 'scrooloose/syntastic'
-let g:syntastic_php_checkers=['php']
-let g:syntastic_python_checkers=['pep8', 'pylint']
-let g:syntastic_python_pep8_args='--ignore=E501'
-" Example
-" let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
-
-" PHPQATools
-Bundle 'joonty/vim-phpqa'
-let g:phpqa_messdetector_autorun = 0
-let g:phpqa_codesniffer_autorun = 0
-let g:phpqa_codecoverage_autorun = 0
-nnoremap <leader>md :Phpmd<CR>
-vnoremap <leader>md :Phpmd<CR>
-
-" VDebug : DBGP (xdebug and others)
-Bundle 'joonty/vdebug'
-let g:vdebug_options = {'server': '0.0.0.0'}
-
-" VDebug for xdebug (PHP) (Add the following lines to php.ini)
-" IMPORTANT: This extension still requires Python2. Use Vim 7.x or NeoVim.
-" xdebug.remote_autostart = On
-" xdebug.remote_enable = On
-" xdebug.remote_host = localhost
-" xdebug.remote_port = 9000
-
-" CtrlP, a fuzzy finder
-Bundle 'ctrlpvim/ctrlp.vim'
-let g:ctrlp_map = '<leader>f'
-set wildignore+=vendor/*
+" Adding the bundles setup
+source $HOME/.vim/bundles.vim
 
 "
 " And now some default Vim options
@@ -179,7 +60,7 @@ set clipboard=unnamed
 set autoread        " Reloads files that where updated after opening them in Vim
 
 "set tw=80           " text width
-"set colorcolumn=81  " color for the 80th column
+set colorcolumn=121  " color for the 80th column
 set incsearch       " incremental search
 set hlsearch        " Highlight search :)
 set ignorecase      " Ignore case for searching
@@ -247,17 +128,7 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 set background=light
 colorscheme PaperColor
 
-" Overwriting options for different languages
-
-" Using PHP syntax for 'thtml' files.
-au BufNewFile,BufRead *.thtml setfiletype php
-
-" Markdown syntax for 'md' files.
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-autocmd Filetype markdown setlocal colorcolumn=80
-
-" Ruby
-autocmd Filetype ruby setlocal ts=2 sw=2 softtabstop=2
-
-" Tubaina
-autocmd Filetype tubaina setlocal colorcolumn=75
+" Adding the specific configs for programming languages
+for f in split(glob("$HOME/.vim/langs/*.vim"), '\n')
+    exe 'source' f
+endfor
