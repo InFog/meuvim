@@ -12,12 +12,16 @@ filetype off
 set modelines=0
 let mapleader=","
 
-" Vundle is the bundle manager
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" Adding the bundles setup
-source $HOME/.vim/bundles.vim
+" Adding the plugins' setup
+source $HOME/.vim/plug/plug.vim
+call plug#begin('~/.vim/plugged')
+source $HOME/.vim/plugins.vim
+" Adding the specific configs for programming languages
+for f in split(glob("$HOME/.vim/langs/*.vim"), '\n')
+    exe 'source' f
+endfor
+call plug#end()
+" End of the plugins' setup
 
 "
 " And now some default Vim options
@@ -127,8 +131,3 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 " Some nice colors
 set background=light
 colorscheme PaperColor
-
-" Adding the specific configs for programming languages
-for f in split(glob("$HOME/.vim/langs/*.vim"), '\n')
-    exe 'source' f
-endfor
