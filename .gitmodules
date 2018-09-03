@@ -1,3 +1,3 @@
-[submodule "bundle/vundle"]
-	path = bundle/vundle
-	url = https://github.com/gmarik/vundle.git
+[submodule "autoload/plug"]
+	path = autoload/plug
+	url = https://github.com/junegunn/vim-plug
