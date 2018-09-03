@@ -16,8 +16,8 @@ nmap <leader>d :call phpactor#GotoDefinition()<CR>
 nmap <leader>n :call phpactor#Navigate()<CR>
 nmap <leader>m :call phpactor#ContextMenu()<CR>
 
-" PHPtagbar : remember to run cd ~/.vim/bundle/tagbar-phpctags.vim && make
-Plug 'vim-php/tagbar-phpctags.vim'
+" PHPtagbar
+Plug 'vim-php/tagbar-phpctags.vim', { 'do': 'make' }
 nnoremap <leader>l :TagbarToggle<CR>
 
 " PHPQATools

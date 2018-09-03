@@ -6,7 +6,7 @@ My config files for Vim.
 
 "MeuVim" is Portuguese for "MyVim". I'm from Brazil and I speak Portuguese as my mother tongue (No, we don't speak Spanish in Brazil. Trust me, I know that).
 
-My initial idea was to replace NetBeans as my IDE during my daily work as a web developer and I can say I achieved that.
+My initial idea was to replace NetBeans, it was 2011, as my IDE during my daily work as a web developer and I can say I achieved that.
 
 I mostly use PHP, Python, Javascript, CSS and HTML.
 
@@ -20,13 +20,13 @@ So you want to use my configs in you Vim? Ok, do the following:
 
  * Clone this repo: `git clone git://github.com/InFog/meuvim.git`
    * You can also get the zip here: https://github.com/InFog/meuvim
- * You should move the contents of this project to `~/.vim`
- * Copy the file `vimrc` to `~/.vimrc`
-   * Or, better yet, use a link: `ln -s ~/.vim/vimrc ~/.vimrc`
+ * You should move the contents of this repo into `~/.vim`
+ * Link the `vimrc` to `~/.vimrc`: `ln -s ~/.vim/vimrc ~/.vimrc`
  * Create the `~/.vimundo` dir for the persistent undo (it's magical, it will allow you to undo stuff when you close and reopen files)
- * Install the git submodules: `git submodule init` and `git submodule update` to install `vundle`
+ * Install the git submodules: `git submodule init` and `git submodule update` to install `plug`, the plugin manager
  * Install the dependencies listed below (*Dependencies*)
- * Start vim and run `:BundleInstall` to install the Bundles (Extensions)
+ * Start vim and run `:PlugInstall` to install the Plugins (Extensions)
+   * This currently depends on having *composer* for PHP and *npm* for javascript on your path
  * In order to have nice colors on the terminal you need to activate 256 colors:
    * Add `export TERM="xterm-256color"` in your `~/.bashrc` or the `rc` for your terminal
    * Then you need to open a new terminal (or run the rc...)
@@ -67,7 +67,7 @@ Inside this repo there is also a `ideavimrc` file that you can copy/link to `~/.
 ### Neovim
 
 This configuration works also for Neovim, you just need to link the `vimrc` file
-to `~/.config/nvim/init.vim`.
+to `~/.config/nvim/init.vim`. But the repo should still be cloned into `~/.vim`.
 
 Learn more about Neovim in their website: https://neovim.io/
 
@@ -79,12 +79,12 @@ Only a few dependencies for everything to work fine:
     * For Debian install `exuberant-ctags`
     * For Fedora install `ctags`
     * For Mac you can try installing `ctags` via `homebrew`.
- * In order to have Tagbar working properly with PHP, go to the `phpctags` dir (**bundle/tagbar-phpctags.vim**) and install it's dependencies using `make`.
- * If you want the PHP autocomplete from `lvht/phpcd.vim` then go into **bundle/phpcd.vim** and run a `composer install`. It is magic.
  * To have Python autocomplete your Vim must have the **+python** flag.
     * For Debian just install the package `vim-gnome`.
  * `python-git`, for Debian
  * If you want the fancy stuff for your status bar you need those fonts: https://github.com/Lokaltog/powerline-fonts/
+ * `composer` for php
+ * `npm` for javascript
 
 ### Options
 
@@ -126,7 +126,7 @@ PHPMD : ' `,md` to run PHPMD (Mess Detector) (You need `phpmd` in your PATH)
 
 Meus arquivos de configuração para o Vim.
 
-Comecei montar esta configuração para Vim com a ideia de substituir o grandalhão NetBeans no dia-a-dia como desenvolvedor WEB e posso dizer que o objetivo foi alcançado.
+Comecei montar esta configuração para Vim com a ideia de substituir o grandalhão NetBeans no dia-a-dia como desenvolvedor WEB, isso em 2011, e posso dizer que o objetivo foi alcançado.
 
 Eu trabalho principalmente para web com Python, PHP, JavaScript, CSS e HTML.
 
@@ -139,24 +139,23 @@ Substituir todos os editores de texto do mundo!
 Tem interesse em usar esta configuração para o seu vim? Faz o seguinte:
 
 
- *  Clone do repositório do GitHub: `git clone git://github.com/InFog/meuvim.git`
-   *  Ou baixe aqui: https://github.com/InFog/meuvim
- *  Coloque o conteúdo do projeto no diretório `~/.vim`
- *  Copie o arquivo `vimrc` para `~/.vimrc`
-    * Ou faça um link, que fica bem melhor: `ln -s ~/.vim/vimrc ~/.vimrc`
- *  Crie o diretório `~/.vimundo` para o desfazer persistente (desfaz mesmo fechando o arquivo e abrindo novamente)
- *  Instale os submodules do git: `git submodule init` e `git submodule update` para instalar o `vundle`
- *  Instale as dependências listadas abaixo.
- *  Abra o vim (sem arquivos) e rode um `:BundleInstall`, ou chame assim: `vim +BundleInstall`. Dessa forma ele instala os Bundles.
- *  Para que os temas de cores funcionem corretamente é necessário ativar as 256 cores no terminal.
-    * Para isso adicione `export TERM="xterm-256color"` no seu `~/.bashrc`, `~/.zshrc` ou o terminal de sua preferência.
-    * Será necessário abrir um novo terminal.
- *  Use seu novo vim =)
- *  Também é possível usar este `vimrc` com o **Neovim**, confira a documentação para isso abaixo.
- *  Gosta do gVim? Aqui também tem um `gvimrc`, basta copiar ou fazer um link para `~/.gvimrc`
-    * Este gvimrc basicamente remove todas as opções de menus e barras de rolagem.
- *  Eu testei este vimrc com o vim no Mac, via linha de comando, e funcionou decentemente.
- *  Deve ser possível usar com o GVim no Windows ou no MacVim, mas aí é com você...
+ * Clone do repositório do GitHub: `git clone git://github.com/InFog/meuvim.git`
+   * Ou baixe aqui: https://github.com/InFog/meuvim
+ * Coloque o conteúdo do projeto no diretório `~/.vim`
+ * Faça um link do arquivo de configuração: `ln -s ~/.vim/vimrc ~/.vimrc`
+ * Crie o diretório `~/.vimundo` para o desfazer persistente (desfaz mesmo fechando o arquivo e abrindo novamente)
+ * Instale os submodules do git: `git submodule init` e `git submodule update` para instalar o `plug`, esse é o gerenciador dos plugins
+ * Instale as dependências listadas abaixo
+ * Abra o vim (sem arquivos) e rode um `:PlugInstall`, ou chame assim: `vim +PlugInstall`. Dessa forma ele instala os Bundles.
+ * Para que os temas de cores funcionem corretamente é necessário ativar as 256 cores no terminal.
+   * Para isso adicione `export TERM="xterm-256color"` no seu `~/.bashrc`, `~/.zshrc` ou o terminal de sua preferência.
+   * Será necessário abrir um novo terminal.
+ * Use seu novo vim =)
+ * Também é possível usar este `vimrc` com o **Neovim**, confira a documentação para isso abaixo.
+ * Gosta do gVim? Aqui também tem um `gvimrc`, basta copiar ou fazer um link para `~/.gvimrc`
+   * Este gvimrc basicamente remove todas as opções de menus e barras de rolagem.
+ * Eu testei este vimrc com o vim no Mac, via linha de comando, e funcionou decentemente.
+ * Deve ser possível usar com o GVim no Windows ou no MacVim, mas aí é com você...
 
 ### Dicas importantes
 
@@ -196,16 +195,16 @@ Saiba mais sobre o Neovim no site do projeto: Learn more about Neovim in their w
 
 Só algumas dependências para tudo funcionar certinho:
 
- *  **exuberant-ctags** para o Tagbar.
+ * **exuberant-ctags** para o Tagbar.
     * No Debian instale o pacote `exuberant-ctags`
     * No Fedora instale o pacote `ctags`
     * No Mac tente instalar o pacote `ctags` usando o `homebrew`
- *  Para o Tagbar funcionar bem com PHP, entre no diretório do `phpctags` (**bundle/tagbar-phpctags.vim**) e instale as dependencias usando o `make`.
- * Se você quiser o autocomplete do PHP do `lvht/phpcd.vim` então vá em **bundle/phpcd.vim** e rode um `composer install`. O funcionamento é bem interessante.
- *  Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**.
-    *  No Debian instale o pacote `vim-gnome` que resolve.
- *  `python-git`, no Debian
- *  Para as a barra de status `airline` funcionar bem com os caracteres especiais, use essas fontes: https://github.com/Lokaltog/powerline-fonts/
+ * Para que o autocomplete Python funcione é necessário ter o vim compilado com a opção **+python**.
+   * No Debian instale o pacote `vim-gnome` que resolve.
+ * `python-git`, no Debian
+ * Para as a barra de status `airline` funcionar bem com os caracteres especiais, use essas fontes: https://github.com/Lokaltog/powerline-fonts/
+ * `composer` para php
+ * `npm` para javascript
 
 ### Opções
 
