@@ -43,6 +43,7 @@ Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 
 autocmd BufEnter * call ncm2#enable_for_buffer()
+set completeopt=noinsert,menuone,noselect
 
 " Tagbar to show the file's tags (depends on exuberant-ctags)
 Plug 'majutsushi/tagbar'
