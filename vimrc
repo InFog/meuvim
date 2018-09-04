@@ -14,7 +14,7 @@ let mapleader=","
 
 " Adding the plugins' setup
 source $HOME/.vim/plug/plug.vim
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/bundle')
 source $HOME/.vim/plugins.vim
 " Adding the specific configs for programming languages
 for f in split(glob("$HOME/.vim/langs/*.vim"), '\n')
