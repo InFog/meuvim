@@ -6,15 +6,18 @@ Plug 'docteurklein/php-getter-setter.vim'
 
 " phpactor - autocomplete/refactoring for PHP
 Plug 'phpactor/phpactor', { 'do': 'composer install' }
-" Requires 'ncm2/ncm2'
-Plug 'phpactor/ncm2-phpactor'
-autocmd FileType php setlocal omnifunc=phpactor#Complete
-let g:phpactorOmniError = v:true
 
 nmap <leader>u :call phpactor#UseAdd()<CR>
 nmap <leader>d :call phpactor#GotoDefinition()<CR>
 nmap <leader>n :call phpactor#Navigate()<CR>
 nmap <leader>m :call phpactor#ContextMenu()<CR>
+
+if has('nvim')
+    " Requires 'ncm2/ncm2'
+    Plug 'phpactor/ncm2-phpactor'
+    autocmd FileType php setlocal omnifunc=phpactor#Complete
+    let g:phpactorOmniError = v:true
+endif
 
 " PHPtagbar
 Plug 'vim-php/tagbar-phpctags.vim', { 'do': 'make' }
