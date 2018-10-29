@@ -19,10 +19,6 @@ if has('nvim')
     let g:phpactorOmniError = v:true
 endif
 
-" PHPtagbar
-Plug 'vim-php/tagbar-phpctags.vim', { 'do': 'make' }
-nnoremap <leader>l :TagbarToggle<CR>
-
 " PHPQATools
 Plug 'joonty/vim-phpqa'
 let g:phpqa_messdetector_autorun = 0

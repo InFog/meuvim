@@ -50,6 +50,7 @@ endif
 
 " Tagbar to show the file's tags (depends on exuberant-ctags)
 Plug 'majutsushi/tagbar'
+nnoremap <leader>l :TagbarToggle<CR>
 let g:tagbar_autoclose=1
 let g:tagbar_autofocus=1
 let g:tagbar_compact=1
@@ -75,8 +76,3 @@ let g:syntastic_python_checkers=['pep8', 'pylint']
 let g:syntastic_python_pep8_args='--ignore=E501'
 " Example
 " let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
-
-" CtrlP, a fuzzy finder
-Plug 'ctrlpvim/ctrlp.vim'
-let g:ctrlp_map = '<leader>f'
-set wildignore+=vendor/*
