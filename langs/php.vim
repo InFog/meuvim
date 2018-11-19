@@ -10,6 +10,8 @@ Plug 'phpactor/phpactor', { 'do': 'composer install' }
 Plug 'InFog/phpctags', {'do': 'composer install' }
 Plug 'InFog/tagbar-phpctags.vim', { 'do': 'make' }
 
+Plug 'lumiliet/vim-twig'
+
 nmap <leader>u :call phpactor#UseAdd()<CR>
 nmap <leader>d :call phpactor#GotoDefinition()<CR>
 nmap <leader>n :call phpactor#Navigate()<CR>

@@ -24,9 +24,14 @@ Plug 'myusuf3/numbers.vim'
 " Show trailing spaces
 Plug 'bronson/vim-trailing-whitespace'
 
+" Highlights word under the cursor
+Plug 'dominikduda/vim_current_word'
+let g:vim_current_word#highlight_current_word = 0
+Plug 'lfv89/vim-interestingwords' " Use with <Leader><k> and <Leader><K>, <n> and <N> to navigate.
+
 " Show the marks
 Plug 'jeetsukumaran/vim-markology'
-let g:markology_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+let g:markology_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 " Shows added, modified and deleted lines on git repos
 Plug 'mhinz/vim-signify'
