@@ -43,6 +43,9 @@ Plug 'NLKNguyen/papercolor-theme'
 " grep/ack and other search utilities
 Plug 'yegappan/grep'
 
+" fading not active buffers
+Plug 'TaDaa/vimade'
+
 " Improved autocomplete
 if has('nvim')
     Plug 'ncm2/ncm2'
