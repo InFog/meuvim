@@ -12,11 +12,11 @@ Plug 'vim-scripts/matchit.zip'
 " Snippets, this is my fork to add some stuff
 Plug 'InFog/snipmate.vim'
 
+" Improved text objects
+Plug 'wellle/targets.vim'
+
 " Lots of languages: https://github.com/sheerun/vim-polyglot
 Plug 'sheerun/vim-polyglot'
-
-" Improves colors for terminals
-Plug 'godlygeek/csapprox'
 
 " Relative line numbers in normal mode and absolute in insert mode (magic)
 Plug 'myusuf3/numbers.vim'
