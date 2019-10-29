@@ -7,7 +7,7 @@ Plug 'docteurklein/php-getter-setter.vim'
 " phpactor - autocomplete/refactoring for PHP
 Plug 'phpactor/phpactor', { 'do': 'composer install' }
 
-Plug 'InFog/phpctags', {'do': 'composer install' }
+Plug 'vim-php/phpctags', {'do': 'composer install' }
 Plug 'InFog/tagbar-phpctags.vim', { 'do': 'make' }
 
 Plug 'lumiliet/vim-twig'
