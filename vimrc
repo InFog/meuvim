@@ -63,8 +63,7 @@ set clipboard=unnamed
 
 set autoread        " Reloads files that where updated after opening them in Vim
 
-"set tw=80           " text width
-set colorcolumn=121  " color for the 80th column
+let &colorcolumn=join(range(121,999),",")
 set incsearch       " incremental search
 set hlsearch        " Highlight search :)
 set ignorecase      " Ignore case for searching
