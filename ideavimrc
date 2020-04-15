@@ -1,9 +1,0 @@
-" Configs for the IdeaVIM Plugin
-imap jj <esc>
-
-set relativenumber
-set hlsearch
-set ignorecase
-set smartcase
-set incsearch
-set showmode
