@@ -6,13 +6,9 @@ My config files for Vim.
 
 "MeuVim" is Portuguese for "MyVim". I'm from Brazil and I speak Portuguese as my mother tongue (No, we don't speak Spanish in Brazil. Trust me, I know that).
 
-My initial idea was to replace NetBeans, it was 2011, as my IDE during my daily work as a web developer and I can say I achieved that.
+My initial idea was to replace NetBeans as my IDE during my daily work (it was 2011) as a web developer and I can say I achieved that.
 
 I mostly use PHP, Python, Javascript, CSS and HTML.
-
-### Mission
-
-To replace all text editors in the world!
 
 ### How to use it
 
@@ -26,15 +22,16 @@ So you want to use my configs in you Vim? Ok, do the following:
  * Install the git submodules: `git submodule init` and `git submodule update` to install `plug`, the plugin manager
  * Install the dependencies listed below (*Dependencies*)
  * Start vim and run `:PlugInstall` to install the Plugins (Extensions)
-   * This currently depends on having *composer* for PHP and *npm* for javascript on your path
+   * This currently depends on a couple commands needed for language support:
+     * *composer* for PHP
+     * *npm* for Javascript
+     * *go* for Golang
  * In order to have nice colors on the terminal you need to activate 256 colors:
    * Add `export TERM="xterm-256color"` in your `~/.bashrc` or the `rc` for your terminal
    * Then you need to open a new terminal (or run the rc...)
  * All done, enjoy!
- * It's also possible to use this `vimrc` with **Neovim**. Check the Neovim section bellow to see how.
- * Do you like **gVim**? Try using `gvimrc` file in this project.
-   * This `gvimrc` will remove most all GUI buttons, leaving just a terminal like window.
- * I tested my vimrc with vim on Mac, from command line, you know, and it worked pretty fine.
+ * It's also possible to use this `vimrc` with **Neovim**. This is what I do, actually. Check the Neovim section bellow to see how.
+ * I tested my vimrc with vim and neovim on Linux and Mac, from command line, you know, and it worked pretty fine.
  * If you want to use these files in Windows or MacVim, then the configuration is up to you, good luck.
 
 ### Important tips
@@ -43,26 +40,6 @@ So you want to use my configs in you Vim? Ok, do the following:
  * I recommend you read my vimrc and get inspired to build your own.
  * Try to learn only two or three new Vim commands per day. It doesn't seems too much, but by the end of one month you will already know more than 50 commands.
  * Learn how to move around with h, j, k and l. It's not mandatory and using the arrows is also ok.
-
-### Vim and Eclipse
-
-If you are using the Eclipse IDE and want to have some of the Vim Power at your fingertips you can try Vrapper, a Vim Emulator. It is not so good as the original Vim, but you can still have some of the Vim capabilities.
-
-You can find Vrapper here: http://vrapper.sourceforge.net/documentation
-
-Inside this repo there is also a `vrapperrc` file that you can copy to `~/.vrapperrc`.
-
-Some other plugins to improve the "Vim feeling" inside Eclipse:
-
- * Relative Line Numbers http://matf.github.io/relativenumberruler/updatesite/
-
-### IdeaVim the Vim Plugin for Jet Brains IDEs
-
-If you are using some IDE from JetBrains and want to have some of the Vim Power at your fingertips you can try IdeaVim, a Vim Emulator. It is not so good as the original Vim, but you can still have some of the Vim capabilities.
-
-You can find IdeaVim here: https://github.com/JetBrains/ideavim
-
-Inside this repo there is also a `ideavimrc` file that you can copy/link to `~/.ideavimrc`.
 
 ### Neovim
 
@@ -85,6 +62,7 @@ Only a few dependencies for everything to work fine:
  * If you want the fancy stuff for your status bar you need those fonts: https://github.com/Lokaltog/powerline-fonts/
  * `composer` for php
  * `npm` for javascript
+ * `go` for Golang
 
 ### Options
 
@@ -130,10 +108,6 @@ Comecei montar esta configuração para Vim com a ideia de substituir o grandalh
 
 Eu trabalho principalmente para web com Python, PHP, JavaScript, CSS e HTML.
 
-### Missão
-
-Substituir todos os editores de texto do mundo!
-
 ### Como usar
 
 Tem interesse em usar esta configuração para o seu vim? Faz o seguinte:
@@ -146,15 +120,17 @@ Tem interesse em usar esta configuração para o seu vim? Faz o seguinte:
  * Crie o diretório `~/.vimundo` para o desfazer persistente (desfaz mesmo fechando o arquivo e abrindo novamente)
  * Instale os submodules do git: `git submodule init` e `git submodule update` para instalar o `plug`, esse é o gerenciador dos plugins
  * Instale as dependências listadas abaixo
- * Abra o vim (sem arquivos) e rode um `:PlugInstall`, ou chame assim: `vim +PlugInstall`. Dessa forma ele instala os Bundles.
+ * Abra o vim (sem arquivos) e rode um `:PlugInstall`, ou chame assim: `vim +PlugInstall` para instalar os plugins.
+   * Isso depende de alguns comandos estarem disponíveis no ambiente para dar suporte para diferentes linguagens:
+     * *composer* php PHP
+     * *npm* para Javascript
+     * *go* para Golang
  * Para que os temas de cores funcionem corretamente é necessário ativar as 256 cores no terminal.
    * Para isso adicione `export TERM="xterm-256color"` no seu `~/.bashrc`, `~/.zshrc` ou o terminal de sua preferência.
    * Será necessário abrir um novo terminal.
  * Use seu novo vim =)
- * Também é possível usar este `vimrc` com o **Neovim**, confira a documentação para isso abaixo.
- * Gosta do gVim? Aqui também tem um `gvimrc`, basta copiar ou fazer um link para `~/.gvimrc`
-   * Este gvimrc basicamente remove todas as opções de menus e barras de rolagem.
- * Eu testei este vimrc com o vim no Mac, via linha de comando, e funcionou decentemente.
+ * Também é possível usar este `vimrc` com o **Neovim**, isso é o que eu faço, confira a documentação para isso abaixo.
+ * Eu testei este vimrc com o vim e o neovim no Linux no Mac, via linha de comando, e funcionou perfeitamente.
  * Deve ser possível usar com o GVim no Windows ou no MacVim, mas aí é com você...
 
 ### Dicas importantes
@@ -163,26 +139,6 @@ Tem interesse em usar esta configuração para o seu vim? Faz o seguinte:
  *  Você também pode usar este vimrc como inspiração para montar o seu próprio vimrc ;-)
  *  Tente aprender apenas um ou dois comandos novos por dia. Parece pouco, mas em um mês você já terá muitas ferramentas nas pontas dos dedos.
  *  Aprender a navegar usando h, j, k e l é importante, mas usar as setas é perfeitamente normal e aceitável.
-
-### Vim e Eclipse
-
-Se você está usando a IDE Eclipse e quer ter um pouco do poder do Vim nas pontas dos dedos, você pode testar o Vrapper, um emulador do Vim. Ele não é tão bom quanto o Vim original, mas quebra o galho para quando você ter ter as funcionalidades do Vim dentro do Eclise.
-
-Você pode achar o Vrapper aqui: http://vrapper.sourceforge.net/documentation
-
-Dentro deste repositório há também um arquivo `vrapperrc` que você pode copiar para `~/.vrapperrc`.
-
-Alguns outros plugins para melhorar a sensação de "estou usando o Vim" dentro do Eclipse:
-
- * Relative Line Numbers http://matf.github.io/relativenumberruler/updatesite/
-
-### IdeaVim o Plugin Vim para as IDEs da Jet Brains
-
-Se você está usando alguma IDE da Jet Brains e quer ter um pouco do poder do Vim nas pontas dos dedos, você pode testar o IdeaVim, um emulador do Vim. Ele não é tão bom quanto o Vim original, mas quebra o galho para quando você ter ter as funcionalidades do Vim dentro do IntelliJ, do RubyMine ou do PHPStorm.
-
-Você pode achar o IdeaVim aqui: https://github.com/JetBrains/ideavim
-
-Dentro deste repositório há também um arquivo `ideavimrc` que você pode copiar ou fazer um link para `~/.ideavimrc`.
 
 ### Neovim
 
@@ -205,6 +161,7 @@ Só algumas dependências para tudo funcionar certinho:
  * Para as a barra de status `airline` funcionar bem com os caracteres especiais, use essas fontes: https://github.com/Lokaltog/powerline-fonts/
  * `composer` para php
  * `npm` para javascript
+ * `go` para golang
 
 ### Opções
 
