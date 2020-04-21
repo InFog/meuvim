@@ -20,6 +20,11 @@ source $HOME/.vim/plugins.vim
 for f in split(glob("$HOME/.vim/langs/*.vim"), '\n')
     exe 'source' f
 endfor
+
+" Support for many languages. Has to be loaded after the other language files.
+" More info: https://github.com/sheerun/vim-polyglot
+Plug 'sheerun/vim-polyglot'
+
 call plug#end()
 " End of the plugins' setup
 

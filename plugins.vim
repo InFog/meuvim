@@ -15,9 +15,6 @@ Plug 'InFog/snipmate.vim'
 " Improved text objects
 Plug 'wellle/targets.vim'
 
-" Lots of languages: https://github.com/sheerun/vim-polyglot
-Plug 'sheerun/vim-polyglot'
-
 " Relative line numbers in normal mode and absolute in insert mode (magic)
 Plug 'myusuf3/numbers.vim'
 
