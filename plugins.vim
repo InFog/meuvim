@@ -45,7 +45,7 @@ Plug 'TaDaa/vimade'
 
 " Improved autocomplete
 if has('nvim')
-    Plug 'ncm2/ncm2'
+    Plug 'ncm2/ncm2', { 'do': 'pip install neovim' }
     Plug 'roxma/nvim-yarp'
 
     autocmd BufEnter * call ncm2#enable_for_buffer()
