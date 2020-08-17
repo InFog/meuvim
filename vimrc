@@ -63,6 +63,7 @@ set noshowmode      " Hide mode because status line shows it already
 set lazyredraw
 set t_BE=           " disabling the bracketed paste (Vim 8+)
 set backspace=indent,eol,start  " Enabling backspace like any other editor
+set scrolloff=5
 
 set clipboard=unnamed
 
