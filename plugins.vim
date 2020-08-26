@@ -1,19 +1,17 @@
 " And now, some bundles
 "
+" Some colorschemes
+" Plug 'jnurmine/Zenburn'
+Plug 'NLKNguyen/papercolor-theme'
+
 " Options to delete, select, copy, etc inside tags and other block symbols
 Plug 'tpope/vim-surround'
 
 " The best git wrapper, ever (Says the author)
 Plug 'tpope/vim-fugitive'
 
-" HTML tags and other improvements for '%'
-Plug 'vim-scripts/matchit.zip'
-
 " Snippets, this is my fork to add some stuff
 Plug 'InFog/snipmate.vim'
-
-" Improved text objects
-Plug 'wellle/targets.vim'
 
 " Relative line numbers in normal mode and absolute in insert mode (magic)
 Plug 'myusuf3/numbers.vim'
@@ -33,15 +31,6 @@ let g:markology_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 " Shows added, modified and deleted lines on git repos
 Plug 'mhinz/vim-signify'
 
-" Some colorschemes
-" Plug 'jnurmine/Zenburn'
-Plug 'NLKNguyen/papercolor-theme'
-
-" grep/ack and other search utilities
-Plug 'yegappan/grep'
-
-" fading not active buffers
-Plug 'TaDaa/vimade'
 
 " Improved autocomplete
 if has('nvim')

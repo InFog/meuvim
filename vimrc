@@ -12,6 +12,9 @@ filetype off
 set modelines=0
 let mapleader=","
 
+" Prevents netrw slowness on 0.4.*
+let g:loaded_clipboard_provider = 1
+
 " Adding the plugins' setup
 source $HOME/.vim/plug/plug.vim
 call plug#begin('~/.vim/bundle')
@@ -64,8 +67,6 @@ set lazyredraw
 set t_BE=           " disabling the bracketed paste (Vim 8+)
 set backspace=indent,eol,start  " Enabling backspace like any other editor
 set scrolloff=5
-
-set clipboard=unnamed
 
 set autoread        " Reloads files that where updated after opening them in Vim
 
