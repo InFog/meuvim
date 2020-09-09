@@ -32,16 +32,5 @@ let g:phpqa_codecoverage_autorun = 0
 nnoremap <leader>md :Phpmd<CR>
 vnoremap <leader>md :Phpmd<CR>
 
-" VDebug : DBGP (xdebug and others)
-Plug 'joonty/vdebug'
-let g:vdebug_options = {'server': '0.0.0.0'}
-
-" VDebug for xdebug (PHP) (Add the following lines to php.ini)
-" IMPORTANT: This extension still requires Python2. Use Vim 7.x or NeoVim.
-" xdebug.remote_autostart = On
-" xdebug.remote_enable = On
-" xdebug.remote_host = localhost
-" xdebug.remote_port = 9000
-
 " Using PHP syntax for 'thtml' files.
 au BufNewFile,BufRead *.thtml setfiletype php
