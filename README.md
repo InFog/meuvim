@@ -63,6 +63,7 @@ Only a few dependencies for everything to work fine:
  * `composer` for php
  * `npm` for javascript
  * `go` for Golang
+ * `java` (OpenJDK) and `graphviz` for PlantUML support.
 
 ### Options
 
@@ -162,6 +163,7 @@ Só algumas dependências para tudo funcionar certinho:
  * `composer` para php
  * `npm` para javascript
  * `go` para golang
+ * `java` (OpenJDK) e `graphviz` para suporte à PlantUML.
 
 ### Opções
 
