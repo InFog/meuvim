@@ -8,7 +8,7 @@ Plug 'docteurklein/php-getter-setter.vim'
 Plug 'phpactor/phpactor', { 'do': 'composer install' }
 
 Plug 'vim-php/phpctags', {'do': 'composer install' }
-Plug 'InFog/tagbar-phpctags.vim', { 'do': 'make' }
+Plug 'vim-php/tagbar-phpctags.vim', { 'do': 'make' }
 
 Plug 'lumiliet/vim-twig'
 
