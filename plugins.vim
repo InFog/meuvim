@@ -19,6 +19,13 @@ Plug 'myusuf3/numbers.vim'
 " Show trailing spaces
 Plug 'bronson/vim-trailing-whitespace'
 
+" Commenting
+Plug 'preservim/nerdcommenter'
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+
 " Highlights word under the cursor
 Plug 'dominikduda/vim_current_word'
 let g:vim_current_word#highlight_current_word = 0
