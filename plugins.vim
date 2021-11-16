@@ -19,6 +19,9 @@ Plug 'myusuf3/numbers.vim'
 " Show trailing spaces
 Plug 'bronson/vim-trailing-whitespace'
 
+" Ack search tool
+Plug 'mileszs/ack.vim'
+
 " Commenting
 Plug 'preservim/nerdcommenter'
 let g:NERDDefaultAlign = 'left'
