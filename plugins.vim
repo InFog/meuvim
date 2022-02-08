@@ -22,6 +22,9 @@ Plug 'bronson/vim-trailing-whitespace'
 " Ack search tool
 Plug 'mileszs/ack.vim'
 
+" Managing tab titles
+Plug 'gcmt/taboo.vim'
+
 " Commenting
 Plug 'preservim/nerdcommenter'
 let g:NERDDefaultAlign = 'left'
