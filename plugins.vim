@@ -7,9 +7,6 @@ Plug 'NLKNguyen/papercolor-theme'
 " Options to delete, select, copy, etc inside tags and other block symbols
 Plug 'tpope/vim-surround'
 
-" The best git wrapper, ever (Says the author)
-Plug 'tpope/vim-fugitive'
-
 " Snippets, this is my fork to add some stuff
 Plug 'InFog/snipmate.vim'
 
@@ -80,5 +77,3 @@ Plug 'scrooloose/syntastic'
 let g:syntastic_php_checkers=['php']
 let g:syntastic_python_checkers=['pep8', 'pylint']
 let g:syntastic_python_pep8_args='--ignore=E501'
-" Example
-" let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
