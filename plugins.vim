@@ -43,7 +43,7 @@ Plug 'mhinz/vim-signify'
 
 " Improved autocomplete
 if has('nvim')
-    Plug 'ncm2/ncm2', { 'do': 'pip install neovim' }
+    Plug 'ncm2/ncm2', { 'do': 'pip3 install neovim' }
     Plug 'roxma/nvim-yarp'
 
     autocmd BufEnter * call ncm2#enable_for_buffer()
