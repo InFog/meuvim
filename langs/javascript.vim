@@ -1,8 +1,6 @@
 " JavaScript
-Plug 'posva/vim-vue'
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
-Plug 'dense-analysis/ale'
 
 let b:ale_fixers = ['prettier']
 let g:ale_fix_on_save = 0
