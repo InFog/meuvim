@@ -1,18 +1,15 @@
 " vimrc
 "
-" Created by InFog - Evaldo Junior <evaldojuniorbento@gmail.com>
+" Created by Evaldo Bento <evaldojuniorbento@gmail.com>
 " Inspired by a lot of other vimrc files out there
 "
 " https://github.com/InFog/meuvim
-"
 " http://evaldojunior.com
 
 set nocompatible
 filetype off
 set modelines=0
 let mapleader=","
-
-" Prevents netrw slowness on 0.4.*
 let g:loaded_clipboard_provider = 1
 
 " Adding the plugins' setup
@@ -24,12 +21,7 @@ for f in split(glob("$HOME/.vim/langs/*.vim"), '\n')
     exe 'source' f
 endfor
 
-" Support for many languages. Has to be loaded after the other language files.
-" More info: https://github.com/sheerun/vim-polyglot
-Plug 'sheerun/vim-polyglot'
-
 call plug#end()
-" End of the plugins' setup
 
 "
 " And now some default Vim options

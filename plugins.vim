@@ -1,7 +1,6 @@
 " And now, some bundles
 "
 " Some colorschemes
-" Plug 'jnurmine/Zenburn'
 Plug 'NLKNguyen/papercolor-theme'
 
 " Options to delete, select, copy, etc inside tags and other block symbols
@@ -32,7 +31,6 @@ let g:NERDCompactSexyComs = 1
 " Highlights word under the cursor
 Plug 'dominikduda/vim_current_word'
 let g:vim_current_word#highlight_current_word = 0
-Plug 'lfv89/vim-interestingwords' " Use with <Leader><k> and <Leader><K>, <n> and <N> to navigate.
 
 " Show the marks
 Plug 'jeetsukumaran/vim-markology'
