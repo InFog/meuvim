@@ -4,7 +4,7 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
 
 if has('nvim')
-    Plug 'ncm2/ncm2-tern', { 'do': 'npm install' }
+    Plug 'ncm2/ncm2-tern', { 'do': 'npm install && npm install -g tern' }
 endif
 
 " Extra setup
