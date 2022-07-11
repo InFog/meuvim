@@ -39,6 +39,9 @@ let g:markology_include="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 " Shows added, modified and deleted lines on git repos
 Plug 'mhinz/vim-signify'
 
+" Git goodies
+Plug 'tpope/vim-fugitive'
+
 " Improved autocomplete
 if has('nvim')
     Plug 'ncm2/ncm2', { 'do': 'pip3 install neovim' }
