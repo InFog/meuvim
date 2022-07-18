@@ -2,8 +2,7 @@
 Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'pangloss/vim-javascript'
 
-let b:ale_fixers = ['prettier']
-let g:ale_fix_on_save = 0
+autocmd FileType javascript nmap <leader>d :ALEGoToDefinition<CR>
 
 if has('nvim')
     Plug 'ncm2/ncm2-tern', { 'do': 'npm install && npm install -g tern' }
