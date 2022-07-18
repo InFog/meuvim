@@ -62,6 +62,7 @@ Only a few dependencies for everything to work fine:
 - If you want the fancy stuff for your status bar you need those fonts: https://github.com/Lokaltog/powerline-fonts/
 - `composer` for php
 - `npm` for javascript
+  - `npm install -g typescript` to have the goodies from ALE.
 - `go` for Golang
   - It is good to have `$GOPATH` and `$GOBIN` set up. Also, add `$GOBIN` to your `$PATH`.
 - `java` (OpenJDK) and `graphviz` for PlantUML support.
@@ -163,6 +164,7 @@ Só algumas dependências para tudo funcionar certinho:
 - Para as a barra de status `airline` funcionar bem com os caracteres especiais, use essas fontes: https://github.com/Lokaltog/powerline-fonts/
 - `composer` para php
 - `npm` para javascript
+  - `npm install -g typescript` para ter os benefícios do ALE.
 - `go` para golang
   - É bom adicionar `$GOPATH` e `$GOBIN` no seu ambiente. Adicione a `$GOBIN` à `$PATH` também.
 - `java` (OpenJDK) e `graphviz` para suporte à PlantUML.
