@@ -73,8 +73,7 @@ let g:lightline = {
     \ },
     \ }
 
-" Syntastic : Checks syntax errors and some other stuff like codestyle
-Plug 'scrooloose/syntastic'
-let g:syntastic_php_checkers=['php']
-let g:syntastic_python_checkers=['pep8', 'pylint']
-let g:syntastic_python_pep8_args='--ignore=E501'
+" Ale: syntax checker
+Plug 'dense-analysis/ale'
+let g:ale_fix_on_save = 0
+let b:ale_fixers = ['prettier', 'eslint']
