@@ -1,4 +1,5 @@
 Plug 'davidhalter/jedi-vim', { 'do': 'pip install jedi' }
+let g:jedi#environment_path = ".venv"
 
 if has('nvim')
     " Requires 'ncm2/ncm2'
