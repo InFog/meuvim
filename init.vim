@@ -13,11 +13,11 @@ let mapleader=","
 let g:loaded_clipboard_provider = 1
 
 " Adding the plugins' setup
-source $HOME/.vim/plug/plug.vim
-call plug#begin('~/.vim/bundle')
-source $HOME/.vim/plugins.vim
+source $HOME/.config/nvim/plug/plug.vim
+call plug#begin("$HOME/.config/nvim/plugins")
+source $HOME/.config/nvim/plugins.vim
 " Adding the specific configs for programming languages
-for f in split(glob("$HOME/.vim/langs/*.vim"), '\n')
+for f in split(glob("$HOME/.config/nvim/langs/*.vim"), '\n')
     exe 'source' f
 endfor
 
@@ -34,7 +34,7 @@ syntax enable
 
 " Persistent undo
 if has('persistent_undo')
-    set undodir=~/.vimundo      " Dir with undo files
+    set undodir=$HOME/.vimundo      " Dir with undo files
     set undofile                " Persistent undo
     set undolevels=1000
     set undoreload=10000
@@ -135,4 +135,5 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 
 " Some nice colors
 set background=light
-colorscheme PaperColor
+let g:one_allow_italics = 1 " I love italic for comments
+colorscheme one

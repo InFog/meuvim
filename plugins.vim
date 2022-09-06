@@ -1,7 +1,7 @@
 " And now, some bundles
-"
-" Some colorschemes
-Plug 'NLKNguyen/papercolor-theme'
+
+" Colorscheme
+Plug 'rakr/vim-one'
 
 " Options to delete, select, copy, etc inside tags and other block symbols
 Plug 'tpope/vim-surround'
@@ -17,6 +17,9 @@ Plug 'bronson/vim-trailing-whitespace'
 
 " Ack search tool
 Plug 'mileszs/ack.vim'
+
+" Managing tab titles
+Plug 'gcmt/taboo.vim'
 
 " Commenting
 Plug 'preservim/nerdcommenter'
@@ -39,16 +42,6 @@ Plug 'mhinz/vim-signify'
 " Git goodies
 Plug 'tpope/vim-fugitive'
 
-" Improved autocomplete
-if has('nvim')
-    Plug 'ncm2/ncm2', { 'do': 'pip3 install neovim' }
-    Plug 'roxma/nvim-yarp'
-
-    autocmd BufEnter * call ncm2#enable_for_buffer()
-    set completeopt=noinsert,menuone,noselect
-    set shortmess+=c
-endif
-
 " Tagbar to show the file's tags (depends on exuberant-ctags)
 Plug 'majutsushi/tagbar'
 nnoremap <leader>l :TagbarToggle<CR>
@@ -60,7 +53,7 @@ let g:tagbar_show_linenumbers=2
 " Statusline
 Plug 'itchyny/lightline.vim'
 let g:lightline = {
-    \ 'colorscheme': 'PaperColor_light',
+    \ 'colorscheme': 'one',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -70,11 +63,21 @@ let g:lightline = {
     \ },
     \ }
 
-" Ale: syntax checker
-Plug 'dense-analysis/ale'
-let g:ale_fix_on_save = 0
-let g:ale_python_auto_poetry = 1
-let g:ale_fixers = {
-\   'javascript': ['prettier', 'eslint'],
-\   'python': ['pylint'],
-\}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = ['coc-diagnostic', 'coc-go', 'coc-tsserver', 'coc-jedi', 'coc-solargraph']
+set updatetime=300
+set signcolumn=yes
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+nnoremap <leader>d <Plug>(coc-definition)
+nnoremap <leader>y <Plug>(coc-type-definition)
+nnoremap <leader>i <Plug>(coc-implementation)
+nnoremap <leader>r <Plug>(coc-references)
