@@ -1,47 +1,7 @@
 {
-    "jedi.enable": true,
-    "jedi.startupMessage": false,
-    "jedi.jediSettings.autoImportModules": [],
-    "jedi.jediSettings.caseInsensitiveCompletion": true,
+    "diagnostic-languageserver.mergeConfig": true,
     "diagnostic-languageserver.filetypes": {
-        "python": "pylint"
-    },
-    "diagnostic-languageserver.linters": {
-        "pylint": {
-            "sourceName": "pylint",
-            "command": "python -m poetry run pylint",
-            "debounce": 100,
-            "args": [
-                "--output-format",
-                "text",
-                "--score",
-                "no",
-                "--msg-template",
-                "'{line}:{column}:{category}:{msg} ({msg_id}:{symbol})'",
-                "%file"
-            ],
-            "formatPattern": [
-                "^(\\d+?):(\\d+?):([a-z]+?):(.*)$",
-                {
-                    "line": 1,
-                    "column": 2,
-                    "endColumn": 2,
-                    "security": 3,
-                    "message": 4
-                }
-            ],
-            "rootPatterns": ["pyproject.toml", "setup.py", ".git"],
-            "securities": {
-                "informational": "hint",
-                "refactor": "info",
-                "convention": "info",
-                "warning": "warning",
-                "error": "error",
-                "fatal": "error"
-            },
-            "offsetColumn": 1,
-            "offsetColumnEnd": 1,
-            "formatLines": 1
-        }
+        "python": "flake8",
+        "javascript": "eslint"
     }
 }
