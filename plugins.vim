@@ -64,7 +64,13 @@ let g:lightline = {
     \ }
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = ['coc-diagnostic', 'coc-go', 'coc-tsserver', 'coc-jedi', 'coc-solargraph']
+let g:coc_global_extensions = [
+    \ 'coc-diagnostic',
+    \ 'coc-go',
+    \ 'coc-tsserver',
+    \ 'coc-jedi',
+    \ 'coc-solargraph',
+    \ 'coc-phpactor']
 set updatetime=300
 set signcolumn=yes
 
