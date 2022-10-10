@@ -80,7 +80,6 @@ nmap <silent> <leader>/ :nohlsearch<CR>
 " File explorer
 let g:netrw_bufsettings = 'noma nomod rnu nobl nowrap ro'
 let g:netrw_banner = 0
-let g:netrw_liststyle = 3
 let g:netrw_list_hide = '.*\.swp$,.*\.pyc$,\.DS_Store,__pycache__,\.git\/$'
 map <leader>t :Explore<CR>
 map <leader>T :vsplit<CR> :Explore<CR>
