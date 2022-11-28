@@ -71,6 +71,7 @@ set incsearch       " incremental search
 set hlsearch        " Highlight search :)
 set ignorecase      " Ignore case for searching
 set smartcase       " If your search has upcase letters, do not ignore case
+set mouse=
 
 " Maps, shortcuts, etc
 "
