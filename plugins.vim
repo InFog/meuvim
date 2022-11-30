@@ -18,9 +18,6 @@ Plug 'bronson/vim-trailing-whitespace'
 " Ack search tool
 Plug 'mileszs/ack.vim'
 
-" Managing tab titles
-Plug 'gcmt/taboo.vim'
-
 " Commenting
 Plug 'preservim/nerdcommenter'
 let g:NERDDefaultAlign = 'left'
@@ -83,7 +80,7 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-nnoremap <leader>d <Plug>(coc-definition)
-nnoremap <leader>y <Plug>(coc-type-definition)
-nnoremap <leader>i <Plug>(coc-implementation)
-nnoremap <leader>r <Plug>(coc-references)
+nmap <leader>d <Plug>(coc-definition)
+nmap <leader>y <Plug>(coc-type-definition)
+nmap <leader>i <Plug>(coc-implementation)
+nmap <leader>r <Plug>(coc-references)

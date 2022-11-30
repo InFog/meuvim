@@ -5,7 +5,7 @@ Plug 'alvan/vim-php-manual'
 Plug 'docteurklein/php-getter-setter.vim'
 
 " phpactor - autocomplete/refactoring for PHP
-Plug 'phpactor/phpactor', { 'do': 'composer install' }
+Plug 'phpactor/phpactor', { 'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o' }
 
 Plug 'vim-php/phpctags', {'do': 'composer install' }
 Plug 'vim-php/tagbar-phpctags.vim', { 'do': 'make' }
