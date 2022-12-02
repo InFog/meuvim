@@ -42,6 +42,13 @@ Plug 'mhinz/vim-signify'
 " Git goodies
 Plug 'tpope/vim-fugitive'
 
+" Fuzzy finder
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+
 " Tagbar to show the file's tags (depends on exuberant-ctags)
 Plug 'majutsushi/tagbar'
 nnoremap <leader>l :TagbarToggle<CR>
