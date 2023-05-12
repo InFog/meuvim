@@ -12,7 +12,7 @@ I mostly use PHP, Python, Javascript, CSS and HTML. But not only.
 
 So you want to use my Neovim setup? Ok, do the following:
 
-- Clone this repo: `git clone git://github.com/InFog/meuvim.git ~/.config/nvim/`
+- Clone this repo: `git clone git@github.com:InFog/meuvim.git ~/.config/nvim/`
 - Create the `~/.vimundo` dir for the persistent undo (it's magical, it will allow you to undo stuff when you close and reopen files)
 - Install the git submodules: `git submodule init` and `git submodule update` to install `plug`, the plugin manager
 - Install the dependencies listed below (_Dependencies_)
