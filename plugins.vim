@@ -3,6 +3,9 @@
 " Colorscheme
 Plug 'rakr/vim-one'
 
+" Prettier to auto format code using <Leader>p
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+
 " Options to delete, select, copy, etc inside tags and other block symbols
 Plug 'tpope/vim-surround'
 
