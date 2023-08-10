@@ -134,6 +134,7 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 " export TERM="xterm-256color"
 
 " Some nice colors
+set t_Co=256
 set background=light
-let g:one_allow_italics = 1 " I love italic for comments
-colorscheme one
+" let g:one_allow_italics = 1 " I love italic for comments
+colorscheme PaperColor

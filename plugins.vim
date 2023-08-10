@@ -1,7 +1,8 @@
 " And now, some bundles
 
-" Colorscheme
+" Colorschemes
 Plug 'rakr/vim-one'
+Plug 'NLKNguyen/papercolor-theme'
 
 " Prettier to auto format code using <Leader>p
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
@@ -60,7 +61,7 @@ let g:tagbar_show_linenumbers=2
 " Statusline
 Plug 'itchyny/lightline.vim'
 let g:lightline = {
-    \ 'colorscheme': 'one',
+    \ 'colorscheme': 'PaperColor',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
