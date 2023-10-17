@@ -1,9 +1,6 @@
 " PHP Documentation
 Plug 'alvan/vim-php-manual'
 
-" Automatically inserts getters and setters for PHP.
-Plug 'docteurklein/php-getter-setter.vim'
-
 " phpactor - autocomplete/refactoring for PHP
 Plug 'phpactor/phpactor', { 'for': 'php', 'tag': '*', 'do': 'composer install --no-dev -o' }
 

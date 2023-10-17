@@ -78,7 +78,7 @@ let g:coc_global_extensions = [
     \ 'coc-tsserver',
     \ 'coc-jedi',
     \ 'coc-solargraph',
-    \ 'coc-phpactor']
+    \ 'coc-phpls']
 set updatetime=300
 set signcolumn=yes
 
