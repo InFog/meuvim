@@ -76,7 +76,7 @@ let g:coc_global_extensions = [
     \ 'coc-diagnostic',
     \ 'coc-go',
     \ 'coc-tsserver',
-    \ 'coc-jedi',
+    \ 'coc-pyright',
     \ 'coc-solargraph',
     \ 'coc-phpls']
 set updatetime=300

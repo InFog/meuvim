@@ -1,7 +1,11 @@
 {
     "diagnostic-languageserver.mergeConfig": true,
     "diagnostic-languageserver.filetypes": {
-        "python": "flake8",
+        "python": {
+            "linting": {
+                "ruffEnabled": true
+            }
+        },
         "javascript": "eslint"
     }
 }
