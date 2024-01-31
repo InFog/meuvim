@@ -25,6 +25,10 @@ endfor
 " More info: https://github.com/sheerun/vim-polyglot
 Plug 'sheerun/vim-polyglot'
 
+if !empty(glob("$HOME/.config/nvim/local.vim"))
+    source $HOME/.config/nvim/local.vim
+endif
+
 call plug#end()
 
 "
