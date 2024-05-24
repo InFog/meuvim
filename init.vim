@@ -7,6 +7,7 @@
 " http://evaldojunior.com
 
 set nocompatible
+set notermguicolors
 filetype off
 set modelines=0
 let mapleader=","
@@ -140,5 +141,4 @@ nnoremap <leader>w :%s/\s\+$//<CR>
 " Some nice colors
 set t_Co=256
 set background=light
-" let g:one_allow_italics = 1 " I love italic for comments
 colorscheme PaperColor
