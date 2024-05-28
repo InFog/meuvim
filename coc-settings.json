@@ -7,5 +7,11 @@
             }
         },
         "javascript": "eslint"
+    },
+    "pyright": {
+        "inlayHints": {
+            "variableTypes": false,
+            "functionReturnTypes": false
+        }
     }
 }
