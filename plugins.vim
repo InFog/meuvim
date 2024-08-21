@@ -29,6 +29,9 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 
+" Use with <Leader><k> and <Leader><K>, <n> and <N> to navigate.
+Plug 'lfv89/vim-interestingwords'
+
 " Highlights word under the cursor
 Plug 'dominikduda/vim_current_word'
 let g:vim_current_word#highlight_current_word = 0
