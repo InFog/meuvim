@@ -1,4 +1,6 @@
 {
+    "diagnostic.enable": true,
+    "diagnostic.enableMessage": "always",
     "diagnostic-languageserver.mergeConfig": true,
     "diagnostic-languageserver.filetypes": {
         "python": {

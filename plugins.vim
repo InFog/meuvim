@@ -1,7 +1,6 @@
 " And now, some bundles
 
 " Colorschemes
-Plug 'rakr/vim-one'
 Plug 'NLKNguyen/papercolor-theme'
 
 Plug 'github/copilot.vim'
@@ -21,9 +20,6 @@ Plug 'myusuf3/numbers.vim'
 
 " Show trailing spaces
 Plug 'bronson/vim-trailing-whitespace'
-
-" Ack search tool
-Plug 'mileszs/ack.vim'
 
 " Commenting
 Plug 'preservim/nerdcommenter'
@@ -98,6 +94,7 @@ inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 nmap <leader>d <Plug>(coc-definition)
+nmap <leader>D :CocDiagnostics<CR>
 nmap <leader>y <Plug>(coc-type-definition)
 nmap <leader>i <Plug>(coc-implementation)
 nmap <leader>r <Plug>(coc-references)

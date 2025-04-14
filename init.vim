@@ -46,6 +46,7 @@ if has('persistent_undo')
 endif
 
 set nobackup
+set nowritebackup
 set noswapfile      " Do not use those annoying swap files
 
 set hidden          " Allow hiding not saved buffers
