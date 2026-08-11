@@ -3,9 +3,6 @@
 " Colorschemes
 Plug 'NLKNguyen/papercolor-theme'
 
-Plug 'github/copilot.vim'
-imap <silent><script><expr> <C-V> copilot#Accept("\<CR>")
-
 " Prettier to auto format code using <Leader>p
 Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
